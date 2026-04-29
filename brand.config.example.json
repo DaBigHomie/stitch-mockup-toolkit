@@ -1,0 +1,59 @@
+{
+  "$schema": "./templates/brand.config.schema.json",
+  "brand": {
+    "name": "PullUpATL",
+    "slug": "pullupatl",
+    "demographic": "Atlanta nightlife / 25-35",
+    "platform": "Mobile (Expo)"
+  },
+  "tokens": {
+    "path": "packages/shared/constants/BRAND.ts",
+    "colors": {
+      "primary": {
+        "name": "Table Gold",
+        "ref": "COLORS.primary"
+      },
+      "secondary": {
+        "name": "Midnight",
+        "ref": "COLORS.secondary"
+      },
+      "accent": {
+        "name": "Velvet",
+        "ref": "COLORS.accent"
+      },
+      "background": {
+        "name": "Ivory",
+        "ref": "COLORS.background"
+      },
+      "text": {
+        "name": "Onyx",
+        "ref": "COLORS.textPrimary"
+      }
+    },
+    "spacing": "SPACING[1]",
+    "radius": {
+      "lg": "RADIUS.lg",
+      "xl": "RADIUS.xl"
+    },
+    "shadow": "SHADOWS.md"
+  },
+  "viewport": "390x844 (iPhone mobile-first)",
+  "monorepo": {
+    "appSurfaces": [
+      "apps/mobile",
+      "apps/admin",
+      "apps/web"
+    ],
+    "componentRoot": "apps/mobile/src",
+    "fsdLayers": [
+      "features",
+      "entities",
+      "shared"
+    ]
+  },
+  "moodTags": [
+    "premium",
+    "nightlife",
+    "atlanta"
+  ]
+}

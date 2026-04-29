@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Gameday Mode</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#e6c364",
+                      "primary-container": "#c9a84c",
+                      "tertiary-fixed-dim": "#ffb0ca",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#343342",
+                      "surface-bright": "#383847",
+                      "secondary": "#c6c4df",
+                      "on-surface": "#e3e0f4",
+                      "inverse-surface": "#e3e0f4",
+                      "inverse-primary": "#755b00",
+                      "on-background": "#e3e0f4",
+                      "on-surface-variant": "#d0c5b2",
+                      "inverse-on-surface": "#2f2f3d",
+                      "surface-container-high": "#292937",
+                      "on-tertiary-fixed": "#3e001f",
+                      "on-primary": "#3d2e00",
+                      "surface-container-low": "#1a1a28",
+                      "on-secondary": "#2f2e43",
+                      "outline": "#99907e",
+                      "surface-dim": "#12121f",
+                      "secondary-fixed-dim": "#c6c4df",
+                      "surface": "#12121f",
+                      "surface-container-lowest": "#0d0d1a",
+                      "surface-container": "#1e1e2c",
+                      "on-tertiary": "#640035",
+                      "on-primary-fixed-variant": "#584400",
+                      "on-secondary-container": "#b8b6d0",
+                      "on-error": "#690005",
+                      "on-secondary-fixed": "#1a1a2e",
+                      "error-container": "#93000a",
+                      "on-tertiary-container": "#7a1345",
+                      "tertiary": "#ffb1ca",
+                      "primary-fixed-dim": "#e6c364",
+                      "tertiary-fixed": "#ffd9e3",
+                      "on-tertiary-fixed-variant": "#841c4c",
+                      "secondary-container": "#47475d",
+                      "secondary-fixed": "#e2e0fc",
+                      "on-primary-fixed": "#241a00",
+                      "on-primary-container": "#503d00",
+                      "primary-fixed": "#ffe08f",
+                      "tertiary-container": "#ff84b2",
+                      "primary": "#e6c364",
+                      "on-secondary-fixed-variant": "#45455b",
+                      "background": "#12121f",
+                      "outline-variant": "#4d4637",
+                      "error": "#ffb4ab",
+                      "surface-container-highest": "#343342"
+              },
+              "fontFamily": {
+                      "headline": ["Newsreader"],
+                      "display": ["Newsreader"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0d0d1a;
+            color: #e3e0f4;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .headline-md { font-size: 1.5rem; line-height: 2rem; }
+        .glass-panel {
+            background: rgba(30, 30, 44, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex justify-center items-start min-h-screen p-0 md:p-8">
+<!-- Device Frame Mockup (iPhone 15 Pro) -->
+<div class="relative w-full max-w-[430px] h-[932px] bg-surface-container-lowest overflow-hidden md:rounded-[55px] shadow-2xl flex flex-col border-[8px] border-surface-container-high">
+<!-- TopAppBar (From JSON) -->
+<header class="docked full-width top-0 z-50 tonal-transition bg-gradient-to-b from-[#12121f] to-transparent flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#e6c364]" data-icon="sports_football">sports_football</span>
+<h1 class="font-['Newsreader'] text-xl font-bold italic text-[#e6c364]">GAMEDAY MODE</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest border border-primary/20 overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a stylish young black man with a sharp fade haircut and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgUifDKHWF7aO1amYK1RCtocRF1mMJaq3VlQd86pQqePQWp3W43djBB_qUQgnXzQUEue0ig2PPUymJweS0-mkiMNmfRWTumV6eXjft0XkU6cAYznirPlt3vy8Fza9zEG0byAoK45Yt-k_4FgqwWoJs-yAdEuJF5jWxhZ0OsqqRgE-gS8DzQdaoDcCOReHFyeBNIs_RhWajm5MgRnJ4cT5Z7QGcHTCd94coE2mwokiDfxuDgwHO7dbEdoIQCEemMRiWLXhGTfBv7Fmn"/>
+</div>
+</header>
+<!-- Main Scrollable Canvas -->
+<main class="flex-1 overflow-y-auto pb-32 scroll-smooth">
+<!-- Hero Banner -->
+<section class="relative px-6 pt-2 pb-6">
+<div class="mb-4">
+<div class="flex items-center gap-3 mb-1">
+<img alt="Falcons Logo" class="w-12 h-12 object-contain" data-alt="stylized logo of a professional football team featuring a red and black falcon in flight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1er7r7dbSjK1qrhd5su6L_q-S6ILzA4GAZI0qB8409OsD0Zmxs_jxUKYlGe38S_oicgm6FCfdPDzafyKwrR_V57rq2hL-H_xESgqmrWWWn5hc7CYDxitAIC9YvSd56QTsWQxAEtaEcavlSdzV4LBf8-CWTS2fyZTro1arlGK48DDiwyjo1EmlEd-erMEVbX8Ebd9SkenOtHzFrel7F1cCnahnZRM-fVLwhUPSi5icjekadm8d1c_e27Md1H0JbSZkS0loX9wBsSaS"/>
+<div>
+<h2 class="font-['Newsreader'] text-3xl font-bold text-primary tracking-tight">Falcons vs Saints</h2>
+<p class="text-on-surface/70 text-sm font-medium">Mercedes-Benz Stadium · 4:25 PM</p>
+</div>
+</div>
+</div>
+<!-- Map Snippet -->
+<div class="relative h-48 rounded-2xl overflow-hidden mb-8 border border-white/5">
+<img class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="dark atmospheric satellite map of downtown Atlanta with gold glowing pin markers on Mercedes-Benz stadium" data-location="Atlanta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjvCMQqE4HPZGruOTjaOxbAsL9Kkl2sSYhMood9MLXEi6_oLouEs3cyav3Kn75ixaRFgjzVkNG_CgfYMgr8CT3QwdwpVCKMsdxi0ecbYz0hZqkHa6z7tDqvsJ0kKnVvxXAxauBEDp62Fw3X7B82Ux0lADFUd0BIZf0gGo-U6zmjXBseAu822eWSHPCiiX8xNX8SOCivPrUDxSYU0oqoBEDoZWdADpW3BQrseLxCGXMwv1swFyYf0REPi18dvpSGL2lF45QUFA7HaQ7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border-2 border-primary/40 flex items-center justify-center animate-pulse">
+<div class="w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(230,195,100,0.8)]"></div>
+</div>
+<span class="bg-primary text-surface-container-lowest text-[10px] font-extrabold px-2 py-0.5 rounded-full mt-2 uppercase tracking-tighter">Within 1 mile</span>
+</div>
+</div>
+<!-- Pre-Game Section -->
+<div class="mb-10">
+<div class="flex justify-between items-end mb-4">
+<h3 class="font-['Newsreader'] text-2xl text-white italic">The Warm Up</h3>
+<span class="text-primary text-[10px] font-bold uppercase tracking-widest">Pre-Game</span>
+</div>
+<div class="space-y-6">
+<!-- Venue Card 1 -->
+<div class="relative group">
+<div class="aspect-[16/9] w-full rounded-2xl overflow-hidden mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-end restaurant interior with moody lighting, leather booths, and groups of sophisticated black socialites dining" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArGi50X79EgZhkH6COUJYMPmJ5niVc6SBiisFF0B2fsRWqZ9GLhFNs6pnm4CV9Tc1XclZ25khfawqA2q2EHNh9jRzPpZt5BgMUfpEv4Yvr_AtPQQ0UOtOZIJQkgJqa4tXAxlmT8Iw-ifXfKi9qqsjNN9AvKaj6Z1CcU_kZe5N3GX7NOvkWXhovtLPxNvw674oycn04pUojaAM1_F5pLUj72s2V7QhgUVXhuHeTVtjsyXULZZuCC9dQLJJ0BlW4GCx3fvh1AiHGgTOu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="text-xl font-['Newsreader'] text-white">Avenue Kitchen &amp; Grill</h4>
+<div class="flex items-center gap-2 text-primary/80 text-xs font-semibold uppercase tracking-wider mt-1">
+<span>0.4 mi from stadium</span>
+<span class="w-1 h-1 bg-primary/40 rounded-full"></span>
+<span>8 min walk</span>
+</div>
+</div>
+</div>
+<button class="w-full py-3.5 bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-surface-container-lowest font-bold text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95">
+                                    Reserve pre-game table
+                                </button>
+</div>
+</div>
+<!-- Venue Card 2 -->
+<div class="relative group">
+<div class="aspect-[16/9] w-full rounded-2xl overflow-hidden mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="upscale cocktail lounge with gold accents, glowing shelves of premium spirits, and elegant black guests laughing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARs9gP3hwWWMzjZXO3xIdk9CbvUiPR2mfs2xikmpoKwi5mfB2egvFU6kBPHL55JBMXR2Mbj5qG2XWzAo26lNl1zi2KEf9mQkcbIyv3feY63aKGpDCJIs_biINPB-30qZmk-sh_zq6Z8p-0Ij49iGwopjuEMfkxgDOqyJco_5tN0bli7QR1HV2x3RbcczE76y09la0aetWVofuTgotRq6qV4u19xiKYbP3IKlnI6t8xYMNh2psvxQ1A1HxPRix0a8AbLuDoEqAl5zRL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="text-xl font-['Newsreader'] text-white">Chillz Restaurant and Bar</h4>
+<div class="flex items-center gap-2 text-primary/80 text-xs font-semibold uppercase tracking-wider mt-1">
+<span>0.6 mi from stadium</span>
+<span class="w-1 h-1 bg-primary/40 rounded-full"></span>
+<span>12 min walk</span>
+</div>
+</div>
+</div>
+<button class="w-full py-3.5 bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-surface-container-lowest font-bold text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95">
+                                    Reserve pre-game table
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Post-Game Section -->
+<div class="mb-10">
+<div class="flex justify-between items-end mb-4">
+<h3 class="font-['Newsreader'] text-2xl text-white italic">The Overtime</h3>
+<span class="text-tertiary text-[10px] font-bold uppercase tracking-widest">Post-Game</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Post Game Card 1 -->
+<div class="flex flex-col">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-2">
+<img class="w-full h-full object-cover" data-alt="vibrant nightlife scene in Atlanta club with purple neon lights and stylish black people dancing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx0lXaonCjVxds7aI2qi9YpNRurxtJBgfuxAPyfJS_1yReWyPb7FZ4ZeamhxMogoEMQ5d6kNHrcazuIyiOrSwfJVb0lGdvgbtXonz9YENho6W0OVZ4PLU_4o_MY7KR7uf3DbljSmh2r9NGniaDMJloquDbrh-op9goDrYSkoDPIQaJqDnn9dzdZQmUHpQshcinpuzaYlwTxyBTDa6XjNslUkzKA4mqxupx4IYvBQCiFLRhVfDI_nZBDhcxb90D1SgXC3d0cUnxiQKa"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-1 rounded-md">
+<p class="text-[9px] text-tertiary font-bold uppercase tracking-tighter">Open late tonight</p>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2">
+<h5 class="text-white font-bold text-sm">Revel Atlanta</h5>
+</div>
+</div>
+</div>
+<!-- Post Game Card 2 -->
+<div class="flex flex-col">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden relative mb-2">
+<img class="w-full h-full object-cover" data-alt="glamorous nightclub interior with velvet ropes and a crowd of fashionable black attendees under warm spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4KH0bdwEDWz_BBJVYQRSlG5_S-7OzCxDoUKYjXFZDO79IpjcLRWc3UIPJDst_77D8GofaOVnPivgtRQWV-dFJaoC4oCP2xriV08PRK6zBiApN93SFNF-B7i2-ySrMdrIfS5UL-GaF6zqWWhhgfiYAfBDvxAKxPoXODq1JmOzgi75dKjLOMEsgpBa0GMH4jJasnWcMrxY1f6lfc6Yz4ST-T6_eGM9iJctVzRoXznR5wfvHLBfuSrKbkVhDI42y3UfoYuhRyyU7hBHt"/>
+<div class="absolute top-2 left-2 bg-primary/90 px-2 py-1 rounded-md shadow-lg">
+<p class="text-[9px] text-on-primary font-extrabold uppercase tracking-tighter">After-party: DJ Kourt Live</p>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2">
+<h5 class="text-white font-bold text-sm">Havana Nightclub ATL</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Countdown Timer -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[60] flex flex-col items-center w-full pointer-events-none">
+<div class="bg-[#f0b000]/20 backdrop-blur-xl border border-[#f0b000]/40 px-4 py-2 rounded-full flex items-center gap-2 pointer-events-auto">
+<span class="w-2 h-2 rounded-full bg-[#f0b000] animate-pulse"></span>
+<p class="text-[#f0b000] text-xs font-bold uppercase tracking-[0.2em]">Kickoff in 3h 12m</p>
+</div>
+</div>
+<!-- BottomNavBar (From JSON) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#12121f]/80 backdrop-blur-xl rounded-t-3xl border-t border-white/10 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<!-- DISCOVER (Active) -->
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl p-2 scale-110 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">DISCOVER</span>
+</div>
+<!-- VIBES -->
+<div class="flex flex-col items-center justify-center text-white/50 p-2 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">VIBES</span>
+</div>
+<!-- CHATS -->
+<div class="flex flex-col items-center justify-center text-white/50 p-2 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">CHATS</span>
+</div>
+<!-- PROFILE -->
+<div class="flex flex-col items-center justify-center text-white/50 p-2 hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-widest font-bold">PROFILE</span>
+</div>
+</nav>
+<!-- Notch/Indicator for iPhone frame -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-surface-container-lowest rounded-b-2xl z-[100] md:block hidden"></div>
+<div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-white/20 rounded-full z-[100] md:block hidden"></div>
+</div>
+</body></html>

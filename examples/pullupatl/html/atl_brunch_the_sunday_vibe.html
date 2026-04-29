@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Brunch Edit</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Design System -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#12121f",
+                    "on-primary": "#3d2e00",
+                    "surface-container-lowest": "#0d0d1a",
+                    "surface-container-high": "#292937",
+                    "outline-variant": "#4d4637",
+                    "on-secondary-fixed": "#1a1a2e",
+                    "surface-dim": "#12121f",
+                    "surface-bright": "#383847",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#d0c5b2",
+                    "inverse-primary": "#755b00",
+                    "tertiary-fixed": "#ffd9e3",
+                    "tertiary-container": "#ff84b2",
+                    "primary-container": "#c9a84c",
+                    "on-secondary-container": "#b8b6d0",
+                    "error-container": "#93000a",
+                    "outline": "#99907e",
+                    "on-secondary": "#2f2e43",
+                    "surface-container-highest": "#343342",
+                    "on-tertiary-container": "#7a1345",
+                    "surface-variant": "#343342",
+                    "secondary": "#c6c4df",
+                    "on-tertiary-fixed-variant": "#841c4c",
+                    "on-background": "#e3e0f4",
+                    "inverse-surface": "#e3e0f4",
+                    "surface-tint": "#e6c364",
+                    "on-secondary-fixed-variant": "#45455b",
+                    "surface-container": "#1e1e2c",
+                    "error": "#ffb4ab",
+                    "secondary-container": "#47475d",
+                    "on-primary-container": "#503d00",
+                    "on-error": "#690005",
+                    "tertiary-fixed-dim": "#ffb0ca",
+                    "surface-container-low": "#1a1a28",
+                    "on-tertiary": "#640035",
+                    "tertiary": "#ffb1ca",
+                    "on-primary-fixed-variant": "#584400",
+                    "on-primary-fixed": "#241a00",
+                    "primary": "#e6c364",
+                    "secondary-fixed-dim": "#c6c4df",
+                    "primary-fixed-dim": "#e6c364",
+                    "primary-fixed": "#ffe08f",
+                    "secondary-fixed": "#e2e0fc",
+                    "on-tertiary-fixed": "#3e001f",
+                    "on-surface": "#e3e0f4",
+                    "inverse-on-surface": "#2f2f3d",
+                    "surface": "#12121f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom Utilities for Design System specifics */
+        .glass-panel {
+            background: rgba(30, 30, 44, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-shadow-ambient {
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+        }
+        /* Hide scrollbar for horizontal chips */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #e6c364, #c9a84c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar Shared Component -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#12121f]/80 backdrop-blur-xl shadow-none">
+<button class="text-[#e6c364] scale-95 active:duration-150 hover:opacity-80 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<h1 class="text-[#e6c364] font-['Newsreader'] text-2xl italic tracking-tight">The Brunch Edit</h1>
+<button class="scale-95 active:duration-150 hover:opacity-80 transition-opacity flex items-center justify-center">
+<img alt="User profile avatar" class="w-8 h-8 rounded-full border border-primary/20 object-cover" data-alt="Close-up portrait of a stylish Black woman looking confidently at the camera, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkFIdhxmZ-bhaAVBixyKCho1rhKX83SS4xyvPeCM3-6ulHoqoST7TSdPbeHX93YoSQZZmVwQYNnNCaDqXoLuHYMAZCkcsu5IUYhHOVRh7lUjd5UTH7U6U_IazAwGzEbyIEdYp0YJKZUoEw6kJDnYW_qpbJUU_pYFteN6UCeMG69mcGyNlR3v_3l75YNNPMSDvJw7uMpBgdFOiBVC1mhYOOjk1D363EbaASFvKdg6Mss8kCwKYc8T1uKofE5U6Wgv3_zWvaVMM_VwQ7"/>
+</button>
+</header>
+<main class="w-full max-w-screen-xl mx-auto">
+<!-- Hero Banner section -->
+<section class="relative w-full h-[574px] md:h-[530px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img alt="ATL Brunch Spread" class="w-full h-full object-cover" data-alt="Wide photo of a vibrant Atlanta brunch spread with diverse Black friends laughing and toasting mimosas, natural morning light, cinematic high-fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7fD4hmRQkOmt4O7hEV1wank-RPIdDcOSfHvw920tcElgru1ZGH8EYlrN3Ffn6mEdjbXkQ1VKUyL8Uop1-C-fiJeGSwb9g7QetlxRgQjhQszuYJ4NYg8O3lH2geKx_jSKCANVj4ZhwrKHp2K-U3bZrAgdI3wrHKFoNS0989Tiz2_rPDxHJO3ZnfTO3uZtn74qzBNxXAzMs75zUR6Nw-p4ioRrqpkrnRze6Cq4WgY0HHR46HEpCCbw8eVNIpWIUD9KbMr3Xwtp4M2Uc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 pb-8 md:pl-24 md:pr-16">
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-on-surface tracking-[-0.02em] leading-tight text-shadow-ambient">
+                    ATL<br/>
+<span class="italic text-primary">Brunch</span>
+</h2>
+<p class="font-label text-sm uppercase tracking-[0.1em] text-on-surface-variant mt-4 opacity-90">
+                    The City's Elite Morning Rituals
+                </p>
+</div>
+</section>
+<!-- Horizontal Scroll Chips (Filters) -->
+<section class="relative z-20 -mt-2 mb-10 w-full pl-6 md:pl-24 pr-4 overflow-hidden">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-4 pt-2">
+<button class="whitespace-nowrap bg-primary text-on-primary font-label text-xs uppercase tracking-[0.1em] px-5 py-2.5 rounded-full shadow-[0_4px_12px_rgba(230,195,100,0.2)] transition-transform active:scale-95">
+                    Bottomless Mimosas
+                </button>
+<button class="whitespace-nowrap bg-surface-container-highest text-on-surface font-label text-xs uppercase tracking-[0.1em] px-5 py-2.5 rounded-full border border-outline-variant/15 hover:bg-surface-bright transition-colors active:scale-95">
+                    Rooftop
+                </button>
+<button class="whitespace-nowrap bg-surface-container-highest text-on-surface font-label text-xs uppercase tracking-[0.1em] px-5 py-2.5 rounded-full border border-outline-variant/15 hover:bg-surface-bright transition-colors active:scale-95">
+                    Live DJ Brunch
+                </button>
+<button class="whitespace-nowrap bg-surface-container-highest text-on-surface font-label text-xs uppercase tracking-[0.1em] px-5 py-2.5 rounded-full border border-outline-variant/15 hover:bg-surface-bright transition-colors active:scale-95">
+                    Boozy Brunch
+                </button>
+<button class="whitespace-nowrap bg-surface-container-highest text-on-surface font-label text-xs uppercase tracking-[0.1em] px-5 py-2.5 rounded-full border border-outline-variant/15 hover:bg-surface-bright transition-colors active:scale-95">
+                    Family Friendly
+                </button>
+</div>
+</section>
+<!-- Editor's Pick (Bento Card Layout) -->
+<section class="ml-6 mr-4 md:ml-24 md:mr-16 mb-12">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<h3 class="font-label text-xs uppercase tracking-[0.15em] text-primary">Editor's Pick</h3>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container-high border border-primary-container/30 shadow-[0_12px_30px_rgba(0,0,0,0.4)] group cursor-pointer">
+<img alt="Editor's Pick Food" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of decadent eggs benedict and avocado toast on a rustic dark wooden table with golden hour backlighting, luxury food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHIX951NgOeleyy8PCGkL_QUtwuGaTJQikSmbni9-Vn1seW4iillhv-jtuRZvdGurb-jIdRMAa4Z_3DWZrOKDm2vEpSCpd1_06AEytBJZyLQvaBbTZ0RcOWPjmKBQnld4MKA1dCkSEchCpU_Wx_GkJzN0QzpuGhLvqE9r7Z6ETCJQZdUJoB7D2pCVQW6qKWh4WV-HQl8qrJnlPvjp6klHtCOHXSrZ5lTsS6HsknMRMI15cDFNEuCwMqDnauStDRvXhkjCpq8HvXmMm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute bottom-0 w-full p-6">
+<div class="flex justify-between items-end">
+<div>
+<h4 class="font-headline text-3xl text-on-surface mb-1">The Southern Velvet</h4>
+<p class="font-body text-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">location_on</span>
+                                Midtown East
+                            </p>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary/10 backdrop-blur-md border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vertical Venue List (Asymmetric Editorial Style) -->
+<section class="flex flex-col gap-10 ml-6 mr-4 md:ml-24 md:mr-16 mb-12">
+<!-- Venue 1 -->
+<article class="relative w-full flex flex-col md:flex-row gap-6 group cursor-pointer">
+<div class="relative w-full md:w-2/3 h-80 rounded-xl overflow-hidden">
+<img alt="Rooftop Venue" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant rooftop patio at a chic Atlanta restaurant, plush seating, sweeping city views, sunny warm ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrMavBmdaPdQ8T8X05HgHlIG1zHpdmlxxO9tRYdy9mhaPxPP8i97xRYGeI5blIbwBm5Bg6kAwRCeGgyHTxqjRO1FHizciwioCs4skvVrcsW8Cu3J5oTRfXfhasNDFkH9JV9tM6aoLunjHceynpi5UAXRMfwxHMQck_RrPOrf2k5ETpdS5XV4RZIjnTP97UhCEMd5Zf5y2PIf7EcSGyI7DXIhxXDhL5p5TZFRaM8NUM-eY8KpdWsYYEg__4CzvpTTDSPoZCd9EDSygG"/>
+<!-- Glassmorphism badge -->
+<div class="absolute top-4 left-4 px-3 py-1.5 rounded-md glass-panel border border-white/10 font-label text-[10px] uppercase tracking-widest text-on-surface">
+                        Wait: ~25 min
+                    </div>
+</div>
+<div class="w-full md:w-1/3 flex flex-col justify-center">
+<h4 class="font-headline text-2xl text-on-surface mb-2">Ascend Skyline</h4>
+<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed">
+                        Elevated brunching. Known for panoramic views and a strictly curated R&amp;B playlist.
+                    </p>
+<div class="space-y-3 font-label text-xs uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">liquor</span>
+<span class="text-primary font-semibold">Bottomless mimosas $35</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Sat &amp; Sun 10AM - 3PM</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Venue 2 (Offset Image to break grid) -->
+<article class="relative w-full flex flex-col-reverse md:flex-row gap-6 group cursor-pointer mt-8">
+<div class="w-full md:w-1/3 flex flex-col justify-center md:items-end md:text-right pr-0 md:pr-6">
+<h4 class="font-headline text-2xl text-on-surface mb-2">Noir Kitchen</h4>
+<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed">
+                        Dark, moody, and exceptionally decadent. The premier destination for a high-energy culinary experience.
+                    </p>
+<div class="space-y-3 font-label text-xs uppercase tracking-widest text-on-surface-variant md:flex md:flex-col md:items-end">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">music_note</span>
+<span class="text-tertiary-container font-semibold">Live DJ 12PM - 4PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Sunday Only 11AM - 5PM</span>
+</div>
+</div>
+</div>
+<div class="relative w-full md:w-2/3 h-80 rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+<img alt="Moody Brunch Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Moody, stylish interior of a modern southern brunch spot with velvet booths, brass fixtures, and a live DJ setup in the corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO8cOZVd--rsaydYDWZUo_Whwl5MH6Av_inLShKxIbDVz9Yg4Ukvp19I1avz2QR60ZyP1wmv_nJnKzqQlz8OYeVqxnHW20jI6Df6NS5NbYpA2y6OKHbQLa3HRXtjsalLS8ql6THhN7phIHrizAqVhIDZ_MB_JLtFHgjYViio9UayzBbkwfaRtSUWFVzIWBLJESu6EtzgTLtf8bmPi96xTeCo0Bk2Id9T7UaFXJ6VCJ-gZ4edGlM2k-8cdervxMOZyNtz5SNT9zbBIF"/>
+<div class="absolute top-4 right-4 px-3 py-1.5 rounded-md bg-surface-container-highest/90 border border-primary/20 font-label text-[10px] uppercase tracking-widest text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                        Booking Fast
+                    </div>
+</div>
+</article>
+</section>
+</main>
+<!-- BottomNavBar Shared Component -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-3xl border-t border-[#c9a84c]/10 bg-[#12121f]/90 backdrop-blur-2xl shadow-[0_-12px_30px_rgba(0,0,0,0.4)] flex justify-around items-center px-4 pt-3 pb-6">
+<!-- Discover (Active State mapped semantically) -->
+<a class="flex flex-col items-center justify-center text-[#e6c364] bg-[#c9a84c]/10 rounded-2xl px-4 py-1 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase tracking-[0.1em] text-[10px]">Discover</span>
+</a>
+<!-- Bookings (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-[#e6c364] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">calendar_today</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase tracking-[0.1em] text-[10px]">Bookings</span>
+</a>
+<!-- Social (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-[#e6c364] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">chat_bubble</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase tracking-[0.1em] text-[10px]">Social</span>
+</a>
+<!-- Profile (Inactive) -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-[#e6c364] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase tracking-[0.1em] text-[10px]">Profile</span>
+</a>
+</nav>
+</body></html>

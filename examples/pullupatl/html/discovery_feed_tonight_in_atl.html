@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL Discovery Feed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffd9e3",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-highest": "#343342",
+                        "surface-container": "#1e1e2c",
+                        "on-surface": "#e3e0f4",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "on-tertiary-fixed": "#3e001f",
+                        "inverse-primary": "#755b00",
+                        "error-container": "#93000a",
+                        "on-secondary": "#2f2e43",
+                        "on-background": "#e3e0f4",
+                        "inverse-on-surface": "#2f2f3d",
+                        "surface-variant": "#343342",
+                        "secondary-fixed": "#e2e0fc",
+                        "primary-fixed": "#ffe08f",
+                        "outline-variant": "#4d4637",
+                        "background": "#12121f",
+                        "surface": "#12121f",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-tertiary": "#640035",
+                        "surface-container-high": "#292937",
+                        "surface-container-low": "#1a1a28",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "primary-fixed-dim": "#e6c364",
+                        "tertiary-container": "#ff84b2",
+                        "secondary": "#c6c4df",
+                        "on-primary-container": "#503d00",
+                        "on-tertiary-container": "#7a1345",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "surface-container-lowest": "#0d0d1a",
+                        "surface-bright": "#383847",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#47475d",
+                        "surface-tint": "#e6c364",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary-fixed-variant": "#584400",
+                        "primary-container": "#c9a84c",
+                        "primary": "#e6c364",
+                        "surface-dim": "#12121f",
+                        "tertiary": "#ffb1ca",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "outline": "#99907e",
+                        "on-primary": "#3d2e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-headline { font-family: 'Newsreader', serif; }
+        .text-glow { text-shadow: 0 0 10px rgba(230, 195, 100, 0.3); }
+        .velvet-glow { box-shadow: 0 0 30px -5px rgba(139, 34, 82, 0.4); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface antialiased pb-28 selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 bg-[#12121f]/80 backdrop-blur-xl dark:bg-[#0d0d1a]/80 shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] z-50">
+<div class="flex items-center gap-3">
+<h1 class="font-headline font-bold italic text-2xl tracking-tighter text-on-surface">Tonight in ATL</h1>
+</div>
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-full border border-white/5">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label text-xs font-bold tracking-widest text-on-surface">9:47 PM</span>
+</div>
+</header>
+<main class="pt-24 px-4 max-w-lg mx-auto flex flex-col gap-8">
+<!-- Hero Section -->
+<section class="flex flex-col gap-3">
+<div class="flex items-center gap-2 px-2">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-primary">Tonight's Pick</span>
+<div class="h-[1px] flex-grow bg-gradient-to-r from-primary/30 to-transparent"></div>
+</div>
+<article class="relative w-full aspect-[4/5] rounded-xl overflow-hidden velvet-glow border border-[#8B2252]/30 bg-surface-container">
+<img alt="High-energy DJ performance in a packed Atlanta nightclub with a glamorous Black crowd, dramatic red and purple club lighting, premium nightlife atmosphere" class="absolute inset-0 w-full h-full object-cover" data-alt="High-energy DJ performance in a packed Atlanta nightclub with a glamorous Black crowd, dramatic red and purple club lighting, premium nightlife atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzxeHPGNEYsyBatunCe6e3GKOhTpfyqusjpRMVBoxo2SueC2MHQUv-9SPTi5kS1ZjKsupYniKBSaO7MFheodkqynM6oS0VCABw8Brh2Plm-gIMtTFP9wFLiIbgwM_hk1niXQsDenIeZm00aANpspGMPQsxYSwHyMAYeVzkzAQRZ7O-VScyHg3yX9i8Yc9Ghjqz0TbuYuP906f0TbhDq16yiUQlsZaVyjTp09eCiNGtjKKtOfc6qqMT0iuLMOwYCRN-w73O3nXcqB90"/>
+<!-- Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<!-- Content -->
+<div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-1">Compound ATL</span>
+<h2 class="font-headline font-bold text-3xl text-on-surface leading-none text-glow">DJ Trauma Live</h2>
+<span class="font-body text-sm text-on-surface-variant mt-2">10 PM - 3 AM • $50 Cover</span>
+</div>
+<div class="bg-surface-container/80 backdrop-blur-md rounded-lg p-2 flex flex-col items-center border border-white/10">
+<span class="material-symbols-outlined text-primary mb-1" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label text-[10px] uppercase text-on-surface">Hot</span>
+</div>
+</div>
+<!-- Occupancy Bar -->
+<div class="flex flex-col gap-1 w-full mt-2">
+<div class="flex justify-between text-[10px] font-label uppercase text-on-surface-variant">
+<span>Vibe Check</span>
+<span class="text-primary-container">85% Full</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[85%] rounded-full shadow-[0_0_10px_rgba(230,195,100,0.5)]"></div>
+</div>
+</div>
+<button class="w-full mt-2 bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-sm font-bold uppercase tracking-widest py-4 rounded-xl hover:opacity-90 transition-opacity flex justify-center items-center gap-2">
+                        Reserve Table
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Feed List -->
+<section class="flex flex-col gap-6">
+<!-- Feed Item 1 -->
+<article class="relative w-full rounded-xl overflow-hidden bg-surface-container-low flex flex-col">
+<div class="relative w-full h-48">
+<img alt="Sophisticated R&amp;B lounge setting with elegantly dressed Black patrons enjoying cocktails, soft amber ambient lighting, velvet seating, upscale Atlanta nightlife" class="absolute inset-0 w-full h-full object-cover" data-alt="Sophisticated R&amp;B lounge setting with elegantly dressed Black patrons enjoying cocktails, soft amber ambient lighting, velvet seating, upscale Atlanta nightlife" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOClUtLbzCWqmPfNB2NUfhFQMnQDiffp45JpZTzpMIUlTnh1v3bzb8sv_vYxDOf_xvpji_XKMM9a-rZ6xM3wFOcJdTuPdbGqI4Su_YZ1duQodIPS2oryKVbuAAgJ4Fnhz9HOfbZCtWabROrfjmcKkYkLOTlEVNx93fIeNjoFeeEXQYZxu7EmqD8CkErH2dEfW_2oMRv50609ufr4Yi6ynOVVAruGzlyROcvxr127jEhKlPyvysQ6FYXvYPg3HPSiliaN804zpwmfSs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute top-4 right-4 bg-surface-container/80 backdrop-blur-md px-2 py-1 rounded border border-white/10 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">music_note</span>
+<span class="font-label text-[10px] font-bold uppercase text-on-surface">R&amp;B</span>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-primary mb-1">Revel Room</span>
+<h3 class="font-headline font-bold text-xl text-on-surface">RNB &amp; Ribbons</h3>
+<span class="font-body text-sm text-on-surface-variant mt-1">10 PM - 2 AM • $40 Cover</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex flex-col gap-1 w-1/2">
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[70%] rounded-full"></div>
+</div>
+<span class="text-[10px] font-label uppercase text-on-surface-variant">70% Full</span>
+</div>
+<button class="bg-transparent border border-primary/20 text-primary font-label text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors">
+                            Guestlist
+                        </button>
+</div>
+</div>
+</article>
+<!-- Feed Item 2 -->
+<article class="relative w-full rounded-xl overflow-hidden bg-surface-container-low flex flex-col">
+<div class="relative w-full h-48">
+<img alt="Vibrant rooftop party in Atlanta at night, stylish Black crowd socializing with city skyline in background, cool blue and warm gold lighting" class="absolute inset-0 w-full h-full object-cover" data-alt="Vibrant rooftop party in Atlanta at night, stylish Black crowd socializing with city skyline in background, cool blue and warm gold lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7iNc0mV_sIgujM52sSQMKUAirW6eSB-AmB5fS3eUEskxHMzjgNSXNebJpYdKMA3U30lpsvofFbmDMKlIM5rAIz0pQEHGVLO-h1uzoAPUGHwCQ-arWPk7kLIQ2rwk8u-uYB3OHzQLgo_bXDroP82kJreqEXSKS5ROtdusgeJcGKlLhb7dTRH6zIqRaD_8IfcETaJ80rAqHiobDMBh6gDLEjpFeS6Y3e-rmRKd2-bI9dRjmTxFcF5PTa0vHU12d5p9_7SPcy4W2dzkI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-primary mb-1">Suite Lounge</span>
+<h3 class="font-headline font-bold text-xl text-on-surface">Skyline Sessions</h3>
+<span class="font-body text-sm text-on-surface-variant mt-1">9 PM - 3 AM • No Cover Before 11</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex flex-col gap-1 w-1/2">
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[45%] rounded-full"></div>
+</div>
+<span class="text-[10px] font-label uppercase text-on-surface-variant">45% Full</span>
+</div>
+<button class="bg-transparent border border-primary/20 text-primary font-label text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors">
+                            Book Now
+                        </button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-8 bg-[#12121f]/80 backdrop-blur-2xl dark:bg-[#0d0d1a]/80 rounded-t-[2rem] border-t border-white/5 shadow-[0_-8px_24px_-10px_rgba(0,0,0,0.5)]">
+<!-- Active Tab: Discover -->
+<button class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5 transition-all duration-300 cubic-bezier(0.22, 1, 0.36, 1) transform active:scale-90 hover:opacity-80">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-sans text-[10px] font-bold uppercase tracking-widest mt-1">Discover</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e6c364]/60 px-4 py-1.5 hover:text-[#e6c364] hover:bg-white/5 rounded-xl transition-all duration-300 cubic-bezier(0.22, 1, 0.36, 1) transform active:scale-90">
+<span class="material-symbols-outlined text-[24px]">nightlife</span>
+<span class="font-sans text-[10px] font-bold uppercase tracking-widest mt-1">Lounges</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e6c364]/60 px-4 py-1.5 hover:text-[#e6c364] hover:bg-white/5 rounded-xl transition-all duration-300 cubic-bezier(0.22, 1, 0.36, 1) transform active:scale-90">
+<span class="material-symbols-outlined text-[24px]">confirmation_number</span>
+<span class="font-sans text-[10px] font-bold uppercase tracking-widest mt-1">Events</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e6c364]/60 px-4 py-1.5 hover:text-[#e6c364] hover:bg-white/5 rounded-xl transition-all duration-300 cubic-bezier(0.22, 1, 0.36, 1) transform active:scale-90">
+<span class="material-symbols-outlined text-[24px]">account_circle</span>
+<span class="font-sans text-[10px] font-bold uppercase tracking-widest mt-1">Profile</span>
+</button>
+</nav>
+</body></html>

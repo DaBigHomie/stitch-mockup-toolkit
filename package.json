@@ -1,0 +1,14 @@
+{
+  "name": "stitch-mockup-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portable, brand-agnostic Google Stitch mockup → React component workflow.",
+  "type": "module",
+  "scripts": {
+    "convert": "tsx scripts/convert-prompts.mts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

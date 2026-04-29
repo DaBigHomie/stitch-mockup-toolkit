@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - OTP Verification</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#343342",
+                        "on-tertiary-fixed": "#3e001f",
+                        "surface-container-low": "#1a1a28",
+                        "surface-container-high": "#292937",
+                        "on-tertiary": "#640035",
+                        "primary": "#e6c364",
+                        "on-secondary": "#2f2e43",
+                        "surface-dim": "#12121f",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#ffe08f",
+                        "on-primary-fixed-variant": "#584400",
+                        "background": "#12121f",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "primary-container": "#c9a84c",
+                        "surface-container": "#1e1e2c",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "inverse-primary": "#755b00",
+                        "on-surface-variant": "#d0c5b2",
+                        "inverse-on-surface": "#2f2f3d",
+                        "tertiary": "#ffb1ca",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0d0d1a",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-tertiary-container": "#7a1345",
+                        "on-primary": "#3d2e00",
+                        "secondary-container": "#47475d",
+                        "on-background": "#e3e0f4",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e2e0fc",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "surface": "#12121f",
+                        "outline": "#99907e",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-highest": "#343342",
+                        "outline-variant": "#4d4637",
+                        "surface-tint": "#e6c364",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "surface-bright": "#383847",
+                        "tertiary-container": "#ff84b2",
+                        "on-primary-container": "#503d00",
+                        "primary-fixed-dim": "#e6c364",
+                        "on-surface": "#e3e0f4",
+                        "inverse-surface": "#e3e0f4",
+                        "secondary": "#c6c4df",
+                        "error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex items-center justify-center p-4">
+<!-- Mobile Device Frame Mockup -->
+<main class="w-full max-w-[430px] h-[932px] max-h-[839px] bg-surface-dim overflow-hidden flex flex-col relative shadow-2xl rounded-[40px] border-[8px] border-surface-container-lowest outline outline-1 outline-surface-variant">
+<!-- Status Bar Placeholder -->
+<div class="h-12 w-full flex items-center justify-between px-6 pt-2 z-50 absolute top-0">
+<span class="text-sm font-semibold tracking-wide text-on-surface">9:41</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px] rotate-90">battery_full</span>
+</div>
+</div>
+<!-- TopAppBar -->
+<nav aria-label="Top Navigation" class="docked full-width top-0 z-50 no-border bg-gradient-to-b from-slate-900/50 to-transparent shadow-2xl shadow-black/40 flex items-center justify-between px-6 h-20 w-full pt-10">
+<button aria-label="Go back" class="flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low transition-colors duration-300">
+<span class="material-symbols-outlined text-yellow-500 dark:text-yellow-400 text-[24px]">arrow_back</span>
+</button>
+<div class="font-serif italic text-yellow-500 font-bold tracking-tight text-xl"></div>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</nav>
+<!-- Canvas / Main Content -->
+<div class="flex-1 px-6 pt-12 pb-8 flex flex-col z-10 relative">
+<header class="mb-10 pl-6 pr-4">
+<h1 class="font-headline text-4xl leading-tight text-on-surface mb-3 tracking-[-0.02em]">Enter your code</h1>
+<p class="font-body text-base text-on-surface-variant leading-relaxed">We sent a 6-digit code to <br/><span class="font-medium text-on-surface">(404) ***-7821</span></p>
+</header>
+<!-- OTP Inputs -->
+<div class="flex justify-between items-center w-full max-w-sm mx-auto mb-8 px-2 gap-2">
+<!-- Filled Inputs -->
+<input aria-label="Digit 1" class="w-12 h-16 bg-surface-container rounded-xl border border-outline-variant/15 text-center font-headline text-3xl text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-[0_12px_30px_-10px_rgba(0,0,0,0.4)]" maxlength="1" readonly="" type="text" value="8"/>
+<input aria-label="Digit 2" class="w-12 h-16 bg-surface-container rounded-xl border border-outline-variant/15 text-center font-headline text-3xl text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-[0_12px_30px_-10px_rgba(0,0,0,0.4)]" maxlength="1" readonly="" type="text" value="3"/>
+<input aria-label="Digit 3" class="w-12 h-16 bg-surface-container rounded-xl border border-outline-variant/15 text-center font-headline text-3xl text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-[0_12px_30px_-10px_rgba(0,0,0,0.4)]" maxlength="1" readonly="" type="text" value="0"/>
+<!-- Active Input -->
+<div class="relative">
+<input aria-label="Digit 4" autofocus="" class="w-12 h-16 bg-surface-container-high rounded-xl border border-primary text-center font-headline text-3xl text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-[0_12px_30px_-10px_rgba(0,0,0,0.4)]" maxlength="1" type="text"/>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0.5 h-8 bg-primary animate-pulse"></div>
+</div>
+<!-- Empty Inputs -->
+<input aria-label="Digit 5" class="w-12 h-16 bg-surface-container-low rounded-xl border border-outline-variant/15 text-center font-headline text-3xl text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" maxlength="1" type="text"/>
+<input aria-label="Digit 6" class="w-12 h-16 bg-surface-container-low rounded-xl border border-outline-variant/15 text-center font-headline text-3xl text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" maxlength="1" type="text"/>
+</div>
+<!-- Secondary Actions -->
+<div class="flex flex-col items-center gap-4 mt-4">
+<p class="font-body text-sm text-on-surface-variant">Resend code in <span class="font-semibold text-on-surface">0:42</span></p>
+<button class="font-body text-sm font-semibold text-primary-container hover:text-primary transition-colors tracking-wide underline decoration-primary-container/30 underline-offset-4">Use a different number</button>
+</div>
+<!-- Bottom Spacer to push CTA down -->
+<div class="flex-1"></div>
+<!-- Primary CTA -->
+<div class="w-full mt-auto pt-6">
+<button class="w-full h-14 rounded-xl font-label text-sm font-bold tracking-widest uppercase bg-gradient-to-br from-primary/50 to-primary-container/50 text-on-primary/50 cursor-not-allowed flex items-center justify-center transition-all duration-300" disabled="">
+                    Verify
+                </button>
+</div>
+<!-- Safe Area Bottom Spacer -->
+<div class="h-8 w-full flex items-center justify-center">
+<div class="w-1/3 h-1 bg-on-surface/20 rounded-full"></div>
+</div>
+</div>
+</main>
+</body></html>

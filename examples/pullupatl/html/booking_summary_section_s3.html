@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservation Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#292937",
+                        "secondary-container": "#47475d",
+                        "surface-tint": "#e6c364",
+                        "on-error": "#690005",
+                        "inverse-surface": "#e3e0f4",
+                        "background": "#0d0d1a",
+                        "outline": "#99907e",
+                        "error": "#ffb4ab",
+                        "outline-variant": "#4d4637",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "primary-fixed-dim": "#e6c364",
+                        "surface-bright": "#383847",
+                        "on-primary": "#3d2e00",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-tertiary-container": "#7a1345",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-surface-variant": "#d0c5b2",
+                        "primary-container": "#c9a84c",
+                        "primary": "#e6c364",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e3e0f4",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "surface-container": "#1e1e2c",
+                        "secondary-fixed": "#e2e0fc",
+                        "on-background": "#e3e0f4",
+                        "surface-container-highest": "#343342",
+                        "surface-variant": "#343342",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffe08f",
+                        "surface-container-low": "#1a1a28",
+                        "surface": "#12121f",
+                        "on-tertiary": "#640035",
+                        "on-tertiary-fixed": "#3e001f",
+                        "on-secondary": "#2f2e43",
+                        "inverse-on-surface": "#2f2f3d",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "surface-dim": "#12121f",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary": "#ffb1ca",
+                        "surface-container-lowest": "#0d0d1a",
+                        "tertiary-container": "#8B2252",
+                        "on-primary-container": "#503d00",
+                        "secondary": "#c6c4df",
+                        "on-primary-fixed-variant": "#584400",
+                        "inverse-primary": "#755b00"
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader"],
+                        display: ["Newsreader"],
+                        body: ["Plus Jakarta Sans"],
+                        label: ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0d0d1a;
+            color: #e3e0f4;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex items-center justify-center min-h-screen">
+<!-- iPhone 15 Pro Mockup Container -->
+<div class="relative w-full max-w-[393px] h-[852px] bg-background overflow-hidden border-[8px] border-surface-container-highest rounded-[55px] shadow-2xl flex flex-col">
+<!-- Header: Focused View (Back Navigation) -->
+<header class="flex items-center justify-between px-6 pt-14 pb-4">
+<button class="flex items-center justify-center size-10 rounded-full bg-surface-container-low text-primary">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-display text-xl font-bold tracking-tight text-on-surface">Your Reservation</h1>
+<div class="size-10"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content (Scrollable) -->
+<main class="flex-1 overflow-y-auto px-6 pb-32">
+<!-- Section Header & Badge -->
+<div class="flex items-center justify-between mb-4 mt-2">
+<h2 class="font-display text-2xl text-on-surface">Your Section</h2>
+<span class="bg-tertiary-container text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">VIP</span>
+</div>
+<!-- Featured Venue Card -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden editorial-shadow mb-8">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="luxury VIP club booth in Atlanta with velvet seating, neon lighting accents, and crystal glassware on a dark table" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoR_lah7E8hv-gzzTJiJ4If2W5CwmK-lWY3Q2V62AgaNgiUxFptWHxlpc8GWrqylJCcft6In7CthOC3X39QgALXZLLCazUD8EbzhhqrnugDMK60_Y8NuK1oAkdCqw9wK7AWrhNfkRYhNlPZvfmgvGSzTUkZKBbdiXG_76keF8gw4Ox7GOEdFhoJkiUXBGuFB1K3XwX8i_-bi7ZziPnnJzjVeUyg7vc_rniS6_blAqzBGsVjE4g_yJV7qa9WwouX5F3Np14QfTmYRHK');">
+</div>
+<!-- Editorial Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<!-- Content Overlay -->
+<div class="absolute bottom-0 left-0 p-6 flex flex-col gap-1">
+<p class="text-on-surface-variant font-label text-xs uppercase tracking-widest">Sat, Mar 22 · 10 PM - 2 AM</p>
+<h3 class="font-display text-3xl text-on-surface font-semibold leading-tight">Section S3 · Main Floor</h3>
+<p class="text-primary font-medium">Fits 8-12 Guests</p>
+</div>
+</div>
+<!-- Bottles Section -->
+<div class="mb-8">
+<div class="flex justify-between items-baseline mb-4">
+<h3 class="font-display text-xl text-on-surface">Bottles Selected</h3>
+<button class="text-primary text-xs font-bold font-label uppercase tracking-wider">Add More</button>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2 no-scrollbar">
+<!-- Bottle Card 1 -->
+<div class="min-w-[160px] bg-surface-container rounded-xl p-3 border border-outline-variant/10">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-3 bg-cover bg-center" data-alt="premium bottle of cognac on a dark reflective surface with moody amber lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjvTtomULCim0Uw4Z8307OB3Sx-vK9MHBdmtI2wjmXWxQbXs4OcwEnIvMODzHPFgLMS5FzNMC0vt8AGHEEPDSJUuK8O7wu0KcUWH10E9MOp6HKquxaM8oIDM_ahxp_FJf5xwB_K3n5aY6HfBA4FyKiqquhb2f9k2nTpv3_9aVN1xccFgdDBw3-iAADro2skmgvmOw6zmPUwp50XnDM8zCVY_SrNlRgmyQfzXW6CENA1HJyIJEkw5jQDqZ2ds9CKaLSGPv69lF_F3ls');"></div>
+<h4 class="text-sm font-bold text-on-surface">Hennessy VSOP</h4>
+<p class="text-primary text-xs font-medium">$350</p>
+</div>
+<!-- Bottle Card 2 -->
+<div class="min-w-[160px] bg-surface-container rounded-xl p-3 border border-outline-variant/10">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-3 bg-cover bg-center" data-alt="luxury bottle of clear tequila reposado with elegant label and wood stopper" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3Gw1xHvE_dSEdbZ3kUrTNqYctmqGRq-l5L0RQG6WWmannWyZUIWOUvNHtsMuUtt5gm2966CwHuX8YV1Zf4Gqgyi19xWI5upQW-itDNe0TjTZJ-jGVTRYsD_hgns2FtqLWOXXxnc4gPIoVggALZzmT_n9lhxMtNEGkK_xbsZJXPpP4mbEvxJORWrsagCGfWAO5-deDR02BaZ_bGaAB-ah6WaZEqbfNcEJF-nJRCN2E9XKmAaixQLMWat2KvkO3KeP_ante0RgYFTDD');"></div>
+<h4 class="text-sm font-bold text-on-surface">Casamigos Reposado</h4>
+<p class="text-primary text-xs font-medium">$300</p>
+</div>
+</div>
+</div>
+<!-- Detailed Cost Breakdown -->
+<div class="bg-surface-container-low rounded-2xl p-6 mb-8">
+<div class="flex flex-col gap-4">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Section minimum</span>
+<span class="text-on-surface">$1,500</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Hennessy VSOP</span>
+<span class="text-on-surface">$350</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Casamigos Reposado</span>
+<span class="text-on-surface">$300</span>
+</div>
+<div class="h-px bg-outline-variant/20 my-1"></div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="text-on-surface">$2,150</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Gratuity (20%)</span>
+<span class="text-on-surface">$430</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Tax</span>
+<span class="text-on-surface">$172</span>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-display text-lg text-on-surface font-semibold">Total</span>
+<span class="font-body text-2xl font-bold text-primary tracking-tight">$2,752</span>
+</div>
+</div>
+</div>
+<!-- Promoter Section -->
+<div class="flex items-center gap-4 bg-surface-container-highest/30 p-4 rounded-xl mb-12">
+<div class="size-10 rounded-full bg-cover bg-center border border-primary/30" data-alt="portrait of a stylish young man with glasses and fashionable streetwear in urban setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVOGZ4kfqN8rp9LxcVpMnmCC3ypwEL4EPnv8nLvq9ZKJyGGWb7Acb8jtX51QaSY7ZkT_-wk76agJQwlzv44m1uYbMvBHF6g392qTZQAMPDQZkjDF_zN-7lhU3e8JQEhN3DAYZ8Q1jRHwU1zt2p0SVmSpBT3PO2JM2PNYX1swHw7qRB1Js0vWknmFF7ciuzYRJGljXfuJutfOk_P2-XINhtZP-AGJ6hh1HjwsoI4RIMO4S5tOmTwHCsbPMo11Rd5YBu04atldQ7EZbW');"></div>
+<div class="flex flex-col">
+<p class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Referred by</p>
+<p class="font-semibold text-primary">@Dame</p>
+</div>
+<div class="ml-auto">
+<span class="material-symbols-outlined text-on-surface-variant">verified</span>
+</div>
+</div>
+</main>
+<!-- Bottom Actions -->
+<footer class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background to-transparent pt-10">
+<div class="flex flex-col gap-4">
+<button class="w-full h-14 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-xl shadow-lg flex items-center justify-center gap-2">
+                    Confirm &amp; Pay
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">payments</span>
+</button>
+<button class="text-primary text-sm font-bold uppercase tracking-widest text-center py-2">
+                    Split with group
+                </button>
+</div>
+<!-- Home Indicator -->
+<div class="w-32 h-1 bg-on-surface/20 rounded-full mx-auto mt-6"></div>
+</footer>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

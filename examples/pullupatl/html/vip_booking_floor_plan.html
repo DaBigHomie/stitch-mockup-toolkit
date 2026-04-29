@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Onyx Room - VIP Floor Plan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#2f2f3d",
+                      "secondary-container": "#47475d",
+                      "on-tertiary": "#640035",
+                      "tertiary-container": "#ff84b2",
+                      "on-primary-fixed": "#241a00",
+                      "surface-container-low": "#1a1a28",
+                      "on-secondary-container": "#b8b6d0",
+                      "surface-container-highest": "#343342",
+                      "secondary-fixed": "#e2e0fc",
+                      "tertiary-fixed": "#ffd9e3",
+                      "primary": "#e6c364",
+                      "on-primary": "#3d2e00",
+                      "inverse-surface": "#e3e0f4",
+                      "secondary-fixed-dim": "#c6c4df",
+                      "on-primary-fixed-variant": "#584400",
+                      "background": "#12121f",
+                      "on-primary-container": "#503d00",
+                      "surface-container-lowest": "#0d0d1a",
+                      "inverse-primary": "#755b00",
+                      "error-container": "#93000a",
+                      "primary-fixed-dim": "#e6c364",
+                      "on-surface-variant": "#d0c5b2",
+                      "on-surface": "#e3e0f4",
+                      "outline-variant": "#4d4637",
+                      "surface": "#12121f",
+                      "on-error": "#690005",
+                      "surface-container-high": "#292937",
+                      "on-tertiary-fixed-variant": "#841c4c",
+                      "surface-variant": "#343342",
+                      "secondary": "#c6c4df",
+                      "surface-dim": "#12121f",
+                      "tertiary": "#ffb1ca",
+                      "primary-container": "#c9a84c",
+                      "primary-fixed": "#ffe08f",
+                      "surface-container": "#1e1e2c",
+                      "on-tertiary-fixed": "#3e001f",
+                      "on-error-container": "#ffdad6",
+                      "surface-tint": "#e6c364",
+                      "on-secondary-fixed-variant": "#45455b",
+                      "on-secondary-fixed": "#1a1a2e",
+                      "on-background": "#e3e0f4",
+                      "outline": "#99907e",
+                      "tertiary-fixed-dim": "#ffb0ca",
+                      "surface-bright": "#383847",
+                      "on-secondary": "#2f2e43",
+                      "error": "#ffb4ab",
+                      "on-tertiary-container": "#7a1345"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": ["Newsreader", "serif"],
+                      "body": ["Plus Jakarta Sans", "sans-serif"],
+                      "label": ["Plus Jakarta Sans", "sans-serif"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .floorplan-container {
+            perspective: 1000px;
+        }
+        .floorplan-skew {
+            transform: rotateX(20deg) rotateZ(-5deg);
+        }
+        .glow-dancefloor {
+            box-shadow: 0 0 60px 10px rgba(132, 28, 76, 0.4);
+        }
+        .tonal-layering {
+            background: linear-gradient(180deg, rgba(26, 26, 40, 0) 0%, rgba(13, 13, 26, 1) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#12121f]/80 backdrop-blur-2xl fixed top-0 w-full z-50 flex items-center justify-between px-6 pt-4 pb-2 w-full bg-gradient-to-b from-[#12121f] to-transparent shadow-[0_12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e6c364] active:scale-95 duration-300 ease-[0.22,1,0.36,1] cursor-pointer">arrow_back_ios</span>
+<div>
+<h1 class="text-[#e6c364] font-['Newsreader'] italic tracking-tight text-3xl font-bold">The Onyx Room</h1>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Select Your Section</p>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a stylish man in a dark blazer with sophisticated lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk1WFhikRGwYnt7b1bBKSxiQToKRbsCscGd81o7zH8Ixs8TePbwjA43iEDroTHLT5cFQwQu4YhJNz8fOAM8cMusifIfB2A8Y5P7H4xc7B7Yb3sC2EA9uBias2jkpeFrwfSKYMgK8FwRdprsbERjeLUULJNIFFDrC2vFjXJ1K3Mf4d9yOh8-g5xsNfgjSkDqdadpKv6PLgThqksV9Bw57e_2FapxlLEry0yD7K5eJcM21h1E8o0i56g1P2NHziNIbm5GXFiu1CF_O1d"/>
+</div>
+</header>
+<!-- Main Canvas: Floor Plan -->
+<main class="relative min-h-screen pt-24 pb-96 overflow-hidden flex items-center justify-center floorplan-container">
+<!-- Floor Plan Grid -->
+<div class="relative w-full max-w-md aspect-[3/4] floorplan-skew mx-auto">
+<!-- DJ Booth (Top) -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-12 bg-surface-container-highest border-b-2 border-primary/30 flex items-center justify-center rounded-b-xl">
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant">DJ BOOTH</span>
+</div>
+<!-- Dance Floor (Center) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-br from-tertiary-container/20 to-on-tertiary-fixed-variant/40 rounded-full blur-xl glow-dancefloor"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-dashed border-tertiary/30 rounded-full flex items-center justify-center">
+<span class="font-headline italic text-tertiary/60">Main Floor</span>
+</div>
+<!-- Bar (Left) -->
+<div class="absolute top-1/4 left-0 w-8 h-48 bg-surface-container rounded-r-xl border-r border-outline-variant flex items-center justify-center">
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant rotate-90 whitespace-nowrap">PREMIUM BAR</span>
+</div>
+<!-- VIP Sections Around Perimeter -->
+<!-- S1 (Available) -->
+<button class="absolute top-12 left-12 w-14 h-14 border border-primary-container rounded-xl flex items-center justify-center hover:bg-primary-container/10 transition-colors">
+<span class="font-label text-xs font-bold text-primary">S1</span>
+</button>
+<!-- S2 (Available) -->
+<button class="absolute top-12 right-12 w-14 h-14 border border-primary-container rounded-xl flex items-center justify-center hover:bg-primary-container/10 transition-colors">
+<span class="font-label text-xs font-bold text-primary">S2</span>
+</button>
+<!-- S3 (SELECTED) -->
+<button class="absolute top-1/2 -right-4 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-primary to-primary-container rounded-xl flex items-center justify-center shadow-[0_0_30px_rgba(230,195,100,0.4)] z-10 scale-110">
+<span class="font-label text-xs font-extrabold text-on-primary">S3</span>
+</button>
+<!-- S4 (Sold) -->
+<div class="absolute bottom-24 right-12 w-14 h-14 bg-surface-container-highest/50 rounded-xl flex flex-col items-center justify-center grayscale opacity-40">
+<span class="font-label text-[8px] text-on-surface-variant">S4</span>
+<span class="font-label text-[10px] font-black text-on-surface">SOLD</span>
+</div>
+<!-- S5 (Sold) -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-14 h-14 bg-surface-container-highest/50 rounded-xl flex flex-col items-center justify-center grayscale opacity-40">
+<span class="font-label text-[8px] text-on-surface-variant">S5</span>
+<span class="font-label text-[10px] font-black text-on-surface">SOLD</span>
+</div>
+<!-- S6 (Premium VIP) -->
+<button class="absolute bottom-24 left-12 w-16 h-16 border-2 border-on-tertiary-fixed-variant rounded-xl flex flex-col items-center justify-center hover:bg-on-tertiary-fixed-variant/10 transition-colors group">
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[8px] font-bold px-1.5 py-0.5 rounded-full shadow-lg">VIP</span>
+<span class="font-label text-xs font-bold text-tertiary">S6</span>
+</button>
+<!-- S7 (Available) -->
+<button class="absolute top-1/2 -left-4 -translate-y-1/2 w-14 h-14 border border-primary-container rounded-xl flex items-center justify-center hover:bg-primary-container/10 transition-colors">
+<span class="font-label text-xs font-bold text-primary">S7</span>
+</button>
+<!-- S8 (Premium VIP) -->
+<button class="absolute top-1/4 right-0 w-16 h-16 border-2 border-on-tertiary-fixed-variant rounded-xl flex flex-col items-center justify-center hover:bg-on-tertiary-fixed-variant/10 transition-colors">
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[8px] font-bold px-1.5 py-0.5 rounded-full shadow-lg">VIP</span>
+<span class="font-label text-xs font-bold text-tertiary">S8</span>
+</button>
+</div>
+</main>
+<!-- Section Details Drawer (Bottom Sheet) -->
+<section class="fixed bottom-[88px] left-0 w-full z-40 h-[397px] bg-surface-container shadow-[0_-20px_40px_rgba(0,0,0,0.6)] rounded-t-[2.5rem] flex flex-col overflow-hidden border-t border-outline-variant/10">
+<!-- Drawer Handle -->
+<div class="w-12 h-1 bg-surface-variant rounded-full mx-auto mt-4 mb-2"></div>
+<div class="px-8 flex-1 overflow-y-auto">
+<!-- Header -->
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-headline text-3xl italic text-on-surface leading-tight">Section S3 · Main Floor</h2>
+<p class="font-label text-xs tracking-[0.15em] text-primary mt-1">CAPACITY: 8-12 GUESTS</p>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-on-surface-variant p-2 rounded-full border border-outline-variant">share</span>
+<span class="material-symbols-outlined text-on-surface-variant p-2 rounded-full border border-outline-variant">info</span>
+</div>
+</div>
+<!-- Content Split -->
+<div class="grid grid-cols-5 gap-6 mb-8">
+<!-- Photo Gallery -->
+<div class="col-span-2 aspect-square rounded-2xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="luxury nightclub vip section with plush velvet dark purple seating gold table and ambient moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcJgdpmIqfWcog7BLx8FwXKidRjgGpn97cn5fAQ-0D8Vwmhs_OGsUU59_dFUDyUd376hyEAYJPQ1MYvgUKS9KAGxy_0wy-J4b3CDn4lYXXY5DbTOCuthYxDeC15MSN3k6skYtLL9ehjfHaze8d0Mb01RkN9ODUukrFCYBxXbAIUsp-WFgoT59zjfDqjn1hvygO9bFN9abcLLn_gOXeBAVQOn0BRvp_jy29jY0yAXeAD4zJVpx0kjXkEp45DaUYmCE4mCKTkKpy17L1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex gap-1">
+<div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+<div class="w-1.5 h-1.5 bg-white/30 rounded-full"></div>
+<div class="w-1.5 h-1.5 bg-white/30 rounded-full"></div>
+</div>
+</div>
+<!-- Pricing & Details -->
+<div class="col-span-3 flex flex-col justify-between py-1">
+<div class="space-y-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest uppercase">Minimum Spend</span>
+<span class="font-headline text-4xl text-[#e6c364] font-bold">$1,500</span>
+</div>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-sm text-secondary">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                                Includes 2 premium bottles
+                            </li>
+<li class="flex items-center gap-2 text-sm text-secondary">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                                Dedicated VIP host
+                            </li>
+<li class="flex items-center gap-2 text-sm text-secondary">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+                                Priority entry for party
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-5 bg-gradient-to-br from-[#e6c364] to-[#c9a84c] rounded-2xl flex items-center justify-center gap-3 active:scale-[0.98] transition-transform duration-200 group">
+<span class="font-label text-sm font-bold uppercase tracking-widest text-[#12121f]">Select This Section</span>
+<span class="material-symbols-outlined text-[#12121f] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- BottomNavBar -->
+<nav class="bg-[#0d0d1a]/90 backdrop-blur-xl fixed bottom-0 w-full z-50 rounded-t-[2rem] shadow-[0_-8px_24px_rgba(0,0,0,0.5)] flex justify-around items-center px-4 py-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-gray-200 transition-all hover:bg-[#1c1c2e] rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-2xl px-5 py-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-gray-200 transition-all hover:bg-[#1c1c2e] rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined mb-1">chat_bubble</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold">Messages</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-gray-200 transition-all hover:bg-[#1c1c2e] rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold">Profile</span>
+</a>
+</nav>
+</body></html>

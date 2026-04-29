@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#e3e0f4",
+                    "outline-variant": "#4d4637",
+                    "on-primary-container": "#503d00",
+                    "surface-tint": "#e6c364",
+                    "secondary-fixed-dim": "#c6c4df",
+                    "surface-container-low": "#1a1a28",
+                    "on-secondary-fixed": "#1a1a2e",
+                    "surface": "#12121f",
+                    "surface-container-high": "#292937",
+                    "on-secondary": "#2f2e43",
+                    "on-tertiary-container": "#7a1345",
+                    "primary-fixed-dim": "#e6c364",
+                    "secondary": "#c6c4df",
+                    "tertiary": "#ffb1ca",
+                    "surface-dim": "#12121f",
+                    "primary-fixed": "#ffe08f",
+                    "on-secondary-fixed-variant": "#45455b",
+                    "on-error": "#690005",
+                    "on-tertiary": "#640035",
+                    "inverse-primary": "#755b00",
+                    "on-surface": "#e3e0f4",
+                    "inverse-on-surface": "#2f2f3d",
+                    "surface-variant": "#343342",
+                    "tertiary-fixed-dim": "#ffb0ca",
+                    "on-surface-variant": "#d0c5b2",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "tertiary-container": "#ff84b2",
+                    "outline": "#99907e",
+                    "on-secondary-container": "#b8b6d0",
+                    "surface-container-highest": "#343342",
+                    "primary": "#e6c364",
+                    "surface-bright": "#383847",
+                    "on-primary": "#3d2e00",
+                    "surface-container": "#1e1e2c",
+                    "primary-container": "#c9a84c",
+                    "on-tertiary-fixed": "#3e001f",
+                    "on-primary-fixed": "#241a00",
+                    "background": "#12121f",
+                    "surface-container-lowest": "#0d0d1a",
+                    "tertiary-fixed": "#ffd9e3",
+                    "secondary-container": "#47475d",
+                    "on-primary-fixed-variant": "#584400",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#841c4c",
+                    "on-background": "#e3e0f4",
+                    "secondary-fixed": "#e2e0fc"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "display": ["Playfair Display", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(30, 30, 44, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+      }
+      ::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- Top Navigation Anchor -->
+<header class="bg-[#12121f]/80 backdrop-blur-xl docked full-width top-0 z-50 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#e6c364]">menu</span>
+<h1 class="font-['Newsreader'] italic text-3xl tracking-tight text-[#e6c364]">Deals &amp; Happy Hours</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#e6c364] hover:text-[#e6c364] transition-colors scale-95 active:duration-150">map</button>
+<button class="material-symbols-outlined text-[#e6c364] hover:text-[#e6c364] transition-colors scale-95 active:duration-150">tune</button>
+</div>
+</header>
+<main class="pb-32 pt-6">
+<!-- Live Alert Banner -->
+<section class="px-6 mb-8">
+<div class="relative overflow-hidden rounded-xl bg-primary-container/20 p-5 flex items-center justify-between border border-primary/10">
+<div class="flex items-center gap-4">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary/80 font-bold">Current Status</p>
+<h2 class="font-display text-xl text-primary italic">Happy Hour is LIVE right now</h2>
+</div>
+</div>
+<div class="glass-card px-3 py-1.5 rounded-full border border-primary/20">
+<p class="text-xs font-bold text-primary font-label">ENDS IN 1:42:00</p>
+</div>
+</div>
+</section>
+<!-- Category & Filter Chips -->
+<section class="mb-10">
+<div class="flex overflow-x-auto px-6 gap-3 pb-2">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-on-primary font-label text-xs font-bold tracking-widest uppercase">Drinks</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold tracking-widest uppercase border border-outline-variant/10">Food</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold tracking-widest uppercase border border-outline-variant/10">Brunch</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label text-xs font-bold tracking-widest uppercase border border-outline-variant/10">Late Night</button>
+</div>
+<div class="flex overflow-x-auto px-6 gap-2 mt-4">
+<button class="flex items-center gap-1.5 whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label text-[11px] font-bold border border-outline-variant/10">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Today
+                </button>
+<button class="flex items-center gap-1.5 whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label text-[11px] font-bold border border-outline-variant/10">
+<span class="material-symbols-outlined text-sm">date_range</span> This Week
+                </button>
+<button class="flex items-center gap-1.5 whitespace-nowrap px-4 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label text-[11px] font-bold border border-outline-variant/10">
+<span class="material-symbols-outlined text-sm">near_me</span> Near Me
+                </button>
+</div>
+</section>
+<!-- Deal Cards Grid (Editorial Asymmetry) -->
+<section class="px-6 space-y-10">
+<!-- Featured Card -->
+<div class="group relative">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-xl editorial-shadow transition-transform duration-500 group-hover:scale-[1.01]">
+<img alt="Chillz Restaurant and Bar" class="h-full w-full object-cover grayscale-[0.2] transition-transform duration-700 group-hover:scale-110" data-alt="Modern upscale Atlanta lounge with warm amber lighting, diverse Black patrons enjoying cocktails at a sleek dark bar, sophisticated evening mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATMyGTAciRQzfqSBAzNroM7G2gKiI-XwaQZoe1A2zNER8f2EhklCsoX3ljU6B4XkKSAe-2OlGTbyPMtg-kMqjJyCucJM_Q_PnB5EHhPLfHyuUi4F-sOTrId0pjJ1NEt4kMszw3hBxs42Bgrz9epgAs7bq6mUqRvss9jQgmPjwIb70S-jIR9xpMA_MY0o2HFQgX4BbTFcRJvZyIzOGEBndLHRd-PxYHgjOlZyF5enRBw8DnYVzZRvBl-bKwVK0aKJ6RWEzrjjEP1eo6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<!-- Deal Badge -->
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary px-3 py-1 rounded text-[10px] font-bold text-on-primary tracking-widest uppercase">Active Now</span>
+<div class="bg-black/60 backdrop-blur-md px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">savings</span>
+<span class="text-[10px] font-bold text-white tracking-widest uppercase">$$$</span>
+</div>
+</div>
+</div>
+<div class="relative -mt-20 px-4">
+<div class="glass-card p-6 rounded-xl border border-primary/10 editorial-shadow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-display text-2xl text-on-surface">Chillz Restaurant &amp; Bar</h3>
+<span class="text-primary font-label text-xs font-bold">4-7 PM</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-4 font-body leading-relaxed">
+                            A local favorite for premium vibes. Experience the best mid-week refresh in the city.
+                        </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">
+<div class="flex flex-col">
+<span class="text-primary font-bold text-lg leading-none">$5 Wells &amp; $3 Drafts</span>
+<span class="text-[10px] uppercase tracking-widest font-label text-on-surface-variant mt-1">Limited Time Offer</span>
+</div>
+<button class="bg-primary px-5 py-2.5 rounded-lg text-on-primary font-label text-xs font-extrabold tracking-widest uppercase transition-transform active:scale-95">RESERVE</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Second Card (Offset Style) -->
+<div class="flex flex-col gap-6">
+<div class="flex gap-4">
+<div class="w-2/3">
+<div class="aspect-[4/3] rounded-xl overflow-hidden editorial-shadow relative">
+<img alt="REVERB Downtown Atlanta" class="h-full w-full object-cover" data-alt="Chic rooftop bar in Atlanta with downtown skyline views, elegant group of friends laughing, warm sunset lighting, editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABWVgoculRELRvLwNFYwLFpwFcb7MDsT5LqcNvyY5pCUv1zy4TDI9-PNSTw02MRNmT1__0QtHCCYkQf7p4_U6kIbKFMkHlyfMy1NaY0iXbPGH9oOPLfcNoIwshSKQqu8glG3HfJC1hFQC7iJfzHcmRFmD_IM2cXiJxpB9BEfxSSGTZWad4MNw87gmIsiI80YsOr_-gqPHqQ7O9Vrp2IWXurWAAKTZgUvdKiZfdpjMdxWKibhU1CRb2SxU1Px7fjLCGBZJ3MnWGk93z"/>
+<div class="absolute top-3 right-3 bg-primary/90 text-on-primary p-1 rounded-full material-symbols-outlined text-sm font-bold">savings</div>
+</div>
+</div>
+<div class="w-1/3 flex flex-col justify-center">
+<div class="flex flex-wrap gap-1 mb-2">
+<span class="bg-surface-container-high px-2 py-0.5 rounded text-[8px] font-bold text-primary tracking-tighter uppercase border border-primary/20">Tue</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded text-[8px] font-bold text-primary tracking-tighter uppercase border border-primary/20">Wed</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded text-[8px] font-bold text-primary tracking-tighter uppercase border border-primary/20">Thu</span>
+</div>
+<h3 class="font-display text-lg text-on-surface leading-tight mb-1">REVERB</h3>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-widest font-label font-bold">Downtown</p>
+</div>
+</div>
+<div class="pl-4 border-l-2 border-primary/30">
+<h4 class="text-primary font-bold text-xl font-headline italic">Half-price appetizers</h4>
+<p class="text-on-surface-variant text-xs mt-1 font-body">Available for bar seating only. Craft cocktails also 20% off.</p>
+</div>
+</div>
+<!-- Deal Alert Card -->
+<div class="bg-surface-container-low rounded-2xl p-6 border border-primary/5 flex items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+</div>
+<div>
+<h4 class="font-label text-sm font-bold text-on-surface">Set deal alerts</h4>
+<p class="text-on-surface-variant text-xs">Get notified when new deals drop near you</p>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<div class="w-11 h-6 bg-surface-container-highest rounded-full border border-outline-variant/20"></div>
+<div class="absolute left-1 top-1 bg-primary w-4 h-4 rounded-full transition-transform translate-x-5"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-3xl border-t border-[#e6c364]/10 bg-[#12121f]/90 backdrop-blur-2xl shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex justify-around items-center px-4 pb-8 pt-4 w-full">
+<div class="flex flex-col items-center justify-center text-[#e6c364]/40 hover:bg-[#c9a84c]/5 cubic-bezier(0.22,1,0.36,1) transition-all duration-300">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold mt-1">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364] bg-[#c9a84c]/10 rounded-xl px-4 py-1 cubic-bezier(0.22,1,0.36,1) transition-all duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold mt-1">Deals</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/40 hover:bg-[#c9a84c]/5 cubic-bezier(0.22,1,0.36,1) transition-all duration-300">
+<span class="material-symbols-outlined">group</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold mt-1">Invites</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/40 hover:bg-[#c9a84c]/5 cubic-bezier(0.22,1,0.36,1) transition-all duration-300">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] uppercase text-[10px] tracking-[0.1em] font-bold mt-1">Profile</span>
+</div>
+</div>
+</nav>
+<!-- Device Frame Mockup Simulation -->
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-md h-full pointer-events-none border-[12px] border-black/10 rounded-[4rem] hidden lg:block opacity-20"></div>
+</body></html>

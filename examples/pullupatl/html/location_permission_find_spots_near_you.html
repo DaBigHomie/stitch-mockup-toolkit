@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Location Permission</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#ffb1ca",
+                        "on-primary": "#3d2e00",
+                        "surface-bright": "#383847",
+                        "error-container": "#93000a",
+                        "outline-variant": "#4d4637",
+                        "on-primary-fixed": "#241a00",
+                        "outline": "#99907e",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "surface-container-highest": "#343342",
+                        "secondary": "#c6c4df",
+                        "on-tertiary-container": "#7a1345",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "tertiary-container": "#ff84b2",
+                        "secondary-fixed": "#e2e0fc",
+                        "tertiary-fixed": "#ffd9e3",
+                        "inverse-primary": "#755b00",
+                        "surface-container-low": "#1a1a28",
+                        "on-tertiary-fixed": "#3e001f",
+                        "surface-variant": "#343342",
+                        "on-secondary-container": "#b8b6d0",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-surface-variant": "#d0c5b2",
+                        "inverse-surface": "#e3e0f4",
+                        "on-tertiary": "#640035",
+                        "primary-fixed-dim": "#e6c364",
+                        "surface": "#12121f",
+                        "inverse-on-surface": "#2f2f3d",
+                        "background": "#12121f",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-primary-container": "#503d00",
+                        "surface-container-high": "#292937",
+                        "primary": "#e6c364",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe08f",
+                        "on-secondary": "#2f2e43",
+                        "secondary-container": "#47475d",
+                        "on-surface": "#e3e0f4",
+                        "on-error-container": "#ffdad6",
+                        "surface-container": "#1e1e2c",
+                        "on-primary-fixed-variant": "#584400",
+                        "on-background": "#e3e0f4",
+                        "primary-container": "#c9a84c",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "surface-dim": "#12121f",
+                        "surface-tint": "#e6c364",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-headline { font-family: 'Newsreader', serif; }
+        /* Midnight Shadow */
+        .shadow-midnight { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); }
+        /* Custom Easing */
+        .ease-midnight { transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface h-screen w-full flex items-center justify-center overflow-hidden">
+<!-- Main Container -->
+<main class="relative w-full max-w-md h-full sm:h-[850px] bg-surface flex flex-col sm:rounded-[32px] sm:shadow-midnight overflow-hidden">
+<!-- Header / Logo -->
+<header class="w-full px-6 py-8 flex justify-center z-10 relative">
+<h1 class="font-headline italic font-bold text-primary tracking-tight text-xl">THE MIDNIGHT</h1>
+</header>
+<!-- Illustration Area -->
+<div class="relative w-full h-[40%] flex items-center justify-center">
+<!-- Background Map Texture -->
+<div class="absolute inset-0 z-0 opacity-40 bg-surface-container-low" data-alt="Abstract minimal dark map of Atlanta streets with subtle golden glowing highlights along major roads at night" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCl0rdYUcBGCvJUPis_OF3lqojVKlzYUDKS6hNVgWni21DUUgfgm0uWv31Xcv8Ht8xrrxjwKrrleFxQcu9PKV_4H71GQkXNBYq4N6fJtJftQJ2IF12bK8J6tNue234nw67fh4RGn-5EoGsvFKdLwaSvHNs4T8tGxNJpZLHePDMQOn5pGslwv2iX5pHLUqu6sqj5rXq7W-SCvprqrifBOdGT38eSCLxO_8ngR6Axq4Z8DnwCnG4_Lwbyo7gFKmocDsHsbOQhqlxtk2q9'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
+</div>
+<!-- Floating Pin -->
+<div class="relative z-10 w-24 h-24 rounded-full bg-surface-container/80 backdrop-blur-xl flex items-center justify-center shadow-midnight border border-outline-variant/15">
+<span class="material-symbols-outlined text-[48px] text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<!-- Radar Ripple Effect -->
+<div class="absolute inset-0 rounded-full border border-primary/30 animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+<div class="absolute -inset-4 rounded-full border border-primary/10 animate-[ping_2.5s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="flex-1 flex flex-col px-8 pb-12 z-10 relative bg-gradient-to-t from-surface via-surface to-transparent">
+<div class="text-center mb-10 mt-4">
+<h2 class="font-headline text-4xl mb-4 text-on-surface tracking-tight" style="letter-spacing: -0.02em;">Find spots near you.</h2>
+<p class="font-body text-on-surface-variant text-base leading-relaxed px-4">
+                    Allow location access to see venues in your area.
+                </p>
+</div>
+<div class="mt-auto space-y-4 w-full flex flex-col">
+<!-- Primary Action -->
+<button class="w-full py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold text-base tracking-wide flex justify-center items-center gap-2 hover:opacity-90 transition-opacity ease-midnight shadow-[0_4px_14px_rgba(230,195,100,0.3)]">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+                    Allow Location Access
+                </button>
+<!-- Secondary Action -->
+<button class="w-full py-4 rounded-xl bg-transparent border border-outline-variant/30 text-primary font-bold text-base tracking-wide hover:bg-surface-container transition-colors ease-midnight">
+                    Enter ZIP Instead
+                </button>
+</div>
+<!-- Footer Link -->
+<div class="mt-8 text-center">
+<button class="text-on-surface-variant/70 text-sm flex items-center justify-center w-full gap-1 hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                    Why we need this
+                </button>
+</div>
+</div>
+<!-- iOS Permission Overlay Simulation (Glassmorphism) -->
+<div class="absolute inset-0 z-50 flex items-center justify-center px-6 bg-surface/60 backdrop-blur-sm">
+<div class="w-full max-w-[320px] bg-surface-container-highest/95 backdrop-blur-xl rounded-[14px] overflow-hidden flex flex-col shadow-midnight border border-white/5">
+<div class="p-5 text-center">
+<h3 class="font-body font-semibold text-on-surface text-lg mb-1 leading-snug">Allow "PullUpATL" to use your location?</h3>
+<p class="font-body text-on-surface-variant text-sm">Your location is used to show you the best nightlife venues and events nearby.</p>
+</div>
+<div class="flex flex-col border-t border-outline-variant/20">
+<button class="py-3.5 text-primary font-medium text-[17px] border-b border-outline-variant/20 active:bg-surface-container-low transition-colors">Allow Once</button>
+<button class="py-3.5 text-primary font-medium text-[17px] border-b border-outline-variant/20 active:bg-surface-container-low transition-colors">Allow While Using App</button>
+<button class="py-3.5 text-primary font-medium text-[17px] active:bg-surface-container-low transition-colors">Don't Allow</button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

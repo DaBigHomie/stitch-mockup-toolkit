@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Notifications Opt-In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#e6c364",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "secondary": "#c6c4df",
+                        "on-primary-container": "#503d00",
+                        "background": "#12121f",
+                        "primary-container": "#c9a84c",
+                        "on-tertiary": "#640035",
+                        "primary-fixed-dim": "#e6c364",
+                        "tertiary": "#ffb1ca",
+                        "on-tertiary-container": "#7a1345",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#47475d",
+                        "on-error": "#690005",
+                        "on-secondary": "#2f2e43",
+                        "tertiary-fixed": "#ffd9e3",
+                        "surface-container-high": "#292937",
+                        "surface-container": "#1e1e2c",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "outline-variant": "#4d4637",
+                        "on-primary-fixed-variant": "#584400",
+                        "surface": "#12121f",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0d0d1a",
+                        "outline": "#99907e",
+                        "on-tertiary-fixed": "#3e001f",
+                        "on-surface-variant": "#d0c5b2",
+                        "primary-fixed": "#ffe08f",
+                        "tertiary-container": "#ff84b2",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "error-container": "#93000a",
+                        "on-primary": "#3d2e00",
+                        "on-background": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "primary": "#e6c364",
+                        "secondary-fixed": "#e2e0fc",
+                        "inverse-surface": "#e3e0f4",
+                        "inverse-on-surface": "#2f2f3d",
+                        "surface-container-highest": "#343342",
+                        "surface-bright": "#383847",
+                        "on-surface": "#e3e0f4",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-primary-fixed": "#241a00",
+                        "surface-variant": "#343342",
+                        "surface-dim": "#12121f",
+                        "inverse-primary": "#755b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        
+        /* Subtle gold ambient glow behind the mock device */
+        .ambient-glow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(230, 195, 100, 0.1) 0%, rgba(18, 18, 31, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Ivory theme overrides specifically requested by user but mapped to design system variables where possible to maintain the structure, though user specifically requested Ivory #FAF8F5 and Onyx #2D2D2D. 
+           We will use arbitrary values for the specific ivory/onyx request inside the device frame, 
+           while keeping the dark midnight background outside the frame as requested. */
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center p-4 sm:p-8 font-body">
+<!-- Device Mockup Container -->
+<div class="relative mx-auto w-full max-w-[400px] aspect-[9/19.5] rounded-[3rem] shadow-2xl overflow-hidden bg-[#FAF8F5] ring-8 ring-surface-container-lowest ambient-glow flex flex-col">
+<!-- Status Bar Area (Mock) -->
+<div class="h-12 w-full flex justify-between items-center px-6 pt-2 text-[#2D2D2D] z-10 shrink-0">
+<div class="text-[14px] font-semibold tracking-tight">9:41</div>
+<div class="flex gap-2 items-center">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span class="material-symbols-outlined text-[16px]">battery_full</span>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col justify-between px-8 pb-10 pt-4 overflow-y-auto">
+<!-- Top Section: Icon, Headline, Subhead -->
+<div class="flex flex-col items-center text-center mt-8">
+<!-- Large Gold Bell Icon -->
+<div class="relative mb-10 w-24 h-24 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-transparent shadow-[0_12px_30px_rgba(230,195,100,0.15)]">
+<span class="material-symbols-outlined text-[64px] text-primary" style="font-variation-settings: 'FILL' 1;">
+                        notifications_active
+                    </span>
+<!-- Animated ring lines representation (static for this output) -->
+<div class="absolute inset-0 rounded-full border border-primary/30 scale-[1.15]"></div>
+<div class="absolute inset-0 rounded-full border border-primary/10 scale-[1.3]"></div>
+</div>
+<!-- Headline -->
+<h1 class="font-serif text-4xl leading-tight font-bold text-[#2D2D2D] tracking-tight mb-4">
+                    Never Miss the Move.
+                </h1>
+<!-- Subhead -->
+<p class="text-[16px] leading-relaxed text-[#64748B] font-body max-w-xs">
+                    Get alerts when your favorite spots drop new events, when reservations open, and when your friends pull up.
+                </p>
+</div>
+<!-- Middle Section: Benefits List -->
+<div class="flex flex-col gap-6 mt-12 mb-auto px-2">
+<!-- Benefit 1 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<div class="text-[#2D2D2D] text-[15px] font-medium leading-snug">
+                        Booking reminders 2hrs before
+                    </div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div class="text-[#2D2D2D] text-[15px] font-medium leading-snug">
+                        Trending venues in your area
+                    </div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[24px]">group</span>
+</div>
+<div class="text-[#2D2D2D] text-[15px] font-medium leading-snug">
+                        When your crew checks in
+                    </div>
+</div>
+</div>
+<!-- Bottom Section: CTAs -->
+<div class="flex flex-col gap-4 mt-12 shrink-0">
+<button class="w-full py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-semibold text-[16px] tracking-wide shadow-[0_8px_20px_rgba(230,195,100,0.3)] transition-transform active:scale-95">
+                    Turn On Notifications
+                </button>
+<button class="w-full py-3 text-[#64748B] font-medium text-[15px] transition-colors active:text-[#2D2D2D]">
+                    Maybe Later
+                </button>
+</div>
+</main>
+<!-- Home Indicator Area (Mock) -->
+<div class="h-8 w-full flex justify-center items-center shrink-0">
+<div class="w-1/3 h-1 bg-[#2D2D2D] rounded-full opacity-20"></div>
+</div>
+</div>
+</body></html>

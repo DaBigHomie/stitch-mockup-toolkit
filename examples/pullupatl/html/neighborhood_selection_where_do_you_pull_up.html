@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Select Neighborhood</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#584400",
+                        "on-secondary": "#2f2e43",
+                        "on-primary-container": "#503d00",
+                        "secondary-fixed": "#e2e0fc",
+                        "on-tertiary-container": "#7a1345",
+                        "inverse-primary": "#755b00",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "outline": "#99907e",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "surface-variant": "#343342",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "tertiary": "#ffb1ca",
+                        "primary": "#e6c364",
+                        "on-primary": "#3d2e00",
+                        "surface-container-low": "#1a1a28",
+                        "surface-container-high": "#292937",
+                        "surface-dim": "#12121f",
+                        "surface-container-highest": "#343342",
+                        "on-tertiary-fixed": "#3e001f",
+                        "on-surface-variant": "#d0c5b2",
+                        "inverse-surface": "#e3e0f4",
+                        "primary-container": "#c9a84c",
+                        "surface": "#12121f",
+                        "primary-fixed-dim": "#e6c364",
+                        "primary-fixed": "#ffe08f",
+                        "error-container": "#93000a",
+                        "on-background": "#e3e0f4",
+                        "secondary": "#c6c4df",
+                        "on-secondary-container": "#b8b6d0",
+                        "secondary-container": "#47475d",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "inverse-on-surface": "#2f2f3d",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-surface": "#e3e0f4",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#e6c364",
+                        "on-error": "#690005",
+                        "surface-bright": "#383847",
+                        "on-tertiary": "#640035",
+                        "on-primary-fixed": "#241a00",
+                        "background": "#12121f",
+                        "surface-container": "#1e1e2c",
+                        "surface-container-lowest": "#0d0d1a",
+                        "tertiary-container": "#ff84b2",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "outline-variant": "#4d4637",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, theme('colors.primary'), theme('colors.primary-container'));
+        }
+        .midnight-shadow {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen pb-32">
+<!-- TopAppBar Semantic Shell mapping to exact JSON styles -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full bg-gradient-to-b from-slate-900/50 to-transparent">
+<!-- Leading Icon mapped -->
+<button aria-label="menu" class="text-[#e6c364] scale-95 active:duration-150 hover:text-[#c9a84c] transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+<!-- Headline mapped -->
+<h1 class="text-[#e6c364] font-['Newsreader'] tracking-tight text-xl uppercase font-bold text-center flex-1 mx-4">
+                SELECT NEIGHBORHOOD
+            </h1>
+<!-- Trailing Avatar mapped -->
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high scale-95 active:duration-150 ring-1 ring-white/10">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="close up portrait of a young woman with natural makeup in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZKAmZMBV3MhlUZmCLGt34d-d2TtP_EowllyjCzQCyQo8abNeQpzDEOxw_zAlsHlQKvw0qUAA3dgdiMOuYnWRHE8leHSC0Z4paVVaCseW232z4Wrr9FvOH7nAXbjE41xc2OHm_psTTe1zz-AI0vQBWTHM0RujCF1iRtdQLR2XXzlv1azi76--t2jBcfw6KRrJJgn1kw4hDOvb6AzofgVS55bvMAMgjxbT9KixQJ-EOyX2Bh4mVRvaUb5Jd_mvATTPEO3tFEwMHgnZB"/>
+</div>
+</div>
+</header>
+<main class="pt-28 px-6">
+<!-- Editorial Header Area -->
+<div class="mb-8">
+<h2 class="font-headline text-4xl tracking-tight leading-none mb-3">Where do you pull up?</h2>
+<p class="font-body text-on-surface-variant text-sm">Pick your neighborhoods to curate your midnight experience.</p>
+</div>
+<!-- Neighborhood Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Card: Selected State (Table Gold Border Glow via primary color ring) -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-2 ring-primary ring-offset-2 ring-offset-surface scale-[0.98] transition-transform">
+<div class="absolute inset-0 bg-surface-container-highest">
+<img alt="Buckhead" class="w-full h-full object-cover opacity-60" data-alt="luxury shopping district street level view at night with sleek cars and upscale retail store fronts illuminated" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt4XhRu7wuplpFbC8WknQTjk7kV-ggIFCjf8PfZ619FBjUe54XyTbBP67SfeRgGrN1Q1MfS7QSKuce2TFkarvO-RLhBE0MtCMmJ5m4yNb_w7v3qzpTIdGLMyDZMnMk_uKK5bSAS4PGG0H2wAJBYetdGV6iBGpd4kuWNbtG4aVlDnZHYijkzAHErBLP1QNKwVIr5ZA44ZsjpEUDXDKMm69DYytu3BHv3_dbceoK9ES47aJaVvSYt23R3nSy6qGwolF5cpAF8-3q4M1u"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white text-lg tracking-wide">Buckhead</span>
+</div>
+<div class="absolute top-3 right-3 text-primary bg-surface/50 rounded-full p-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Card: Unselected State -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-1 ring-outline-variant/15 hover:ring-primary/50 transition-all">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="Midtown" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-60 transition-all duration-500" data-alt="dense urban skyline at dusk with glowing skyscraper windows reflecting off glass facades" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxbIHIkD9IZWI_99pxA00dllf_wKq9RC0E35cgGsTZKaOYS3aEFDImvIJ0KvyKzUMspb6-RWmU6Riza1bTXCn7rnmqitRQ111fq439Xg-uQJOuHEOPOEOPaH-PFY7eg0rgGrDZ_5_aDToG2xl5SgXDEFBwuhJfZvCOPipx8PNsYYnNIHOpeT9zaRcFJI_t8zBKPz6PmjpkAV8IXB_tLYf3mMVz5LT2aROIDJNKUGM-_WQi7OyhbvNLg3RCypORV4mx9glhOZzP4Uno"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white/90 text-lg tracking-wide group-hover:text-white transition-colors">Midtown</span>
+</div>
+</button>
+<!-- Card: Unselected State -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-1 ring-outline-variant/15 hover:ring-primary/50 transition-all">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="Old Fourth Ward" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-60 transition-all duration-500" data-alt="trendy industrial brick building converted to lofts next to a paved walking trail with string lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjsDAkywSGvJXXrJ0Ufqvd0C7BRQYaO5Ts9xejrvheXPXKDmZipAVAsbI365aRUpaOyerDzkhkQ9DJJXGyVe1zWK62tqHb_ui2K3L3MYBLQ21Qab74izMI6SI-DLiIgkQ99ubtXDSoyJ7zrfJNnl3vgK-aWJewn9tfMbexdhGPrVQABol_bDD_ehBMuy3DD8KQv-i7vJmsDHGHmBlEQ6MtyEVwWYcpGPcUuulczloGUiD8Ef1z62jfrjS2tdJw4pXTN0hXPQqyAqMZ"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white/90 text-lg tracking-wide group-hover:text-white transition-colors text-center leading-tight">Old Fourth<br/>Ward</span>
+</div>
+</button>
+<!-- Card: Selected State -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-2 ring-primary ring-offset-2 ring-offset-surface scale-[0.98] transition-transform">
+<div class="absolute inset-0 bg-surface-container-highest">
+<img alt="East Atlanta" class="w-full h-full object-cover opacity-60" data-alt="gritty neon lit street corner with dive bars and colorful murals on brick walls at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5ZpHAN4hH6lmiOxL5jfbbU_UG1Czvue71-iKEUKKdirAcTg8kM9VdwrouNg7_SYT1ORxWISn0ptbKhmVf0-XIStik09bO-7rv_8kECEto_WSsz8JULVcKXmm7YalqU4HvvLJVcYo0_8z728Y3ivFK3LhJ87IbWIol-DlwtNN5N8lznuYyCsyV7rqENh9OCa9cDNqsUoA29LBlZaFEuDSGmgicvKwyOegsWiEDJ7KQlvKsV_pmVLcAgaAIddlKXxj14y5no6YhhGy"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white text-lg tracking-wide">East Atlanta</span>
+</div>
+<div class="absolute top-3 right-3 text-primary bg-surface/50 rounded-full p-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Card: Unselected State -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-1 ring-outline-variant/15 hover:ring-primary/50 transition-all">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="Decatur" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-60 transition-all duration-500" data-alt="quaint town square with mature oak trees and historic stone courthouse lit up with warm street lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrt2jbQ8n1NuWpKkadosf5wInH6mDVoFKa-qnRehscN-oTjz7hlz_Vsg-AYpge8n1m5sVnuIuT1sEWxTJZn8yrxUKdQPqKsxYfs4TelbPjXXL6ootL2eYYsODLqKujDPksp_JKliubwODb6MolK6M10U-zkHYk0g0PTq5XpumoP8vfNnB0mWSZvm_VjQ4p71A1U5zHTvaQbV8ffgT1GXhI-jI860URMRH-WRmtgEzI1F3XiGFHej5ZowORlgdtUdN95hwQrOMcJfd4"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white/90 text-lg tracking-wide group-hover:text-white transition-colors">Decatur</span>
+</div>
+</button>
+<!-- Card: Unselected State -->
+<button class="relative rounded-[12px] overflow-hidden aspect-[4/5] group ring-1 ring-outline-variant/15 hover:ring-primary/50 transition-all">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="West End" class="w-full h-full object-cover opacity-50 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-60 transition-all duration-500" data-alt="historic craftsman style bungalow homes line a quiet street with lush green tree canopy overhead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBbd7LfbtSW5Ha1Qn65TFtORXW_0QN--3W6QC3DGK7Y1HMWM14VkgGu3XfFko_1GKQAicKu8uAyQK9FwXpbqGVsDpPcquufNlrqcs5XMZs9OJVf-gFrUIvGxe2AUgB8ROMLTamgj85TBkO3TRDFFQMlTiUG_-IZJX9wSIsgYW9H9HM0iIAv1zPCi5N0Lus4sc5XSShtOhLV2MsG5WI1pP1luM0biP5qJiJGkTFhpdmVer5FS7Se1NCEMh6mKVYSWKhpuGDWPADs6K"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end justify-center p-4">
+<span class="font-body font-bold text-white/90 text-lg tracking-wide group-hover:text-white transition-colors">West End</span>
+</div>
+</button>
+<!-- Filler to push content above fixed bottom navs -->
+<div class="col-span-2 h-4"></div>
+</div>
+</main>
+<!-- Floating Action Button Area (Contextual for this flow, overriding FAB suppression as it's a specific transactional requirement in the prompt) -->
+<div class="fixed bottom-[90px] left-0 w-full px-6 z-40 pointer-events-none">
+<div class="w-full flex justify-center pb-4">
+<button class="pointer-events-auto bg-gold-gradient text-on-primary font-body font-bold py-4 px-12 rounded-[0.75rem] midnight-shadow w-full max-w-sm flex items-center justify-center space-x-2 active:scale-95 transition-transform">
+<span>Continue</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar Semantic Shell mapping to exact JSON styles -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-3xl border-t border-white/5 bg-[#12121f]/80 backdrop-blur-2xl shadow-[0_-12px_30px_rgba(0,0,0,0.4)] block md:hidden">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4">
+<!-- Active state logic: Since this is "SELECT NEIGHBORHOOD", it maps closest to 'explore' -->
+<button aria-label="Explore" class="bg-[#c9a84c] text-slate-950 rounded-full p-3 flex flex-col items-center justify-center transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="hidden font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] mt-1">Explore</span>
+</button>
+<!-- Inactive -->
+<button aria-label="Tickets" class="text-slate-500 p-3 flex flex-col items-center justify-center transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/5">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="hidden font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] mt-1">Tickets</span>
+</button>
+<!-- Inactive -->
+<button aria-label="Messages" class="text-slate-500 p-3 flex flex-col items-center justify-center transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/5">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="hidden font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] mt-1">Messages</span>
+</button>
+<!-- Inactive -->
+<button aria-label="Profile" class="text-slate-500 p-3 flex flex-col items-center justify-center transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/5">
+<span class="material-symbols-outlined">person</span>
+<span class="hidden font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] mt-1">Profile</span>
+</button>
+</div>
+</nav>
+</body></html>

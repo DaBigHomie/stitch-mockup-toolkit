@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stitch Mockup Toolkit Brand Config",
+  "type": "object",
+  "required": [
+    "brand",
+    "tokens",
+    "viewport",
+    "monorepo"
+  ],
+  "properties": {
+    "brand": {
+      "type": "object",
+      "required": [
+        "name",
+        "slug"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "demographic": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        }
+      }
+    },
+    "tokens": {
+      "type": "object",
+      "required": [
+        "path",
+        "colors"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "colors": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-zA-Z]+$": {
+              "type": "object",
+              "required": [
+                "name",
+                "ref"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "ref": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "spacing": {
+          "type": "string"
+        },
+        "radius": {
+          "type": "object"
+        },
+        "shadow": {
+          "type": "string"
+        }
+      }
+    },
+    "viewport": {
+      "type": "string"
+    },
+    "monorepo": {
+      "type": "object",
+      "properties": {
+        "appSurfaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "componentRoot": {
+          "type": "string"
+        },
+        "fsdLayers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "moodTags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
