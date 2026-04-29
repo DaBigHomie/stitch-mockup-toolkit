@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#2f2f3d",
+                        "on-error": "#690005",
+                        "surface-bright": "#383847",
+                        "on-tertiary": "#640035",
+                        "surface-dim": "#12121f",
+                        "surface-tint": "#e6c364",
+                        "background": "#12121f",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "tertiary-container": "#ff84b2",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#c9a84c",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-secondary": "#2f2e43",
+                        "surface-container-high": "#292937",
+                        "secondary-fixed": "#e2e0fc",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-primary-fixed-variant": "#584400",
+                        "on-background": "#e3e0f4",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container": "#1e1e2c",
+                        "on-tertiary-container": "#7a1345",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-primary-fixed": "#241a00",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "error-container": "#93000a",
+                        "secondary-container": "#47475d",
+                        "primary-fixed": "#ffe08f",
+                        "outline": "#99907e",
+                        "on-surface": "#e3e0f4",
+                        "inverse-primary": "#755b00",
+                        "on-primary": "#3d2e00",
+                        "tertiary-fixed": "#ffd9e3",
+                        "surface": "#12121f",
+                        "tertiary": "#ffb1ca",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-primary-container": "#503d00",
+                        "outline-variant": "#4d4637",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "primary": "#e6c364",
+                        "surface-container-highest": "#343342",
+                        "secondary": "#c6c4df",
+                        "on-tertiary-fixed": "#3e001f",
+                        "surface-variant": "#343342",
+                        "surface-container-low": "#1a1a28",
+                        "primary-fixed-dim": "#e6c364"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "md": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "display": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrim-gradient {
+            background: linear-gradient(180deg, rgba(13,13,26,0) 0%, rgba(13,13,26,0.8) 60%, rgba(13,13,26,1) 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #e6c364 0%, #c9a84c 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 w-full bg-transparent">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#e6c364]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<span class="font-['Newsreader'] text-[#e6c364] font-bold"></span>
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform text-[#e6c364]">
+<span class="material-symbols-outlined">share</span>
+</button>
+</nav>
+<main class="pb-32">
+<!-- Hero Section -->
+<section class="relative h-[530px] w-full overflow-hidden">
+<img alt="DJ Kourt" class="absolute inset-0 w-full h-full object-cover" data-alt="Cinematic shot of a Black DJ performing in a dimly lit luxury nightclub with amber spotlights and smoke atmospheric effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR3sp_UoA6F_dYihqeGfYYESi3HUtRN33ms-h2RP2gnuz3ZQfb-hupPRzPKtYE6nq9G8u6zY5CYAgDnaXKCTMavheTk2AfYavbYcBzPqNVIG_X3iqnf8JmMtjkklj2J4SfLejOgdr8dohU-0jSLuedhUL4-DmOf9AzO5NHMmZCisTlRuaFBHocOlBdngUJHvKBoMhrE8eRSdq0EHLB-hbs52Xf3225kfeBO-lIdqj_Qnjr2E7HO3Tspskcqm2wvvtqqfeg6FdZ8Odv"/>
+<div class="absolute inset-0 scrim-gradient"></div>
+<div class="absolute bottom-0 left-0 w-full px-6 pb-8">
+<h1 class="text-4xl font-bold text-on-surface mb-2 font-body tracking-tight">DJ Kourt</h1>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-lowest text-on-surface-variant px-3 py-1 rounded-full text-xs font-label tracking-widest uppercase border border-outline-variant/10">Hip-Hop</span>
+<span class="bg-surface-container-lowest text-on-surface-variant px-3 py-1 rounded-full text-xs font-label tracking-widest uppercase border border-outline-variant/10">R&amp;B</span>
+<span class="bg-surface-container-lowest text-on-surface-variant px-3 py-1 rounded-full text-xs font-label tracking-widest uppercase border border-outline-variant/10">Afrobeats</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl">brand_family</span>
+<span class="font-label font-bold">Instagram</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl">cloud</span>
+<span class="font-label font-bold">SoundCloud</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="px-6 py-8 flex justify-between items-center bg-surface-container-low/50">
+<div class="text-center">
+<p class="text-primary font-display text-2xl font-bold italic">127</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-label">shows</p>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<p class="text-primary font-display text-2xl font-bold italic">12</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-label">residencies</p>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<p class="text-primary font-display text-2xl font-bold italic">4.9</p>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-label">rating</p>
+</div>
+</section>
+<!-- Upcoming Sets -->
+<section class="px-6 py-8">
+<div class="flex justify-between items-end mb-6">
+<h2 class="font-display text-3xl italic text-on-surface">Upcoming Sets</h2>
+<span class="text-primary text-xs font-label tracking-widest uppercase">View All</span>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container rounded-md overflow-hidden flex gap-4 p-4 shadow-xl border border-outline-variant/5">
+<div class="w-20 h-20 rounded-md overflow-hidden flex-shrink-0">
+<img alt="Revel Atlanta" class="w-full h-full object-cover" data-alt="Interior of a luxury nightclub with violet and gold lighting fixtures and velvet seating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe16SbfO9Y9MrOrLwObZG8qSbBzCYVkF8qNFIV43bv1BW4Baw33C-6hpRCs75UG0FZxZq8kcEfi-y5yU21L0GbkNQdXQJ3cglXVdtCAe6BXlfoZu4L9_YB-xe6zL_oUSrOJaWUPIEjn0uOp524rAwDZ4NVKBEmeAR1GNz49kXJUxYf0r_-YHGResy7KwYeq0zqWPCzdfJv6NrUWHJHaIp8zMwKbMjcpTj94QfREGROeidr49ENyn6m94KLZIAfta1wHrVWghJkOVta"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1">
+<div>
+<h3 class="font-display text-lg text-on-surface leading-tight italic">Revel Atlanta</h3>
+<p class="text-xs text-on-surface-variant font-label uppercase tracking-wider">Fri Apr 18 · 10 PM</p>
+</div>
+<button class="gold-gradient text-on-primary text-[10px] font-bold px-4 py-1.5 rounded-full w-max uppercase tracking-wider active:scale-95 transition-transform">
+                            RSVP
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Residencies -->
+<section class="px-6 py-8 bg-surface-container-low/30">
+<h2 class="font-display text-3xl italic text-on-surface mb-6">Residencies</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="pt-1">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+</div>
+<div>
+<p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Tuesdays</p>
+<p class="font-display text-xl text-on-surface italic">REVERB Downtown Atlanta</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="pt-1">
+<span class="text-primary material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+</div>
+<div>
+<p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Fridays</p>
+<p class="font-display text-xl text-on-surface italic">Havana Nightclub ATL</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Preview -->
+<section class="px-6 py-8">
+<h2 class="font-display text-3xl italic text-on-surface mb-6">Reviews</h2>
+<div class="bg-surface-container p-6 rounded-md italic font-display text-lg text-on-surface-variant leading-relaxed">
+                "Kourt brings an energy to the room that you can't describe. The transition from Afrobeats to late-night R&amp;B was seamless. A true vibe curator."
+                <div class="mt-4 flex items-center gap-3 not-italic">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="text-primary font-bold text-xs">MA</span>
+</div>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface">Marcus A.</p>
+</div>
+</div>
+</section>
+<!-- CTA Action -->
+<section class="px-6 pt-4 pb-12">
+<button class="w-full py-4 rounded-md border-2 border-primary text-primary font-label font-bold uppercase tracking-[0.2em] hover:bg-primary/5 transition-colors active:scale-[0.98] transition-transform">
+                Book DJ Kourt for your event
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#12121f]/80 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="bg-gradient-to-t from-[#12121f] to-transparent absolute inset-0 rounded-t-[2rem] pointer-events-none"></div>
+<button class="relative z-10 text-[#f5f5f5]/40 p-3 hover:text-[#e6c364] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">explore</span>
+</button>
+<button class="relative z-10 text-[#f5f5f5]/40 p-3 hover:text-[#e6c364] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">confirmation_number</span>
+</button>
+<button class="relative z-10 text-[#f5f5f5]/40 p-3 hover:text-[#e6c364] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">forum</span>
+</button>
+<button class="relative z-10 bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-full p-3 active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+</button>
+</nav>
+</body></html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Discovery Map</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1a1a2e",
+                        "primary-fixed-dim": "#e6c364",
+                        "on-primary-container": "#503d00",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "surface-container-lowest": "#0d0d1a",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "surface-container-highest": "#343342",
+                        "on-secondary": "#2f2e43",
+                        "primary-fixed": "#ffe08f",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#e2e0fc",
+                        "inverse-primary": "#755b00",
+                        "on-tertiary": "#640035",
+                        "surface-container-high": "#292937",
+                        "on-tertiary-fixed": "#3e001f",
+                        "primary": "#e6c364",
+                        "outline-variant": "#4d4637",
+                        "tertiary": "#ffb1ca",
+                        "surface-bright": "#383847",
+                        "surface-container": "#1e1e2c",
+                        "on-surface-variant": "#d0c5b2",
+                        "secondary-container": "#47475d",
+                        "surface-dim": "#12121f",
+                        "surface-container-low": "#1a1a28",
+                        "secondary": "#c6c4df",
+                        "primary-container": "#c9a84c",
+                        "surface": "#12121f",
+                        "on-tertiary-container": "#7a1345",
+                        "on-background": "#e3e0f4",
+                        "surface-variant": "#343342",
+                        "on-surface": "#e3e0f4",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "tertiary-container": "#ff84b2",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "error": "#ffb4ab",
+                        "background": "#12121f",
+                        "on-primary": "#3d2e00",
+                        "outline": "#99907e",
+                        "on-primary-fixed-variant": "#584400",
+                        "inverse-on-surface": "#2f2f3d",
+                        "surface-tint": "#e6c364",
+                        "inverse-surface": "#e3e0f4",
+                        "on-primary-fixed": "#241a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .map-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(18, 18, 31, 0.9) 0%, rgba(18, 18, 31, 0) 20%, rgba(18, 18, 31, 0) 80%, rgba(18, 18, 31, 0.9) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-dim text-on-surface font-body selection:bg-primary/30">
+<!-- App Shell Container (iPhone 15 Pro Ratio) -->
+<div class="relative mx-auto w-full max-w-[430px] h-[932px] bg-surface-container-lowest overflow-hidden shadow-2xl flex flex-col">
+<!-- TopAppBar (JSON Context) -->
+<header class="bg-[#12121f]/80 backdrop-blur-md shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 py-4 w-full docked full-width top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#e6c364]">search</span>
+<h1 class="text-xl font-serif italic text-[#e6c364] font-serif italic tracking-tight">The Midnight Editorial</h1>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-[#e6c364]/20 overflow-hidden">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="close-up portrait of a stylish Black man in a dark velvet blazer with subtle moody rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW2nYN_78e9hBppw9HLOtd7u4ySwHEUHLnkWXJXdIYoMZI3_LAbEPcZEjRBR2NDDUOj71b-7PchpPrqKlXYEd-W8CqZ0461zLxmfN5ZbmPXFrxR8yjz4xCpKail1ZCyyF-3_MzG50P5ZIuu5RtfBKrRVtc5mcvB9c0a6I6ide3H0aWuUBzO89u7tuMzE0y1QK8A78SwYHVymoEIUedI1xMBeYsitiPc1Uvw0we0DuqJx5Ie2LsG1rDGwtEbE2aIn3zfli8SjOHLeZZ"/>
+</div>
+</header>
+<!-- Main Canvas: Map Interaction -->
+<main class="flex-1 relative overflow-hidden">
+<!-- Map Background (Simulated Dark Mapbox/Apple Style) -->
+<div class="absolute inset-0 bg-[#0d0d1a] z-0">
+<img class="w-full h-full object-cover opacity-60 grayscale-[0.5] contrast-[1.2]" data-alt="stylized satellite map view of Midtown Atlanta at night with deep navy streets and glowing gold arterial roads" data-location="Atlanta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtCt5lcN-AP295GuQUg8eLE0Rx8VPeXz7qDmnYmK1jVu8IjrPu88_W2QvM9nAsVntQHLqaE4-6f9H7bP82F4M0R-XZCohwiazVAmRuDCgWBM2SAs1qraKTmSIPb_9spJE3P7oeoNzgQgqh1E-dDcuGKLUKX3oOE3ne5P7rH8BPuZVYKekL2HS0-foEDpqNRMYiMb8DN0z0t-QOQ4PkjT-7LwZ4Mxmqz7ey21qk8FbvI6z-ngGjJ2ZUW5OkH_3o2rHb9MtVgXrmSuX3"/>
+<div class="absolute inset-0 map-gradient-overlay pointer-events-none"></div>
+</div>
+<!-- Search & Filter Layer -->
+<div class="relative z-10 p-6 space-y-4">
+<!-- Search Bar -->
+<div class="bg-surface-container/90 backdrop-blur-xl rounded-2xl p-4 flex items-center gap-3 shadow-2xl">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div class="flex-1">
+<p class="text-[10px] uppercase tracking-widest text-primary font-bold">Near me</p>
+<p class="text-on-surface font-medium">Buckhead, Atlanta GA</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">tune</span>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">Open Now</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold uppercase tracking-widest whitespace-nowrap hover:bg-surface-bright">Dining</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold uppercase tracking-widest whitespace-nowrap hover:bg-surface-bright">Nightlife</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface text-[10px] font-bold uppercase tracking-widest whitespace-nowrap hover:bg-surface-bright">Brunch</button>
+</div>
+</div>
+<!-- Custom Map Pins -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Pin: Restaurant (Selected) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto">
+<div class="relative flex flex-col items-center">
+<div class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(230,195,100,0.4)] border-4 border-surface ring-2 ring-primary scale-110">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div class="w-2 h-2 bg-primary rotate-45 -mt-1 shadow-lg"></div>
+</div>
+</div>
+<!-- Pin: Nightclub -->
+<div class="absolute top-[35%] left-[65%] pointer-events-auto">
+<div class="relative flex flex-col items-center">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg border-2 border-surface">
+<span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings: 'FILL' 1;">nightlife</span>
+</div>
+<div class="w-1.5 h-1.5 bg-primary rotate-45 -mt-1"></div>
+</div>
+</div>
+<!-- Pin Cluster -->
+<div class="absolute top-[60%] left-[25%] pointer-events-auto">
+<div class="w-12 h-12 bg-surface-container-highest rounded-full flex items-center justify-center border-2 border-primary/40 text-primary font-bold text-sm shadow-xl">
+                        12
+                    </div>
+</div>
+<!-- Pin: Brunch -->
+<div class="absolute top-[20%] left-[30%] pointer-events-auto">
+<div class="relative flex flex-col items-center">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg border-2 border-surface">
+<span class="material-symbols-outlined text-on-primary text-sm" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+</div>
+<div class="w-1.5 h-1.5 bg-primary rotate-45 -mt-1"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet Preview -->
+<div class="absolute bottom-4 left-4 right-4 z-20">
+<div class="bg-surface-container/90 backdrop-blur-2xl rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5">
+<!-- Photo Strip -->
+<div class="flex h-36 gap-1 p-1">
+<div class="flex-1 rounded-l-2xl overflow-hidden">
+<img alt="Venue interior" class="w-full h-full object-cover" data-alt="luxury steakhouse interior with dim amber lighting, leather booths, and modern art on dark walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAa6X-Lsz4ox_5rG055apnMK7CcVyvvYRECWsk0MnxtUw2gwVtVLUZRe3h8EGGYsFPSze8uqwLTM-vM-v8XvM2zC1VsR1a3h7Hjp6oRF29fJ3_pmVquKEoa_BYCFkx_kGBE6wKfaJgWisQBs2z6uI5l06-kTjR2y3eTOfEWU2koPlYSwUn2aMiOppm6ZgX8D6yGwNfi-Fr81DW9032jdgrmEo2WNNf0M4FNNY-EOeHgYEGICVaZL7hHq76pwE2ySAsVbDZ0LGcf1_-"/>
+</div>
+<div class="flex-1 overflow-hidden">
+<img alt="Crowd at STK" class="w-full h-full object-cover" data-alt="elegant group of Black socialites laughing and holding cocktails in a high-end lounge setting at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-bKGGBdpHTUNe4Gx-UySfIsfHdoOJzIstHjdY70VTiMohKla9prLxy4VTr-ZLb7HDeXFe6rv4dK4AAkWSbVSp-gbZoUdhHHnku3IVj7bpXGwJfMl31Y6UWbcx-3gmD_QkKuR9huAQJ-UV-Suig84oq7WAwEshXXO9hQoiISdL0JYgzZcfyvMYtgVjd4ysEmPEwJwf08HdRd2OQLQrkUR5JjcA5xQ61k3k-f-RME7ter224lAWsZezYviRnngqjMICVbmkqSjT-bjf"/>
+</div>
+<div class="flex-1 rounded-r-2xl overflow-hidden">
+<img alt="Signature Dish" class="w-full h-full object-cover" data-alt="perfectly seared wagyu steak on a dark ceramic plate with artisanal garnish and dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWtf5xMdH-ucOujyyAy0OKoQEHsQXjMfvszWGcpUWvo_M2A3CB44ObN9Lv60-yGPvy2II3DXp8y1Vg-g9TKzZqPBqjMtPBgeq8aQ3dpL12tlmp6VB3K5lY8fFfRTbPzNNqpCg04HrAW-KE6pATPTDjJJQIQDWv-P4G7qXcXG_9sKUkA-0ry0MA-BepW2qQw9OB3zrnqnBst0vK3oSCMg1C6UTAdNORLQlffspuWTKw3yKOHDwpDGZlEq0m8ur80dXEnqWC_-BWzJ4G"/>
+</div>
+</div>
+<!-- Details Area -->
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h2 class="text-2xl font-headline font-bold text-on-surface tracking-tight">STK Steakhouse</h2>
+<p class="text-on-surface-variant text-sm font-medium">Steakhouse · Buckhead · $$$$</p>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.7</span>
+</div>
+<span class="text-xs text-on-surface-variant/60 uppercase tracking-tighter">1.2k reviews</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-green-500 font-bold text-sm">2 tables available tonight</span>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-xl font-bold text-sm tracking-widest hover:scale-105 active:scale-95 transition-transform shadow-lg">
+                                BOOK
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (JSON Context) -->
+<nav class="bg-[#12121f]/80 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 docked full-width bottom-0 z-50 rounded-t-3xl border-t border-white/5">
+<!-- DISCOVER (Active) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-5 py-2 cubic-bezier(0.22,1,0.36,1) transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.1em] font-bold mt-1">DISCOVER</span>
+</a>
+<!-- EVENTS -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-slate-300 px-5 py-2 hover:bg-white/5 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">nightlife</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.1em] font-bold mt-1">EVENTS</span>
+</a>
+<!-- RESERVATIONS -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-slate-300 px-5 py-2 hover:bg-white/5 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.1em] font-bold mt-1">RESERVATIONS</span>
+</a>
+<!-- PROFILE -->
+<a class="flex flex-col items-center justify-center text-slate-500 hover:text-slate-300 px-5 py-2 hover:bg-white/5 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-sans text-[10px] uppercase tracking-[0.1em] font-bold mt-1">PROFILE</span>
+</a>
+</nav>
+<!-- Floating Action Button (Optional Contextual Layer) -->
+<button class="fixed bottom-32 right-6 w-14 h-14 bg-surface-container-high rounded-2xl flex items-center justify-center shadow-2xl border border-white/10 text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</body></html>

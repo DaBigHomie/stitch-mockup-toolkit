@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Search Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#755b00",
+                        "surface": "#12121f",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "primary-container": "#c9a84c",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "on-background": "#e3e0f4",
+                        "inverse-on-surface": "#2f2f3d",
+                        "surface-container-high": "#292937",
+                        "primary-fixed": "#ffe08f",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary": "#ffb1ca",
+                        "surface-container": "#1e1e2c",
+                        "outline-variant": "#4d4637",
+                        "on-tertiary-container": "#7a1345",
+                        "tertiary-container": "#ff84b2",
+                        "primary-fixed-dim": "#e6c364",
+                        "surface-container-highest": "#343342",
+                        "surface-bright": "#383847",
+                        "on-primary": "#3d2e00",
+                        "on-primary-container": "#503d00",
+                        "secondary-fixed": "#e2e0fc",
+                        "background": "#12121f",
+                        "surface-container-low": "#1a1a28",
+                        "secondary-container": "#47475d",
+                        "primary": "#e6c364",
+                        "outline": "#99907e",
+                        "on-primary-fixed-variant": "#584400",
+                        "surface-variant": "#343342",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#640035",
+                        "surface-dim": "#12121f",
+                        "secondary": "#c6c4df",
+                        "inverse-surface": "#e3e0f4",
+                        "on-surface": "#e3e0f4",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3e001f",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-error": "#690005",
+                        "surface-tint": "#e6c364",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-secondary": "#2f2e43",
+                        "on-surface-variant": "#d0c5b2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Newsreader"
+                        ],
+                        "body": [
+                            "Plus Jakarta Sans"
+                        ],
+                        "label": [
+                            "Plus Jakarta Sans"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #12121f; /* surface */
+            color: #e3e0f4; /* on-surface */
+        }
+        .font-headline {
+            font-family: 'Newsreader', serif;
+        }
+        /* Custom scrollbar for horizontal scrolling filters */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen pb-24 selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar JSON Translation -->
+<header class="fixed top-0 w-full z-50 bg-[#12121f]/80 backdrop-blur-xl shadow-none">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-none bg-gradient-to-b from-[#12121f] to-transparent">
+<!-- Leading Icon -->
+<button class="text-[#e6c364] hover:text-[#e6c364] transition-colors duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<!-- Brand / Headline -->
+<h1 class="text-[#e6c364] font-serif italic font-black text-2xl tracking-tight uppercase">
+                DISCOVER
+            </h1>
+<!-- Trailing Avatar -->
+<div class="w-8 h-8 rounded-full overflow-hidden border border-[#e6c364]/20 active:scale-95 transition-transform cursor-pointer hover:border-[#e6c364] transition-colors duration-300">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close up portrait of a stylish Black man looking confident against a moody dark background, high quality photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjUkTT0ldUMvw2FhnoYln0kot02NWO8zycQNnUWY9mBWc2d8OvaJPSv9exh7SNXrSOg_wSeh1Gjy6M69xDz5KnhmHHbQROgnwapIJacPuIssYxHeMmH4eor7G7u7n5yybZ_sQhz0XJnwrWAqJoBgfA7wslgcnlh0amvzW3kEcBEDngE9dSU__2eItHHA5q7FLuebR-GSrOAo1Rg9b6GItcSmIA-sri9diz3zSpn9xt9ZcOizLdYsAtjUBpAwjVSsS6VgoQYadMfJ8h"/>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="pt-20 px-6 max-w-md mx-auto relative">
+<!-- Search Bar -->
+<div class="mt-4 relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant z-10 group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 text-on-surface rounded-full py-4 pl-12 pr-12 font-body text-base focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all shadow-[0_4px_20px_rgba(0,0,0,0.2)] placeholder:text-on-surface-variant/50" placeholder="Search venues, vibes..." type="text" value="Rooftop"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">tune</span>
+</button>
+</div>
+<!-- Filter Chips -->
+<div class="mt-6 flex items-center overflow-x-auto hide-scrollbar gap-3 pb-2 -mx-6 px-6">
+<div class="flex items-center bg-primary text-on-primary rounded-full px-4 py-2 font-label text-xs uppercase tracking-widest font-bold shrink-0 shadow-[0_4px_12px_rgba(230,195,100,0.2)]">
+                Buckhead
+                <span class="material-symbols-outlined text-[14px] ml-2 cursor-pointer">close</span>
+</div>
+<div class="flex items-center bg-primary text-on-primary rounded-full px-4 py-2 font-label text-xs uppercase tracking-widest font-bold shrink-0 shadow-[0_4px_12px_rgba(230,195,100,0.2)]">
+                Open Now
+                <span class="material-symbols-outlined text-[14px] ml-2 cursor-pointer">close</span>
+</div>
+<div class="flex items-center bg-primary text-on-primary rounded-full px-4 py-2 font-label text-xs uppercase tracking-widest font-bold shrink-0 shadow-[0_4px_12px_rgba(230,195,100,0.2)]">
+                $$-$$$
+                <span class="material-symbols-outlined text-[14px] ml-2 cursor-pointer">close</span>
+</div>
+<button class="text-primary-container font-label text-xs uppercase tracking-widest font-bold whitespace-nowrap pl-2 hover:text-primary transition-colors">
+                Clear All
+            </button>
+</div>
+<!-- Results Header -->
+<div class="flex justify-between items-end mt-8 mb-6">
+<div>
+<h2 class="font-headline text-2xl text-on-surface tracking-tight">12 spots found</h2>
+</div>
+<div class="flex items-center text-on-surface-variant font-label text-sm cursor-pointer hover:text-on-surface transition-colors group">
+<span class="mr-1">Relevance</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-y-0.5 transition-transform">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- Results List -->
+<div class="flex flex-col gap-6">
+<!-- Venue Card 1 -->
+<div class="flex gap-4 group cursor-pointer relative bg-surface-container-lowest p-2 rounded-2xl border border-white/[0.02] hover:bg-surface-container-low transition-colors duration-300">
+<!-- Image -->
+<div class="w-28 h-28 rounded-xl overflow-hidden shrink-0 relative shadow-[0_8px_20px_rgba(0,0,0,0.4)]">
+<img alt="High-end rooftop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Stylish Black couple enjoying drinks at an upscale Atlanta rooftop bar at dusk, ambient lighting, city skyline in background, cinematic depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWo1DZsRoGKtuzmfISS_MUx5X9Uy5SALZSbcbj8aJEyvu8MtjKb3mBHyjrjC3nqI5I0-cQX32yfcdwtcqBu44Hp-VP7rWggPehFx1hf9EzjM8au8JRUTESVBYGa--7hHSYBxWQpSfWkMmZuhYmohmnXXPgbTPv0y-1jGLt72tYJv4Mobeolw4z4x82hZCofUSx7AO99-h9GMQTvhAC5GGAtqNAQ6Z-MTUNSNBPCHVAe4wmX64NtpSfPYMLgLkJlT23UJNxv-uEsDEL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<button class="absolute top-2 right-2 text-white/80 hover:text-primary transition-colors z-10">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Content -->
+<div class="flex flex-col justify-center py-1 flex-1 min-w-0 pr-2">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline text-lg font-semibold text-on-surface truncate pr-2 tracking-tight">The Regent Room</h3>
+<div class="flex items-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold ml-1">4.8</span>
+</div>
+</div>
+<div class="flex items-center text-on-surface-variant font-body text-sm mb-2">
+<span class="truncate">New American</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0">$$$</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0 text-primary-container">0.8 mi</span>
+</div>
+<div class="mt-auto">
+<span class="inline-flex items-center text-[#8fe3a2] bg-[#8fe3a2]/10 border border-[#8fe3a2]/20 px-2.5 py-1 rounded-md font-label text-[10px] uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8fe3a2] mr-1.5 animate-pulse"></span>
+                            Available tonight
+                        </span>
+</div>
+</div>
+</div>
+<!-- Venue Card 2 -->
+<div class="flex gap-4 group cursor-pointer relative bg-surface-container-lowest p-2 rounded-2xl border border-white/[0.02] hover:bg-surface-container-low transition-colors duration-300">
+<div class="w-28 h-28 rounded-xl overflow-hidden shrink-0 relative shadow-[0_8px_20px_rgba(0,0,0,0.4)]">
+<img alt="Lounge area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Elegant group of young Black professionals laughing at a luxurious outdoor restaurant patio in Buckhead, warm golden hour lighting, champagne glasses on table, highly stylized editorial look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArKkkE0niukj7Ilh6RrblbIPEy0E2A1Ba27zd2-KbYJXi1P_Tw94R77v2HlzDb4MaLxMcE9GUEBci4PKnAvCsrEl7NzLyBS67kkSaH0kAhOF_pXg-PWk-RQeA5i5Cy1V3vo9Gcugqj24LcU3GKjbBlbuk5XWmd3ztYgPmfhxbc-6kuRZlVPmqz60ztJGQP0JdDHIdCy6kZYMX_I5qbF89TbItLsfaLoxe1u3LKHVq9E_k-_0O1RGGO_E-NxdArhoC5e_e_oQGrDGlC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<button class="absolute top-2 right-2 text-white/80 hover:text-primary transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex flex-col justify-center py-1 flex-1 min-w-0 pr-2">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline text-lg font-semibold text-on-surface truncate pr-2 tracking-tight">Oasis Sky Lounge</h3>
+<div class="flex items-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold ml-1">4.9</span>
+</div>
+</div>
+<div class="flex items-center text-on-surface-variant font-body text-sm mb-2">
+<span class="truncate">Tapas &amp; Cocktails</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0">$$</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0 text-primary-container">1.2 mi</span>
+</div>
+<div class="mt-auto">
+<span class="inline-flex items-center text-[#ffb86b] bg-[#ffb86b]/10 border border-[#ffb86b]/20 px-2.5 py-1 rounded-md font-label text-[10px] uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[12px] mr-1">schedule</span>
+                            Waitlist (45m)
+                        </span>
+</div>
+</div>
+</div>
+<!-- Venue Card 3 -->
+<div class="flex gap-4 group cursor-pointer relative bg-surface-container-lowest p-2 rounded-2xl border border-white/[0.02] hover:bg-surface-container-low transition-colors duration-300">
+<div class="w-28 h-28 rounded-xl overflow-hidden shrink-0 relative shadow-[0_8px_20px_rgba(0,0,0,0.4)]">
+<img alt="Restaurant interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Chic modern restaurant interior with dark moody velvet seating and gold accents, blurred figures of sophisticated patrons in background, architectural photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq3LICmVHN5QJVb62HbEatLfEojsxFqt2vpRUDDEcectADg4mj6J4fzod60r-g0LXZzsBKweT_62d2hA6_czkQh96iY2Iui8k1t76O7YvQEKZCAy11cBVRCmNiuZ4ESkfdt4hqXBQ5tpqAT9_ZVCdYWuKwsNF1hBCyqkUVkYqi7FJx6bDCOwMEV49go9qfn-3BHcsVvdsah1_xuiWWM37g727bQ8_PZT6YVbPaYzS8AX7VacGJUcfZt5aVWJUiJSvz1llepAbrs7LV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<button class="absolute top-2 right-2 text-white/80 hover:text-primary transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex flex-col justify-center py-1 flex-1 min-w-0 pr-2">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline text-lg font-semibold text-on-surface truncate pr-2 tracking-tight">Velvet &amp; Vine</h3>
+<div class="flex items-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold ml-1">4.6</span>
+</div>
+</div>
+<div class="flex items-center text-on-surface-variant font-body text-sm mb-2">
+<span class="truncate">Pan-African</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0">$$$</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0 text-primary-container">2.5 mi</span>
+</div>
+<div class="mt-auto">
+<span class="inline-flex items-center text-[#8fe3a2] bg-[#8fe3a2]/10 border border-[#8fe3a2]/20 px-2.5 py-1 rounded-md font-label text-[10px] uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8fe3a2] mr-1.5 animate-pulse"></span>
+                            Available tonight
+                        </span>
+</div>
+</div>
+</div>
+<!-- Venue Card 4 -->
+<div class="flex gap-4 group cursor-pointer relative bg-surface-container-lowest p-2 rounded-2xl border border-white/[0.02] hover:bg-surface-container-low transition-colors duration-300">
+<div class="w-28 h-28 rounded-xl overflow-hidden shrink-0 relative shadow-[0_8px_20px_rgba(0,0,0,0.4)]">
+<img alt="Food details" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close up of high end craft cocktails and gourmet small plates on a dark marble bar top, dim atmospheric lighting with a neon glow in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfigN75dCK72EL-37h59VX5kx0E3_clYCWBiOt3jacTT9-k2etgst3KV_Wfd-uV3WeYLvNikiClKNIiMxDCRMEbTdc0uDBC1DC7ylCWQEzGEeGY1OfFFa8yuW1HZMzclkLO_Iykk9MJrZnyTuonNnqnHcBx7QD25-cr9_tLT5DYztIgsy45eyZBKzbgqnmT0ZhmRXYwofHh2-4BJBpWTcROTTbAH3V0W0TbFygSmbCRNol7DovW7RttdQK_emMBw_ve_jk8TtYQ9K2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<button class="absolute top-2 right-2 text-white/80 hover:text-primary transition-colors z-10">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex flex-col justify-center py-1 flex-1 min-w-0 pr-2">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-headline text-lg font-semibold text-on-surface truncate pr-2 tracking-tight">The Canopy</h3>
+<div class="flex items-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold ml-1">4.7</span>
+</div>
+</div>
+<div class="flex items-center text-on-surface-variant font-body text-sm mb-2">
+<span class="truncate">Seafood</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0">$$</span>
+<span class="mx-1.5 opacity-50">•</span>
+<span class="shrink-0 text-primary-container">3.1 mi</span>
+</div>
+<div class="mt-auto">
+<span class="inline-flex items-center text-[#8fe3a2] bg-[#8fe3a2]/10 border border-[#8fe3a2]/20 px-2.5 py-1 rounded-md font-label text-[10px] uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#8fe3a2] mr-1.5 animate-pulse"></span>
+                            Available tonight
+                        </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Spacer for bottom nav -->
+<div class="h-10"></div>
+</main>
+<!-- Floating Map Button -->
+<div class="fixed bottom-28 left-1/2 -translate-x-1/2 z-40">
+<button class="bg-surface-bright/90 backdrop-blur-md border border-outline-variant/30 text-on-surface flex items-center gap-2 px-6 py-3 rounded-full shadow-[0_12px_30px_rgba(0,0,0,0.6)] hover:bg-surface-bright hover:border-primary/50 transition-all duration-300 active:scale-95 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">location_on</span>
+<span class="font-label font-bold text-sm uppercase tracking-wider">Map View</span>
+</button>
+</div>
+<!-- BottomNavBar JSON Translation -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-2xl border-t border-[#e6c364]/10 bg-[#12121f]/80 backdrop-blur-xl shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex justify-around items-center px-4 pb-6 pt-3 w-full">
+<!-- Active: EXPLORE (Matches Search Intent) -->
+<button class="flex flex-col items-center justify-center text-[#e6c364] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#e6c364] after:rounded-full hover:opacity-100 transition-all duration-300 active:scale-90" style="transition-timing-function: cubic-bezier(0.22,1,0.36,1);">
+<span class="material-symbols-outlined text-2xl mb-1" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-sans font-bold text-[10px] tracking-[0.1em] uppercase">EXPLORE</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 opacity-60 hover:opacity-100 transition-all duration-300 active:scale-90" style="transition-timing-function: cubic-bezier(0.22,1,0.36,1);">
+<span class="material-symbols-outlined text-2xl mb-1">bookmark</span>
+<span class="font-sans font-bold text-[10px] tracking-[0.1em] uppercase">SAVED</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 opacity-60 hover:opacity-100 transition-all duration-300 active:scale-90" style="transition-timing-function: cubic-bezier(0.22,1,0.36,1);">
+<span class="material-symbols-outlined text-2xl mb-1">group</span>
+<span class="font-sans font-bold text-[10px] tracking-[0.1em] uppercase">GROUPS</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 opacity-60 hover:opacity-100 transition-all duration-300 active:scale-90" style="transition-timing-function: cubic-bezier(0.22,1,0.36,1);">
+<span class="material-symbols-outlined text-2xl mb-1">confirmation_number</span>
+<span class="font-sans font-bold text-[10px] tracking-[0.1em] uppercase">RESERVE</span>
+</button>
+</div>
+</nav>
+</body></html>

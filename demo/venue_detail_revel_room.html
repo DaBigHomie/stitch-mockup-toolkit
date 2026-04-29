@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Revel Room | Atlanta's Premier Nightlife</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#ff84b2",
+                        "on-tertiary-fixed": "#3e001f",
+                        "tertiary-fixed": "#ffd9e3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "on-background": "#e3e0f4",
+                        "surface-dim": "#12121f",
+                        "surface-bright": "#383847",
+                        "secondary-fixed": "#e2e0fc",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#12121f",
+                        "primary": "#e6c364",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-highest": "#343342",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#241a00",
+                        "surface-tint": "#e6c364",
+                        "primary-container": "#c9a84c",
+                        "outline-variant": "#4d4637",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "secondary-container": "#47475d",
+                        "on-primary-container": "#503d00",
+                        "primary-fixed-dim": "#e6c364",
+                        "primary-fixed": "#ffe08f",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#2f2f3d",
+                        "surface-container-low": "#1a1a28",
+                        "surface-container-high": "#292937",
+                        "tertiary": "#ffb1ca",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "on-primary": "#3d2e00",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#755b00",
+                        "secondary": "#c6c4df",
+                        "on-primary-fixed-variant": "#584400",
+                        "on-tertiary": "#640035",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-tertiary-container": "#7a1345",
+                        "on-surface": "#e3e0f4",
+                        "background": "#12121f",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "outline": "#99907e",
+                        "surface-variant": "#343342",
+                        "surface-container": "#1e1e2c",
+                        "on-secondary": "#2f2e43"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+        .scrim-bottom {
+            background: linear-gradient(to top, rgba(13,13,26,1) 0%, rgba(13,13,26,0.6) 50%, transparent 100%);
+        }
+        .glass-panel {
+            background: rgba(30, 30, 44, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#12121f]/80 backdrop-blur-xl docked full-width top-0 z-50 fixed flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#e6c364] active:scale-95 duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-serif italic text-2xl text-[#e6c364]">Revel Room</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#e6c364] active:scale-95 duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="moody nightclub interior in Atlanta with warm amber lighting, plush velvet VIP sections, and champagne sparklers in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyba78FF-UHAVReMrmzDnXArVV1u9I_Ye4slAhor65vI94CssGW5igTOLoeQ3HtLGg_2AFvXpagV36ISTjTH5sH-MtlKr9ooZgpH5Qh4QQojiTls3UIlSoiI5kFZzcHeNlfi8HomgkGO3gUHq42JRglbxHDtXPqoQ2JexQ0nc5lhdXjd-dansBL8M1duWwWWi7MOCadStPWq9-skoqm8qSt4nWfCEAv5TmV1OJFSrw8edxagVEub8ab9SYAnVO4PZ5QY0o1XHSs_CA"/>
+<div class="absolute inset-0 scrim-bottom"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 md:p-16 flex flex-col items-start gap-4">
+<div class="flex items-center gap-3">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase">Open Tonight</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold tracking-widest">4.9</span>
+</div>
+</div>
+<h2 class="font-headline text-5xl md:text-7xl italic leading-none tracking-tight">Revel Room</h2>
+<p class="font-label text-on-surface-variant uppercase tracking-[0.15em] text-xs font-semibold">Nightclub · Buckhead · $$$$</p>
+<div class="flex flex-wrap gap-4 mt-6 w-full max-w-md">
+<button class="flex-1 bg-gradient-to-tr from-primary-container to-primary text-on-primary py-4 px-8 rounded-xl font-bold uppercase tracking-widest text-xs active:scale-95 transition-transform duration-200 shadow-lg">
+                        Book a Section
+                    </button>
+<button class="flex-1 border border-primary/20 bg-primary/5 text-primary py-4 px-8 rounded-xl font-bold uppercase tracking-widest text-xs active:scale-95 transition-transform duration-200">
+                        Guest List
+                    </button>
+</div>
+</div>
+</section>
+<!-- Tonight's Lineup -->
+<section class="mt-12 px-6">
+<div class="flex items-baseline justify-between mb-8">
+<div>
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.3em] block mb-1">Schedule</span>
+<h3 class="font-headline text-3xl italic">Tonight's Lineup</h3>
+</div>
+<button class="text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20 pb-1">View Full Calendar</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[4/5] md:aspect-video">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="portrait of a stylish Black male DJ with headphones around his neck in a moody music studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfOd6tNNPDn6dGfCPtnfzV3oR58geFUYD0jqJagiTNfYvf5RLvKEbe29vKmAFajnwquagZLhiM6FGJvH80nRj_zqeugXa-PFTZyHA5KWsvzEaOrM9reDE52s_jYGB1IT2NW3t6-wRvOrVn_1zWo_FPJlzBgA4EECNVk0et3EtlFeAYPBILsb_642KF00zYIrv-pZ96xfhnM0LZJzgiNBSMq-I5MG8af7kDJumSw-6BPIgllDn3yLbqlsllhjfMIApGyoSPRAyForUW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="font-headline text-4xl text-white">DJ K-Soul</h4>
+<p class="font-label text-primary text-[10px] uppercase tracking-widest mt-1">Afrobeats &amp; R&amp;B · 11PM - 4AM</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottle Menu -->
+<section class="mt-24 pl-6 overflow-hidden">
+<div class="flex items-baseline justify-between mb-8 pr-6">
+<div>
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.3em] block mb-1">Selection</span>
+<h3 class="font-headline text-3xl italic">Bottle Menu</h3>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Hennessy -->
+<div class="snap-start min-w-[280px] bg-surface-container rounded-2xl p-6 editorial-shadow">
+<div class="h-48 mb-6 flex items-center justify-center">
+<img class="h-full object-contain" data-alt="premium bottle of cognac on a reflective dark surface with professional studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXz5WXbs46jKMT9wNUOEfws10YQ7tf30ZQgq-a37Nm797j8483djGwlhYwT5Bcp2yEnPfEhc6JILUkmXw9QdgOrjMQ_GFQdwvTC95vlungmFA389Aca-PSrEles6T8plet27KFGc_p8q4bnlGs3kqmY7HTJwiKCkZ31TLrnHIis4sb6KugVlTnokS_br3N1z6Ju8mBHoRgizvaEJJu7FaRAO09GBdxFVNtqrnfHkOazckolfjwz6LAgTJRFM8thnjwixAlFzSK5j3w"/>
+</div>
+<h5 class="font-headline text-xl text-primary">Hennessy V.S.O.P</h5>
+<p class="font-label text-on-surface-variant text-[10px] uppercase tracking-widest mt-1">Cognac · $450</p>
+<button class="mt-6 w-full py-3 rounded-lg border border-outline-variant text-[10px] font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Add to Pre-Order</button>
+</div>
+<!-- Casamigos -->
+<div class="snap-start min-w-[280px] bg-surface-container rounded-2xl p-6 editorial-shadow">
+<div class="h-48 mb-6 flex items-center justify-center">
+<img class="h-full object-contain" data-alt="artisanal tequila bottle with clear glass and rustic label in a luxury setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_hkr0k6Rn1-Z8gvnME7GZ7NgG9kkExW3ybVgmFh4lnFSbAlz7yOkVnIBIN0swBMIKgUF0J1Uq5ICDr28n1CQ9phJQkvMWgd8Tlz4BrdNIvGLkgf91sc-fZXdjmkw0sTN3WOCBiOnUry_ZI72vnjtEnmyXjoK-SnQ0sBVUFefqzmmViPM0jfjuSFFhdcmZHPpDceZCFLrQNxanXqp31FxyLzrVy0MUDnpJB1A5cgfGNbPu2QqdxNmn4dOk0B5LYk9wq1l4pC85qQTy"/>
+</div>
+<h5 class="font-headline text-xl text-primary">Casamigos Reposado</h5>
+<p class="font-label text-on-surface-variant text-[10px] uppercase tracking-widest mt-1">Tequila · $550</p>
+<button class="mt-6 w-full py-3 rounded-lg border border-outline-variant text-[10px] font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Add to Pre-Order</button>
+</div>
+<!-- Ace of Spades -->
+<div class="snap-start min-w-[280px] bg-surface-container rounded-2xl p-6 editorial-shadow">
+<div class="h-48 mb-6 flex items-center justify-center">
+<img class="h-full object-contain" data-alt="gold metallic champagne bottle reflecting nightclub lights on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Er9-ZvHRn9NB-r3rCixRIN9DMwwN1dSQm3quXTHt-hIsqu8gdJrSIAtnr5h6OCsUf8JDaq0jfCIXYzuFmqCiPuuYHJ_ClO7PkSOp-xb8y5m9bSypV9eqGkUv4hybHvl0nkoTSdI-qR1K7rM1c-pgCDXBG_-3_5Qijmig-dctYR-D0TuvMtKeMIcCcJK71AphXkZW4GsQEtzPrVkYFP697oVOxhS3J6GZ4NIlB3OnyEpSSJJ8mUFZOY102F7USpO8caL7OWHWVcDG"/>
+</div>
+<h5 class="font-headline text-xl text-primary">Ace of Spades Gold</h5>
+<p class="font-label text-on-surface-variant text-[10px] uppercase tracking-widest mt-1">Champagne · $1,200</p>
+<button class="mt-6 w-full py-3 rounded-lg border border-outline-variant text-[10px] font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Add to Pre-Order</button>
+</div>
+</div>
+</section>
+<!-- Section Map -->
+<section class="mt-16 px-6">
+<div class="bg-surface-container-low rounded-[2rem] p-8 md:p-12 overflow-hidden relative">
+<div class="relative z-10">
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.3em] block mb-1">Layout</span>
+<h3 class="font-headline text-3xl italic mb-8">Section Map</h3>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-square bg-surface-container-highest rounded-2xl overflow-hidden border border-outline-variant/30">
+<!-- Visual placeholder for a complex floor plan -->
+<div class="absolute inset-0 opacity-40 mix-blend-overlay">
+<img class="w-full h-full object-cover" data-alt="abstract architectural floor plan visualization with glowing lines and geometric shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8RZBAEqe9xUYRz4XuZpHXAPYqk_sZu_HQqJqtxyT8hJ_fcoBb9kkPxDqd2HKQeSce71cdSS_uBhhQxfDsgk-AycA-MQIO_7twQQcjtiu0enI-GCSbEgaFduNX9g2xov9d9IcjlH8gFuik1GxXPRDP16cjzJk7LZmYz-_1uaENHReeGts6C9xK4p0HpnIXltwa21TxxxM6cYMhtdRjod3lyEiOY_mnADczG_bBMKCrAuu57OmvReNa558y8kv8vjXSJIIxYLYvWkg6"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<div class="grid grid-cols-4 grid-rows-4 gap-2 w-full h-full">
+<div class="bg-red-500/40 rounded-sm border border-red-500/60 flex items-center justify-center text-[10px] font-bold">SOLD</div>
+<div class="bg-primary-container/60 rounded-sm border border-primary flex items-center justify-center text-[10px] font-bold">VIP</div>
+<div class="bg-primary-container/60 rounded-sm border border-primary flex items-center justify-center text-[10px] font-bold">VIP</div>
+<div class="bg-red-500/40 rounded-sm border border-red-500/60 flex items-center justify-center text-[10px] font-bold">SOLD</div>
+<div class="col-span-2 row-span-2 bg-emerald-500/40 rounded-sm border border-emerald-500/60 flex items-center justify-center text-[10px] font-bold">DANCE FLOOR</div>
+<div class="bg-primary-container/60 rounded-sm border border-primary flex items-center justify-center text-[10px] font-bold">VIP</div>
+<div class="bg-primary-container/60 rounded-sm border border-primary flex items-center justify-center text-[10px] font-bold">VIP</div>
+<div class="bg-red-500/40 rounded-sm border border-red-500/60 flex items-center justify-center text-[10px] font-bold">SOLD</div>
+<div class="bg-primary-container/60 rounded-sm border border-primary flex items-center justify-center text-[10px] font-bold">VIP</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+<span class="font-label text-xs uppercase tracking-widest font-semibold">Available Now</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-label text-xs uppercase tracking-widest font-semibold">Limited Premium</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-red-500"></div>
+<span class="font-label text-xs uppercase tracking-widest font-semibold">Fully Committed</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mt-6 italic font-headline">
+                                "Our Stage Side sections offer the ultimate proximity to the DJ booth and immersive sound system. Ideal for parties of 8-10."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dress Code -->
+<section class="mt-24 px-6 mb-12">
+<div class="flex items-baseline justify-between mb-8">
+<div>
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.3em] block mb-1">Requirements</span>
+<h3 class="font-headline text-3xl italic">Dress Code</h3>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-6 bg-surface-container rounded-2xl flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="checkroom">checkroom</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Upscale Attire</span>
+</div>
+<div class="p-6 bg-surface-container rounded-2xl flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="block">block</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">No Sportswear</span>
+</div>
+<div class="p-6 bg-surface-container rounded-2xl flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="styler">styler</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Button Downs</span>
+</div>
+<div class="p-6 bg-surface-container rounded-2xl flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="high_quality">high_quality</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Clean Footwear</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-24 left-0 w-full px-6 z-[60] md:hidden">
+<button class="w-full glass-panel border border-primary/20 p-5 rounded-2xl editorial-shadow flex items-center justify-between group active:scale-[0.98] transition-transform">
+<div class="text-left">
+<span class="block font-label text-[10px] text-primary uppercase tracking-[0.2em] mb-0.5">Instant Booking</span>
+<span class="block font-headline text-lg italic text-white leading-none">Book a Section — from $500</span>
+</div>
+<div class="bg-primary text-on-primary p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-8 pt-4 bg-[#12121f]/90 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center text-white/50 hover:text-[#e6c364] transition-all active:scale-90 duration-300 ease-[0.22,1,0.36,1]">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-sans uppercase tracking-[0.1em] text-[9px] font-bold">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364] active:scale-90 duration-300 ease-[0.22,1,0.36,1]">
+<div class="bg-[#c9a84c] text-[#12121f] rounded-full px-5 py-1.5 flex flex-col items-center">
+<span class="material-symbols-outlined" data-icon="nightlight" style="font-variation-settings: 'FILL' 1;">nightlight</span>
+<span class="font-sans uppercase tracking-[0.1em] text-[9px] font-bold">Vibe</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-white/50 hover:text-[#e6c364] transition-all active:scale-90 duration-300 ease-[0.22,1,0.36,1]">
+<span class="material-symbols-outlined mb-1" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-sans uppercase tracking-[0.1em] text-[9px] font-bold">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-white/50 hover:text-[#e6c364] transition-all active:scale-90 duration-300 ease-[0.22,1,0.36,1]">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-sans uppercase tracking-[0.1em] text-[9px] font-bold">Profile</span>
+</div>
+</nav>
+</body></html>

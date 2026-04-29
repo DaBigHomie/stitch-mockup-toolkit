@@ -1,6 +1,2 @@
-node_modules/
-out/
-dist/
-.DS_Store
-brand.config.json
-*.local.*
+
+demo/.vercel

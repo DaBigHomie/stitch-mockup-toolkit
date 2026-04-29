@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#12121f",
+                        "tertiary-fixed": "#ffd9e3",
+                        "surface-container-lowest": "#0d0d1a",
+                        "outline-variant": "#4d4637",
+                        "primary": "#e6c364",
+                        "on-error": "#690005",
+                        "secondary-container": "#47475d",
+                        "primary-fixed-dim": "#e6c364",
+                        "tertiary": "#ffb1ca",
+                        "on-primary": "#3d2e00",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "on-tertiary-container": "#7a1345",
+                        "surface-container": "#1e1e2c",
+                        "inverse-on-surface": "#2f2f3d",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "surface-container-high": "#292937",
+                        "surface-tint": "#e6c364",
+                        "on-primary-container": "#503d00",
+                        "tertiary-container": "#ff84b2",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#c9a84c",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "inverse-surface": "#e3e0f4",
+                        "surface-container-low": "#1a1a28",
+                        "on-primary-fixed-variant": "#584400",
+                        "surface-container-highest": "#343342",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "surface-variant": "#343342",
+                        "surface-bright": "#383847",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "on-surface": "#e3e0f4",
+                        "outline": "#99907e",
+                        "on-secondary": "#2f2e43",
+                        "on-tertiary-fixed": "#3e001f",
+                        "on-tertiary": "#640035",
+                        "secondary-fixed": "#e2e0fc",
+                        "inverse-primary": "#755b00",
+                        "surface": "#12121f",
+                        "error-container": "#93000a",
+                        "surface-dim": "#12121f",
+                        "primary-fixed": "#ffe08f",
+                        "error": "#ffb4ab",
+                        "secondary": "#c6c4df",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-background": "#e3e0f4"
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader", "serif"],
+                        body: ["Plus Jakarta Sans", "sans-serif"],
+                        label: ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #E5E5E5; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .section-label { font-size: 0.75rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 1.5rem; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="p-8 md:p-16">
+<div class="max-w-7xl mx-auto space-y-16">
+<!-- ROW 1: TAB BAR STATES -->
+<section>
+<h2 class="section-label">Row 1: Tab Bar States (Midnight Glassmorphism)</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- 1. Discover Active -->
+<div class="space-y-2">
+<p class="text-[10px] text-gray-500 font-bold ml-2">STATE: DISCOVER ACTIVE</p>
+<nav class="bg-[#12121f]/80 backdrop-blur-xl rounded-2xl flex justify-around items-center px-4 py-4 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364] transition-all">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Social</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+<!-- 2. Search Active -->
+<div class="space-y-2">
+<p class="text-[10px] text-gray-500 font-bold ml-2">STATE: SEARCH ACTIVE</p>
+<nav class="bg-[#12121f]/80 backdrop-blur-xl rounded-2xl flex justify-around items-center px-4 py-4 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Social</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+<!-- 3. Book Active + Badge -->
+<div class="space-y-2">
+<p class="text-[10px] text-gray-500 font-bold ml-2">STATE: BOOK ACTIVE + BADGE</p>
+<nav class="bg-[#12121f]/80 backdrop-blur-xl rounded-2xl flex justify-around items-center px-4 py-4 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Search</span>
+</div>
+<div class="relative flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Book</span>
+<div class="absolute -top-1 -right-1 bg-surface-container-highest text-primary border border-primary/20 w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold">+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Social</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+<!-- 4. Social Active + Notification -->
+<div class="space-y-2">
+<p class="text-[10px] text-gray-500 font-bold ml-2">STATE: SOCIAL ACTIVE + NOTIFICATION</p>
+<nav class="bg-[#12121f]/80 backdrop-blur-xl rounded-2xl flex justify-around items-center px-4 py-4 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Book</span>
+</div>
+<div class="relative flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Social</span>
+<div class="absolute -top-1 -right-1 bg-error-container text-white w-4 h-4 rounded-full flex items-center justify-center text-[8px] font-bold">3</div>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50 hover:text-[#e6c364]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+<!-- 5. Profile Active Avatar -->
+<div class="space-y-2 lg:col-span-2 max-w-xl mx-auto w-full">
+<p class="text-[10px] text-gray-500 font-bold ml-2 text-center">STATE: PROFILE ACTIVE + AVATAR</p>
+<nav class="bg-[#12121f]/80 backdrop-blur-xl rounded-2xl flex justify-around items-center px-4 py-4 shadow-[0_-12px_30px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6c364]/50">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Social</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-[#e6c364] to-[#c9a84c] text-[#12121f] rounded-xl px-4 py-1.5">
+<img alt="Profile" class="w-6 h-6 rounded-full border border-[#12121f]/20" data-alt="close-up portrait of a stylish young man with a slight smile, natural lighting, urban fashion aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk7Css0pYLL0gQ9fLBlJXOQ_Ae3BeEO7EALagGFy1JsiwjQpn7XTVyLzEpa74swRfb67JN2bQk5llJ3ugN4tyQ4CCYWC3OwVt8Ru_95rf-bCbAf3eo6xDIKqJlzsrRdLmbfFwhsgMt-D-mmi70q_kZcDaGaoZSd29-6JaBzByGVB2528ehXa4JvqIUc8juCZsfXdrKpSYcdhnex3c6COgFOVlS2eYm-1RhZ3Uxdi4y5Nq8SEa0Os9T_phIeFLcOBZvWlBgQB4z_n-a"/>
+<span class="text-[10px] uppercase tracking-widest font-semibold mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+</div>
+</section>
+<!-- ROW 2: HEADER VARIATIONS -->
+<section>
+<h2 class="section-label">Row 2: Header Variations</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- 1. Home Header -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">VARIANT: HOME / DASHBOARD</p>
+<header class="bg-surface-container-lowest p-6 rounded-3xl space-y-4 shadow-xl">
+<div class="flex justify-between items-center">
+<h1 class="font-headline text-2xl text-on-surface tracking-tight leading-none">What's the move, <span class="text-primary italic">Dame?</span></h1>
+<div class="relative bg-surface-container rounded-full p-2.5 text-primary hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-xl">notifications</span>
+<div class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full border border-surface-container-lowest"></div>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container w-fit px-3 py-1.5 rounded-full border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="text-xs font-label font-bold text-on-surface/80 uppercase tracking-widest">Midtown ATL</span>
+<span class="material-symbols-outlined text-primary/40 text-sm">expand_more</span>
+</div>
+</header>
+</div>
+<!-- 2. Detail Header -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">VARIANT: VENUE DETAIL</p>
+<header class="bg-surface-container-lowest p-6 rounded-3xl flex justify-between items-center shadow-xl">
+<button class="bg-surface-container rounded-full p-2.5 text-on-surface hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="font-headline text-lg text-primary tracking-tight">The Garden Room</h2>
+<div class="flex gap-2">
+<button class="bg-surface-container rounded-full p-2.5 text-on-surface hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">ios_share</span>
+</button>
+<button class="bg-surface-container rounded-full p-2.5 text-on-surface hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+</div>
+</header>
+</div>
+<!-- 3. Flow Header -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">VARIANT: TRANSACTIONAL FLOW</p>
+<header class="bg-surface-container-lowest p-6 rounded-3xl space-y-4 shadow-xl">
+<div class="flex items-center gap-4">
+<button class="text-on-surface/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div>
+<h3 class="font-headline text-xl text-on-surface leading-tight">Book a Table</h3>
+<p class="text-[10px] font-label font-bold uppercase tracking-widest text-primary/60">Step 1 of 4</p>
+</div>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="w-1/4 h-full bg-gradient-to-r from-primary to-primary-container"></div>
+</div>
+</header>
+</div>
+</div>
+</section>
+<!-- ROW 3: MODALS & SHEETS -->
+<section>
+<h2 class="section-label">Row 3: Modals &amp; Sheets (Editorial Ivory)</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- 1. Half Sheet -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">PATTERN: BOTTOM HALF-SHEET</p>
+<div class="bg-on-surface rounded-[2rem] overflow-hidden shadow-2xl relative">
+<div class="w-full flex justify-center py-3">
+<div class="w-12 h-1.5 bg-surface-container/20 rounded-full"></div>
+</div>
+<div class="p-8 pt-4 space-y-6">
+<h4 class="font-headline text-2xl text-surface tracking-tight">Reserve a Table</h4>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-4 bg-surface/5 rounded-2xl border border-surface/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface">groups</span>
+<span class="font-label font-bold text-surface uppercase text-xs tracking-widest">Party Size</span>
+</div>
+<span class="text-surface font-headline italic">4 Guests</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface/5 rounded-2xl border border-surface/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface">calendar_month</span>
+<span class="font-label font-bold text-surface uppercase text-xs tracking-widest">Date</span>
+</div>
+<span class="text-surface font-headline italic">Friday, Oct 12</span>
+</div>
+</div>
+<button class="w-full bg-surface text-primary font-label font-extrabold py-5 rounded-2xl shadow-lg uppercase tracking-[0.2em] text-sm">
+                                Check Availability
+                            </button>
+</div>
+</div>
+</div>
+<!-- 2. Full Screen Modal -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">PATTERN: FULL-SCREEN OVERLAY</p>
+<div class="bg-on-surface rounded-[2rem] h-[400px] overflow-hidden shadow-2xl relative p-8">
+<button class="absolute top-8 right-8 text-surface/40 hover:text-surface">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<div class="mt-12 space-y-10">
+<div class="space-y-1">
+<p class="font-label font-bold text-primary text-xs uppercase tracking-widest">Curated Discovery</p>
+<h4 class="font-headline text-4xl text-surface tracking-tighter leading-none">Select <span class="italic">Vibe</span></h4>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface rounded-2xl p-4 flex flex-col justify-end group cursor-pointer border border-transparent hover:border-primary/50 transition-all">
+<span class="text-primary-container font-headline text-lg italic">Intimate &amp; Low</span>
+</div>
+<div class="aspect-square bg-surface/5 border border-surface/10 rounded-2xl p-4 flex flex-col justify-end">
+<span class="text-surface/40 font-headline text-lg italic">High Energy</span>
+</div>
+<div class="aspect-square bg-surface/5 border border-surface/10 rounded-2xl p-4 flex flex-col justify-end">
+<span class="text-surface/40 font-headline text-lg italic">Rooftop View</span>
+</div>
+<div class="aspect-square bg-surface/5 border border-surface/10 rounded-2xl p-4 flex flex-col justify-end">
+<span class="text-surface/40 font-headline text-lg italic">Live Jazz</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Action Sheet -->
+<div class="space-y-4">
+<p class="text-[10px] text-gray-500 font-bold ml-2">PATTERN: MIDNIGHT ACTION SHEET</p>
+<div class="bg-surface-container rounded-[2rem] p-4 shadow-2xl space-y-2">
+<div class="bg-surface-container-highest/50 p-6 rounded-[1.5rem] space-y-4">
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors group">
+<span class="font-label font-bold uppercase text-xs tracking-widest">Share with Group</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<div class="h-px bg-on-surface/5 w-full"></div>
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors group">
+<span class="font-label font-bold uppercase text-xs tracking-widest">Save for Later</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">bookmark</span>
+</button>
+<div class="h-px bg-on-surface/5 w-full"></div>
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors group">
+<span class="font-label font-bold uppercase text-xs tracking-widest">Sync to Calendar</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">event</span>
+</button>
+</div>
+<button class="w-full bg-error-container/20 text-error font-label font-bold py-5 rounded-[1.5rem] uppercase tracking-widest text-xs hover:bg-error-container/30 transition-all">
+                            Cancel
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</body></html>

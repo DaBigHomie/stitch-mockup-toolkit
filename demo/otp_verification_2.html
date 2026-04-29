@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - OTP Verification</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#383847",
+                        "on-primary-fixed-variant": "#584400",
+                        "on-secondary-fixed-variant": "#45455b",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#241a00",
+                        "surface-container-highest": "#343342",
+                        "surface-container-high": "#292937",
+                        "on-primary": "#3d2e00",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#0d0d1a",
+                        "primary-container": "#c9a84c",
+                        "primary": "#e6c364",
+                        "surface": "#12121f",
+                        "error-container": "#93000a",
+                        "surface-variant": "#343342",
+                        "surface-dim": "#12121f",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-primary-container": "#503d00",
+                        "on-surface": "#e3e0f4",
+                        "on-background": "#e3e0f4",
+                        "tertiary-fixed": "#ffd9e3",
+                        "outline-variant": "#4d4637",
+                        "secondary-container": "#47475d",
+                        "tertiary-container": "#ff84b2",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "secondary-fixed": "#e2e0fc",
+                        "tertiary": "#ffb1ca",
+                        "on-error-container": "#ffdad6",
+                        "background": "#12121f",
+                        "surface-tint": "#e6c364",
+                        "outline": "#99907e",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-tertiary-container": "#7a1345",
+                        "on-tertiary-fixed": "#3e001f",
+                        "inverse-surface": "#e3e0f4",
+                        "secondary": "#c6c4df",
+                        "primary-fixed": "#ffe08f",
+                        "on-tertiary": "#640035",
+                        "inverse-primary": "#755b00",
+                        "surface-container-low": "#1a1a28",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "surface-container": "#1e1e2c",
+                        "on-secondary": "#2f2e43",
+                        "inverse-on-surface": "#2f2f3d",
+                        "primary-fixed-dim": "#e6c364"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Newsreader"
+                        ],
+                        "body": [
+                            "Plus Jakarta Sans"
+                        ],
+                        "label": [
+                            "Plus Jakarta Sans"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex items-center justify-center">
+<!-- Mobile Frame Simulation -->
+<main class="w-full max-w-[430px] h-screen max-h-[932px] bg-surface relative overflow-hidden flex flex-col mx-auto shadow-2xl md:rounded-[40px] md:border-8 md:border-surface-container-lowest ring-1 ring-white/10">
+<!-- TopAppBar (Transactional - No Navigation Shell, just a back button) -->
+<header class="flex justify-between items-center px-6 h-20 w-full docked full-width top-0 bg-transparent no-border z-10 pt-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface hover:opacity-80 transition-opacity scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="font-['Plus_Jakarta_Sans'] font-bold text-[#c9a84c] uppercase tracking-widest hidden">PullUpATL</div> <!-- Hidden brand for structural balance if needed later -->
+<div class="w-10 h-10"></div> <!-- Spacer for flex-between balance -->
+</header>
+<!-- Content Canvas -->
+<div class="flex-1 flex flex-col px-8 pt-12 pb-8">
+<!-- Headers -->
+<div class="mb-12">
+<h1 class="font-headline text-4xl tracking-tight text-on-surface mb-3">Enter your code</h1>
+<p class="font-body text-on-surface-variant text-base leading-relaxed max-w-[280px]">
+                    We sent a 6-digit code to <br/><span class="text-on-surface font-medium">(404) ***-7821</span>
+</p>
+</div>
+<!-- OTP Input Group -->
+<div class="flex justify-between gap-2 mb-8">
+<!-- Filled Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container flex items-center justify-center border-b-2 border-transparent relative">
+<span class="font-headline text-2xl text-on-surface">4</span>
+</div>
+<!-- Filled Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container flex items-center justify-center border-b-2 border-transparent relative">
+<span class="font-headline text-2xl text-on-surface">0</span>
+</div>
+<!-- Filled Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container flex items-center justify-center border-b-2 border-transparent relative">
+<span class="font-headline text-2xl text-on-surface">4</span>
+</div>
+<!-- Active/Focused Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container flex items-center justify-center border-b-2 border-primary relative shadow-[0_4px_20px_-4px_rgba(230,195,100,0.15)]">
+<div class="w-[2px] h-6 bg-primary animate-pulse"></div>
+</div>
+<!-- Empty Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container-low flex items-center justify-center border-b-2 border-transparent outline outline-1 outline-outline-variant/15 outline-offset-[-1px]">
+</div>
+<!-- Empty Input -->
+<div class="w-12 h-14 rounded-xl bg-surface-container-low flex items-center justify-center border-b-2 border-transparent outline outline-1 outline-outline-variant/15 outline-offset-[-1px]">
+</div>
+</div>
+<!-- Auxiliary Actions -->
+<div class="flex flex-col items-center gap-4 mb-auto">
+<p class="font-label text-sm text-on-surface-variant">
+                    Resend code in <span class="text-primary-container font-medium">0:42</span>
+</p>
+<button class="font-label text-sm text-primary-container tracking-wide hover:opacity-80 transition-opacity">
+                    Use a different number
+                </button>
+</div>
+<!-- Bottom Action (Disabled State) -->
+<div class="mt-auto pt-6">
+<button class="w-full py-4 rounded-xl bg-surface-container-high text-on-surface-variant/50 font-label font-bold text-base tracking-wider uppercase flex items-center justify-center cursor-not-allowed transition-all duration-300 pointer-events-none">
+                    Verify
+                </button>
+</div>
+</div>
+</main>
+</body></html>

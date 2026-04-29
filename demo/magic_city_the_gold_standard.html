@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Magic City - Premium VIP Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#45455b",
+                        "on-secondary-container": "#b8b6d0",
+                        "on-primary-fixed": "#241a00",
+                        "primary-fixed-dim": "#e6c364",
+                        "on-tertiary-container": "#7a1345",
+                        "tertiary": "#ffb1ca",
+                        "outline-variant": "#4d4637",
+                        "on-tertiary-fixed-variant": "#841c4c",
+                        "surface-bright": "#383847",
+                        "on-tertiary-fixed": "#3e001f",
+                        "tertiary-fixed": "#ffd9e3",
+                        "on-error": "#690005",
+                        "background": "#12121f",
+                        "on-tertiary": "#640035",
+                        "on-surface-variant": "#d0c5b2",
+                        "on-primary": "#3d2e00",
+                        "inverse-surface": "#e3e0f4",
+                        "on-background": "#e3e0f4",
+                        "tertiary-fixed-dim": "#ffb0ca",
+                        "surface-variant": "#343342",
+                        "on-primary-fixed-variant": "#584400",
+                        "primary": "#e6c364",
+                        "surface-tint": "#e6c364",
+                        "secondary-fixed-dim": "#c6c4df",
+                        "on-secondary-fixed": "#1a1a2e",
+                        "primary-container": "#c9a84c",
+                        "surface-container-low": "#1a1a28",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e2e0fc",
+                        "on-primary-container": "#503d00",
+                        "on-surface": "#e3e0f4",
+                        "error-container": "#93000a",
+                        "secondary": "#c6c4df",
+                        "primary-fixed": "#ffe08f",
+                        "surface": "#12121f",
+                        "tertiary-container": "#ff84b2",
+                        "surface-container-lowest": "#0d0d1a",
+                        "inverse-primary": "#755b00",
+                        "surface-container-highest": "#343342",
+                        "surface-container-high": "#292937",
+                        "outline": "#99907e",
+                        "surface-container": "#1e1e2c",
+                        "inverse-on-surface": "#2f2f3d",
+                        "on-error-container": "#ffdad6",
+                        "secondary-container": "#47475d",
+                        "on-secondary": "#2f2e43",
+                        "surface-dim": "#12121f"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "display": ["Newsreader"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(180deg, rgba(13, 13, 26, 0) 0%, rgba(13, 13, 26, 0.9) 70%, #0d0d1a 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #e6c364 0%, #c9a84c 100%);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#0d0d1a] text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-[#12121f]/80 backdrop-blur-xl shadow-2xl shadow-black/50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e6c364] scale-95 active:duration-150 cursor-pointer">arrow_back</span>
+</div>
+<h1 class="text-xl font-serif text-[#e6c364] italic font-serif italic tracking-tight">THE MIDNIGHT</h1>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e6c364] scale-95 active:duration-150 cursor-pointer">share</span>
+</div>
+</nav>
+<main class="pb-32">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<div class="absolute inset-0">
+<img alt="Magic City Interior" class="w-full h-full object-cover" data-alt="Moody interior of a luxury gentleman's club with deep violet stage lighting, plush velvet VIP booths, and high-end obsidian finishes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsLKwuQgX3cxukrDTBcYXw5VnB0F8yxICw2VODKD9fv-O7C67hnweaD4L1F7HMfSr1_9VD2LDQFw2OG077pMQaFYFM087NnbA8ouhMXItwxMrzjwk9yeyo2acsVfgCI6cUIHFYaaVZLv2V1C-yQlg7wekexhQhR6Qva7IvGpKHF8Ku5uj38vd2bXyWpEgBuTytZlLsTju3yrVuixSxjSYWqJJ21yJ1UCn-UZ3XT6SvP26pAeYhHR5hTd2MolKq2QlMwMRGbK3ou24A"/>
+<div class="absolute inset-0 editorial-gradient"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full px-8 pb-12">
+<div class="mb-6 flex">
+<span class="bg-on-tertiary-fixed-variant text-tertiary-fixed px-4 py-1 rounded-full text-[10px] font-label uppercase tracking-widest font-bold">
+                        21+ Only
+                    </span>
+</div>
+<h2 class="text-6xl md:text-8xl font-display italic text-on-surface leading-none mb-4">Magic City</h2>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mb-8">
+<span class="font-label text-primary uppercase tracking-widest text-xs font-bold">Gentleman's Club</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="font-label text-on-surface-variant uppercase tracking-widest text-xs">West End</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="font-label text-primary uppercase tracking-widest text-xs tracking-tighter">$$$$</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 max-w-xl">
+<button class="gold-gradient text-on-primary font-label font-bold uppercase tracking-widest py-4 px-8 rounded-xl flex-1 transition-transform active:scale-95">
+                        Book VIP Section
+                    </button>
+<button class="border border-primary/20 text-primary font-label font-bold uppercase tracking-widest py-4 px-8 rounded-xl flex-1 backdrop-blur-md transition-all hover:bg-primary/5 active:scale-95">
+                        Buy Bottle Service
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Venue Stats & Highlights -->
+<section class="px-6 -mt-8 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container p-6 rounded-xl shadow-xl flex flex-col justify-between">
+<span class="text-primary material-symbols-outlined text-3xl">star</span>
+<div>
+<p class="text-2xl font-display italic text-on-surface">Atlanta Legend</p>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider mt-1">World Renowned Experience</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl shadow-xl flex flex-col justify-between">
+<span class="text-primary material-symbols-outlined text-3xl">restaurant</span>
+<div>
+<p class="text-2xl font-display italic text-on-surface">Kitchen 24/7</p>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider mt-1">Signature Wings &amp; Soul</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl shadow-xl flex flex-col justify-between">
+<span class="text-primary material-symbols-outlined text-3xl">verified_user</span>
+<div>
+<p class="text-2xl font-display italic text-on-surface">Elite Security</p>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider mt-1">Discretion Guaranteed</p>
+</div>
+</div>
+</section>
+<!-- Tiered VIP Sections -->
+<section class="mt-16 px-6">
+<div class="flex items-baseline justify-between mb-8">
+<h3 class="text-3xl font-display italic text-on-surface">VIP Reservations</h3>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">View Floorplan</span>
+</div>
+<div class="space-y-6">
+<!-- Main Floor Section -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container-low border border-outline-variant/10 transition-all hover:bg-surface-container">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+<img alt="Main Floor Section" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern VIP section with low-slung leather seating, golden accent tables, and atmospheric purple club lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaa8I801ADIB-KEhuApDDW0GxmtSVsd8W5OR7joaK8LOor7nR3KgJ6lX8avOXKvDfq9FhTV9pF0ANT06WszOSRwUJLX6D1rx_2GBwz2ohebl5fgRsfGsJ6DDcBvCXalxtN4I5YzZTeiPbUjPU7oc6kjezhU8GO207pJqreylgAVUGbZc5NtfuhuoOq4RBl-CcY2TyXhNZDfgkfAgeS1_hfRxOAu_1WMHQu-sIb3hDyReTrHuWUKNaFu65oKp00GbCAq_zqqzBmeGvZ"/>
+</div>
+<div class="p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="text-2xl font-display text-on-surface">Main Floor Section</h4>
+<p class="text-on-surface-variant text-sm mt-1">Close to the action. Seats up to 6 guests.</p>
+</div>
+<div class="text-right">
+<p class="text-primary font-display text-2xl">$500</p>
+<p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Minimum Spend</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="bg-surface-container-high px-3 py-1 rounded text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Dedicated Waitress</span>
+<span class="bg-surface-container-high px-3 py-1 rounded text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Priority Entry</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mezzanine VIP -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container-low border border-on-tertiary-fixed-variant/30 transition-all hover:bg-surface-container">
+<div class="absolute top-0 right-0">
+<div class="bg-on-tertiary-fixed-variant text-tertiary-fixed px-6 py-1 rounded-bl-xl text-[10px] font-label uppercase tracking-widest font-bold">Most Popular</div>
+</div>
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+<img alt="Mezzanine VIP" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elevated VIP mezzanine view overlooking the club floor with premium velvet seating and private rail access." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQG5uEMtHgZd6A_NJt6RF67_KVR43OVAa_W89PmzP8LU415Wn7aDY5g1P4-9ZADA-j8fakea-rIGjEaJaBAs4nxoVcml5e8wMQn-0pMOkRk3e5boiFCOnrr91H0yBt2VlaPjLJb_HXiJxs0ALjveScLK970GazI6QyMAZrx3efANZl7gHZgON696adp4ImeV6T08-nlhsU-ugV6v7zKkiREcOuVcrgMiEun4cQPpOMmFaPHdrtmiEOfbA7aZOT09ivirWDFDEV-1sI"/>
+</div>
+<div class="p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="text-2xl font-display text-on-surface">Mezzanine VIP</h4>
+<p class="text-on-surface-variant text-sm mt-1">The best view in the house. Seats up to 10 guests.</p>
+</div>
+<div class="text-right">
+<p class="text-primary font-display text-2xl">$1,500</p>
+<p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Minimum Spend</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="bg-on-tertiary-fixed-variant/20 px-3 py-1 rounded text-[10px] font-label text-tertiary-fixed uppercase tracking-widest">Velvet Rope Service</span>
+<span class="bg-surface-container-high px-3 py-1 rounded text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Private Security</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Private Suite -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container-low border border-primary/20 transition-all hover:bg-surface-container">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
+<img alt="Private Suite" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ultra-exclusive private club suite with private bar, plush sofas, and soundproof glass overlooking the stage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzbOI30W7u2VByMS6NDQm61E6Hmcsy0ragYPMCRFQrVYJlS8_WJxqBPkV_5weNM6T05UE4xLtHHlPwzHF_SMIhINHjfUrgmClAlXU0jKAiiQvuZcPAZ0SQ-mP30ROalnaGmrK60TSQZ_MYy-2hctI2kg2YGlEk9YiuVPxdb7CnDVct7LrupLo1bT03C2-jZLOsnzMi16mRNtbU5gdDO8mEjPAbS1XCGPwKm8Bp6QxR1swUpEoPDEqQCf6M27t6ashAEXhpm-OA_n6"/>
+</div>
+<div class="p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="text-2xl font-display text-on-surface">Private Suite</h4>
+<p class="text-on-surface-variant text-sm mt-1">Ultimate exclusivity. Seats up to 20 guests.</p>
+</div>
+<div class="text-right">
+<p class="text-primary font-display text-2xl">$3,000</p>
+<p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Minimum Spend</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="bg-primary/10 px-3 py-1 rounded text-[10px] font-label text-primary uppercase tracking-widest">Private Entrance</span>
+<span class="bg-primary/10 px-3 py-1 rounded text-[10px] font-label text-primary uppercase tracking-widest">Personal Bartender</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottle Menu Scroll -->
+<section class="mt-20">
+<div class="px-6 mb-8 flex items-baseline justify-between">
+<h3 class="text-3xl font-display italic text-on-surface">The Bottle List</h3>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Swipe to Browse</span>
+</div>
+<div class="flex overflow-x-auto gap-6 px-6 hide-scrollbar">
+<!-- Bottle Item 1 -->
+<div class="flex-none w-64 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10">
+<div class="h-64 mb-6 flex items-center justify-center">
+<img alt="Ace of Spades" class="max-h-full object-contain" data-alt="Premium gold-plated champagne bottle reflecting warm spotlights on a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUse7JG3Fo52LwHpYHyI-9z9q4T-8KM_8McnJEekuqjTIHnlrt-aPKlE0b3lR1iVHJxfIAuG5oXm1eaM4x7bciB1GFw_FeUPSxZ-TKAaVXJjKTa4wf39i5-_IFRgiy_CK0E3b_1G5XbjHdfCRZ8oeruenNefH5SM7FTNeAF6v_CaMCIvgKPJfwpmEoO97mKkhT0csv3H5_BN_vvnVCPtkV2UX1rBLKigsvT95J6sgh2-3W6pxXrugxorWG-MYkXZge3dVnrbnG_Ijl"/>
+</div>
+<h5 class="text-lg font-display text-on-surface">Ace of Spades Gold</h5>
+<p class="text-primary font-label font-bold mt-2">$1,200</p>
+<button class="mt-4 w-full py-2 border border-primary/20 rounded-lg font-label text-[10px] uppercase tracking-widest text-primary hover:bg-primary/5 transition-colors">Add to Order</button>
+</div>
+<!-- Bottle Item 2 -->
+<div class="flex-none w-64 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10">
+<div class="h-64 mb-6 flex items-center justify-center">
+<img alt="Don Julio 1942" class="max-h-full object-contain" data-alt="Luxury tall amber glass tequila bottle with elegant branding in a high-contrast club setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACHioXrVnaCNMpicdoyAcnL-6KnAhdaANYiWaz0lCOO-Pdn2mzPUVs-jO2f61mnNsHULMO9xARzZ2NrPp5rZykXS9-rmnsVazZOCaBgh08MvuToYxAQ9enfBVpqFts_r6Ds1jjlEQ6towNffydAkxEYlRTO0gA2zOVs1Q1zgB0YIcAobh2Aze6obzom6kK17zAE_3_K_4ggXY1ppE1Yi6XmuDje5TcutYcipDEos_lTbI5NDP56Epst8C7eS6pqR3gVlMrPmUGcqtd"/>
+</div>
+<h5 class="text-lg font-display text-on-surface">Don Julio 1942</h5>
+<p class="text-primary font-label font-bold mt-2">$950</p>
+<button class="mt-4 w-full py-2 border border-primary/20 rounded-lg font-label text-[10px] uppercase tracking-widest text-primary hover:bg-primary/5 transition-colors">Add to Order</button>
+</div>
+<!-- Bottle Item 3 -->
+<div class="flex-none w-64 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10">
+<div class="h-64 mb-6 flex items-center justify-center">
+<img alt="Hennessy VSOP" class="max-h-full object-contain" data-alt="Cognac bottle with rich amber liquid catching warm highlights in a dark, luxury club atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz_Um4OoGuUSmEBwqMUR1BKCVr1pER-mzkwrA6DHYRPp7dI-YKQM1-5PAGteGSPaK8sPrTr8VK1rHX0gD_ZMMN7hOn-7Hw5s4s4SBZN5wqW1Me3e7vZhXUw00fflUADToIIUGJQUmhDDH7XEf1BN-F5qj8J8A3vdCfXSeP-8Mgad8I9_3VLhUhCWkuHdSMI_IIedA5YcTLLwgCAjacgSf-YHRmJI6WjZajxIDc8Cm33K6VkwJg_ZuZsCY62F8rY-ZX6_9PwxGNdCuZ"/>
+</div>
+<h5 class="text-lg font-display text-on-surface">Hennessy VSOP</h5>
+<p class="text-primary font-label font-bold mt-2">$650</p>
+<button class="mt-4 w-full py-2 border border-primary/20 rounded-lg font-label text-[10px] uppercase tracking-widest text-primary hover:bg-primary/5 transition-colors">Add to Order</button>
+</div>
+<!-- Bottle Item 4 -->
+<div class="flex-none w-64 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10">
+<div class="h-64 mb-6 flex items-center justify-center">
+<img alt="Moët &amp; Chandon" class="max-h-full object-contain" data-alt="Iconic champagne bottle with gold foil wrap and green glass, dramatically lit from the side." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMXDnhYvm0Hy4-UNkNK58g0gvTWkCjfrhWAsG1eIMjh8BwBkvNJa9ASvZWP9WfHCTZ_LseysShyJHABKu3RyOzv3mIg_9qPVhMs4stPOgCwQetgLPgfPm8r6a34MiQD7uqG65oggE8lJjAYphWT3KpfrG4ua42IOo1zQFgmH8NGYGzVEBysVhj5jOmk06k8nIjpzFJz7MNSJYXkjLkL-k30mQtADC9Mf1Ufx07jg3y9dRZ1w1uznpbnvpehpL5qoGy1HcBUKM49LSd"/>
+</div>
+<h5 class="text-lg font-display text-on-surface">Moët &amp; Chandon</h5>
+<p class="text-primary font-label font-bold mt-2">$450</p>
+<button class="mt-4 w-full py-2 border border-primary/20 rounded-lg font-label text-[10px] uppercase tracking-widest text-primary hover:bg-primary/5 transition-colors">Add to Order</button>
+</div>
+</div>
+</section>
+<!-- Cover Pricing Section -->
+<section class="mt-20 px-6">
+<div class="bg-surface-container p-8 rounded-2xl border-l-4 border-primary shadow-2xl">
+<h3 class="text-2xl font-display italic text-on-surface mb-6">Entry &amp; Cover</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+<div>
+<p class="text-on-surface font-label uppercase tracking-widest text-xs font-bold">Standard Entry</p>
+<p class="text-on-surface-variant text-xs mt-1">General admission access</p>
+</div>
+<p class="text-on-surface font-display text-xl">$40</p>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+<div>
+<p class="text-on-surface font-label uppercase tracking-widest text-xs font-bold">Priority Pass</p>
+<p class="text-on-surface-variant text-xs mt-1">Skip the general admission line</p>
+</div>
+<p class="text-primary font-display text-xl">$100</p>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<p class="text-on-surface font-label uppercase tracking-widest text-xs font-bold">Valet Parking</p>
+<p class="text-on-surface-variant text-xs mt-1">Secure on-site parking</p>
+</div>
+<p class="text-on-surface font-display text-xl">$30</p>
+</div>
+</div>
+<div class="mt-8 p-4 bg-on-tertiary-fixed-variant/10 rounded-lg border border-on-tertiary-fixed-variant/20">
+<p class="text-tertiary-fixed text-[10px] font-label uppercase tracking-widest text-center">Dress Code: Upscale Attire Required. No Athletic Wear.</p>
+</div>
+</div>
+</section>
+<!-- Gallery/Atmosphere -->
+<section class="mt-20 px-6">
+<h3 class="text-3xl font-display italic text-on-surface mb-8">Atmosphere</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[500px]">
+<div class="col-span-2 row-span-2 overflow-hidden rounded-2xl">
+<img alt="Main Floor" class="w-full h-full object-cover" data-alt="Group of elegantly dressed Black professionals celebrating in a dimly lit, high-end club environment with stage lights in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwapu_CkXpqF4RJlv1X_-5fqnZLt4eCzQCn9gJc2VupRmC7FK-G9UUosEqwJfyC03LbWKtzSKMzz1v7NvEKejQjMSoLJMKaR6jlTIvK6BBZOilEgHYEwviX_kBR7KC9BzJQalQhk3QAi1UQs0TXQ_6pcSNgA0CJrCS0JPIrTRNYyYJrjRP5TKNinBLLuMAlgEUh_DHOihheEfJ4HyBdYO9q1TGJsP1ZAlrz61_raeG-ClPf-9R0KbDhl181FHmrNF-aK8JUfNgDmlY"/>
+</div>
+<div class="overflow-hidden rounded-2xl">
+<img alt="Live Performance" class="w-full h-full object-cover" data-alt="Dramatic silhouette of a performance artist under purple spotlights with smoke and laser effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi5ThEsTooJYE-0Fn2oQ-qcU-7HN-cCg7ly0Lj_prqg24-qp5LqrhRHo453yNQX171cy12JPNyluKDgizsac77UR-sjPZOlDNPgwP4X2bV6ACzFevVXEYLtMANvVCox1bdEn0ebYnhg7gBcGONT0EnvEAgtjWAdYjg0dx0BzXLM9n1fKnk0bGxnbKJe2F9PgTHN3vHW3koSJOYjmzWHy_mbi595tjT4M0d7ckrDhod3VKgBX9tpm4Tsgzvnc7mkSy3Xai3a0w4nDGe"/>
+</div>
+<div class="overflow-hidden rounded-2xl">
+<img alt="Cocktails" class="w-full h-full object-cover" data-alt="Close up of artisanal cocktails on a dark bar surface with gold reflections and blurred club lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwqZtSetNoIzZkSXH32u1zK5_aEoM8V8h7mQjU172ZgX_G_pXmEZcKCCcYd4TQwrHK41FPYu86pZTbPT1Ay-RyGfEHyf2LLPUVl86_Vw7V0KmJPimJ50spIyAde3gFUEpYKvEf1E8FwzX5TV1OHn3hj_yDGR1UPs3YiDdAY_Ir-oFPOTZ5HsUidOXfjQrSCoZ4Gr2nBITwLW_GXnKV3Iy7g5ux71nWZI5vOi_JUn9pyxXdKF5nCXJ-Y15s-klcnGRkhwItrEnCEzX-"/>
+</div>
+<div class="col-span-2 overflow-hidden rounded-2xl">
+<img alt="Private Hallway" class="w-full h-full object-cover" data-alt="Sleek hallway with obsidian walls and integrated gold LED strip lighting leading to private VIP rooms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXQ1Bs0vh2C5W345N44h-orydq2aCqf0Rtoz4WpkoH7-1jVt9VfA_ZTxbcxm6VCJJV0oZyphWaNgpKD1Aq_DWOoNUMJkxuoy7RWkEGymzPN-qlirYUq3-aINZZl6IKPup7iXT4fzdK0M0oQubg9YC4LdviP7msdpBQGPSuav99HJKAsSq09ntl0pFFtHB6DePPwpJDx_GF5wdf4Dh_OEpLIgg28bh4w6z_0gXCiRH4GpZLCVCfUhaDtz99t2sThDtVwjDur7MhAGzA"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-24 left-0 w-full px-6 z-40 md:hidden">
+<button class="gold-gradient w-full py-4 rounded-xl shadow-2xl flex items-center justify-between px-8 text-on-primary font-bold transition-transform active:scale-95">
+<span class="font-label uppercase tracking-widest">Book VIP</span>
+<span class="font-display italic text-lg">from $500</span>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#1d1d2b]/90 backdrop-blur-2xl shadow-[0_-10px_30px_rgba(0,0,0,0.5)] rounded-t-2xl">
+<div class="flex flex-col items-center justify-center text-[#e6c364] bg-[#c9a84c]/10 rounded-xl px-4 py-1 transition-all cubic-bezier[0.22,1,0.36,1] hover:scale-105">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 transition-all cubic-bezier[0.22,1,0.36,1] hover:scale-105 px-4 py-1">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 transition-all cubic-bezier[0.22,1,0.36,1] hover:scale-105 px-4 py-1">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Concierge</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 transition-all cubic-bezier[0.22,1,0.36,1] hover:scale-105 px-4 py-1">
+<span class="material-symbols-outlined">person</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Find Your Spot</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "primary-fixed": "#ffe08f",
+                  "primary-fixed-dim": "#e6c364",
+                  "on-secondary-fixed": "#1a1a2e",
+                  "surface-container-high": "#292937",
+                  "tertiary": "#ffb1ca",
+                  "on-tertiary-container": "#7a1345",
+                  "on-secondary-fixed-variant": "#45455b",
+                  "on-primary-container": "#503d00",
+                  "surface-container-lowest": "#0d0d1a",
+                  "on-secondary": "#2f2e43",
+                  "tertiary-fixed-dim": "#ffb0ca",
+                  "surface": "#12121f",
+                  "on-tertiary-fixed": "#3e001f",
+                  "primary": "#e6c364",
+                  "on-primary-fixed-variant": "#584400",
+                  "on-primary-fixed": "#241a00",
+                  "inverse-on-surface": "#2f2f3d",
+                  "tertiary-container": "#ff84b2",
+                  "outline-variant": "#4d4637",
+                  "on-tertiary-fixed-variant": "#841c4c",
+                  "on-tertiary": "#640035",
+                  "surface-tint": "#e6c364",
+                  "on-primary": "#3d2e00",
+                  "error": "#ffb4ab",
+                  "secondary-container": "#47475d",
+                  "outline": "#99907e",
+                  "surface-dim": "#12121f",
+                  "on-error-container": "#ffdad6",
+                  "on-error": "#690005",
+                  "secondary": "#c6c4df",
+                  "on-surface-variant": "#d0c5b2",
+                  "on-surface": "#e3e0f4",
+                  "inverse-surface": "#e3e0f4",
+                  "surface-bright": "#383847",
+                  "surface-container-low": "#1a1a28",
+                  "error-container": "#93000a",
+                  "surface-variant": "#343342",
+                  "secondary-fixed-dim": "#c6c4df",
+                  "secondary-fixed": "#e2e0fc",
+                  "on-background": "#e3e0f4",
+                  "surface-container": "#1e1e2c",
+                  "inverse-primary": "#755b00",
+                  "background": "#12121f",
+                  "tertiary-fixed": "#ffd9e3",
+                  "surface-container-highest": "#343342",
+                  "primary-container": "#c9a84c",
+                  "on-secondary-container": "#b8b6d0"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "fontFamily": {
+                  "headline": ["Newsreader", "serif"],
+                  "body": ["Plus Jakarta Sans", "sans-serif"],
+                  "label": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col justify-between overflow-hidden m-0 p-0 antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Semantic Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-transparent no-line tonal-transition flat no shadows scale-95 duration-200">
+<button aria-label="Close" class="text-[#e6c364] hover:opacity-80 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="close" data-weight="regular" style="font-variation-settings: 'FILL' 0;">close</span>
+</button>
+<div class="text-[#e6c364] font-['Newsreader'] font-bold text-xl"></div>
+<button aria-label="Skip" class="text-slate-400 font-['Newsreader'] italic text-2xl tracking-tight hover:opacity-80 transition-opacity">
+      Skip
+    </button>
+</header>
+<!-- Hero Image Area (Top 60%) -->
+<div class="relative h-[530px] w-full">
+<img alt="Vibrant Atlanta restaurant patio at night" class="absolute inset-0 w-full h-full object-cover" data-alt="Aerial view of a vibrant, upscale restaurant patio at night with warm string lights, showing diverse Black diners laughing and enjoying food, deep rich colors, high contrast editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHhOtK5UhrEUEml7_AXaxRL9vQojksrcpmYNN282HbTNi_lS0XKsq2BlcrVDpV2ozhAUJ9U3FxcIWZ9pS02sOewvIZ4PEbqs_Rzg03o_bE1BOg88ItgZHx8ZVo_FgRmw1a7UaeAJA2Gu0wJBmay8kz9RR03OdIXpj80A7_3RbpG0PKb9CNe-OXJCEhy2neozRX5UjdR7VpwPKvnwfeYctl2SMbiWuDQ8Fqrz-zD9-OjX1xjjqTM2eO-zLGA2rAecaam7WdNgQOefly"/>
+<!-- Gradient Overlay blending into bottom section -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/60 to-surface"></div>
+</div>
+<!-- Content Area (Bottom 40%) -->
+<div class="relative flex flex-col justify-end px-6 pb-12 pt-8 h-[353px] w-full bg-surface z-10 -mt-12 rounded-t-[32px]">
+<!-- Text Content -->
+<div class="flex flex-col items-center text-center space-y-6 mb-10">
+<h1 class="font-headline font-bold text-4xl text-on-surface tracking-tight leading-tight px-4">
+        Find Your Spot.
+      </h1>
+<!-- Feature Pills (The "Filter" Experience) -->
+<div class="flex flex-wrap justify-center gap-3 px-2">
+<div class="flex items-center gap-2 bg-surface-container-highest rounded-full py-2.5 px-4 text-on-surface hover:bg-surface-bright transition-colors cursor-pointer border border-outline-variant/15 shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="restaurant" data-weight="regular">restaurant</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface">Restaurants</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest rounded-full py-2.5 px-4 text-on-surface hover:bg-surface-bright transition-colors cursor-pointer border border-outline-variant/15 shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="local_bar" data-weight="regular">local_bar</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface">Nightlife</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest rounded-full py-2.5 px-4 text-on-surface hover:bg-surface-bright transition-colors cursor-pointer border border-outline-variant/15 shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="local_cafe" data-weight="regular">local_cafe</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface">Brunch</span>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Elements (Pagination & CTA) -->
+<div class="flex flex-col items-center space-y-8 w-full mt-auto">
+<!-- Pagination Dots -->
+<div class="flex justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-surface-container-high transition-colors"></div>
+<div class="w-6 h-2 rounded-full bg-primary transition-all duration-300 ease-[0.22,1,0.36,1]"></div>
+<div class="w-2 h-2 rounded-full bg-surface-container-high transition-colors"></div>
+</div>
+<!-- Primary CTA Button -->
+<button class="w-full max-w-sm bg-gradient-to-br from-primary to-primary-container text-on-primary font-label font-semibold text-[15px] tracking-wide rounded-xl py-4 flex items-center justify-center gap-2 shadow-[0_12px_30px_-10px_rgba(230,195,100,0.4)] hover:opacity-90 transition-opacity active:scale-[0.98]">
+        Next
+        <span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Note: BottomNavBar is intentionally suppressed as this is an onboarding (transactional) screen -->
+</body></html>

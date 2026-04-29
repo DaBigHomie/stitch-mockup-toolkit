@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PullUpATL - Brand Design Showcase</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#0D0D1A',
+            brandGold: '#C9A84C',
+            brandDark: '#1A1A2E',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+<style data-purpose="typography">
+    h1, h2 {
+      letter-spacing: -0.02em;
+    }
+    .label-text {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  </style>
+<style data-purpose="mockup-styles">
+    /* iOS Icon Shaping */
+    .ios-icon-shape {
+      border-radius: 22.37%;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Phone Mockup Frame */
+    .iphone-frame {
+      width: 320px;
+      height: 650px;
+      background: #000;
+      border: 8px solid #222;
+      border-radius: 48px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    .iphone-screen {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, #1a1a2e, #0a0a0f);
+      padding: 60px 20px;
+    }
+
+    .status-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 44px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 28px;
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .dynamic-island {
+      position: absolute;
+      top: 11px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90px;
+      height: 25px;
+      background: #000;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body class="bg-midnight text-white font-sans antialiased min-h-screen">
+<!-- BEGIN: MainContainer -->
+<main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+<!-- BEGIN: Header -->
+<header class="text-center mb-24" data-purpose="page-header">
+<h1 class="font-serif text-4xl md:text-5xl mb-4">PullUpATL</h1>
+<div class="h-px w-24 bg-brandGold mx-auto mb-6"></div>
+<p class="text-brandGold tracking-widest text-sm font-medium uppercase">Visual Identity &amp; App Iconography</p>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Section1-IconSuite -->
+<section class="mb-32" data-purpose="app-icon-suite">
+<h2 class="font-serif text-2xl mb-12 border-l-2 border-brandGold pl-6">App Icon Suite</h2>
+<div class="flex flex-col items-center space-y-20">
+<!-- Master Icon Display -->
+<div class="flex flex-col items-center" data-purpose="master-icon">
+<img alt="PullUpATL Master Icon" class="w-64 h-64 ios-icon-shape mb-6 border border-white/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIORzqzCf4xIvZB_yPM28Sc6oInn_09_sOY3zCFm6mDJttIQQt3h7wg_Phg5v0Elutx1sUulbyXzS4Y7saXwafDcRWPHBrg1E7r6GHqzGuoR7RpBUSx-nnf2mvdVNdDLf41-oGWrlnWeNxnMRWaVNp3i_jHaNZfLV4-N263kr56J80NWFG49pAcJ4WIEK_pAxKx1RDX-_4KRH68jDOy-XxTzpNWSNBaIZ2Y2RMHo9cEvEymNMYb7nwoizF1jrnbR799-kEf5pMjT3B"/>
+<p class="label-text">Master Artwork (1024px)</p>
+</div>
+<!-- Sized Icons Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-end text-center" data-purpose="icon-variations">
+<div class="flex flex-col items-center">
+<img alt="Home Screen Icon" class="w-[180px] h-[180px] ios-icon-shape mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIORzqzCf4xIvZB_yPM28Sc6oInn_09_sOY3zCFm6mDJttIQQt3h7wg_Phg5v0Elutx1sUulbyXzS4Y7saXwafDcRWPHBrg1E7r6GHqzGuoR7RpBUSx-nnf2mvdVNdDLf41-oGWrlnWeNxnMRWaVNp3i_jHaNZfLV4-N263kr56J80NWFG49pAcJ4WIEK_pAxKx1RDX-_4KRH68jDOy-XxTzpNWSNBaIZ2Y2RMHo9cEvEymNMYb7nwoizF1jrnbR799-kEf5pMjT3B"/>
+<p class="label-text">Home Screen (180px)</p>
+</div>
+<div class="flex flex-col items-center">
+<img alt="App Store Icon" class="w-[60px] h-[60px] ios-icon-shape mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIORzqzCf4xIvZB_yPM28Sc6oInn_09_sOY3zCFm6mDJttIQQt3h7wg_Phg5v0Elutx1sUulbyXzS4Y7saXwafDcRWPHBrg1E7r6GHqzGuoR7RpBUSx-nnf2mvdVNdDLf41-oGWrlnWeNxnMRWaVNp3i_jHaNZfLV4-N263kr56J80NWFG49pAcJ4WIEK_pAxKx1RDX-_4KRH68jDOy-XxTzpNWSNBaIZ2Y2RMHo9cEvEymNMYb7nwoizF1jrnbR799-kEf5pMjT3B"/>
+<p class="label-text">App Store (60px)</p>
+</div>
+<div class="flex flex-col items-center">
+<img alt="Notification Icon" class="w-[40px] h-[40px] ios-icon-shape mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIORzqzCf4xIvZB_yPM28Sc6oInn_09_sOY3zCFm6mDJttIQQt3h7wg_Phg5v0Elutx1sUulbyXzS4Y7saXwafDcRWPHBrg1E7r6GHqzGuoR7RpBUSx-nnf2mvdVNdDLf41-oGWrlnWeNxnMRWaVNp3i_jHaNZfLV4-N263kr56J80NWFG49pAcJ4WIEK_pAxKx1RDX-_4KRH68jDOy-XxTzpNWSNBaIZ2Y2RMHo9cEvEymNMYb7nwoizF1jrnbR799-kEf5pMjT3B"/>
+<p class="label-text">Notification (40px)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section1-IconSuite -->
+<!-- BEGIN: Section2-ContextualMockup -->
+<section class="flex flex-col items-center" data-purpose="contextual-mockup">
+<div class="w-full mb-12">
+<h2 class="font-serif text-2xl border-l-2 border-brandGold pl-6">Visual Context</h2>
+</div>
+<!-- iPhone 15 Pro Mockup -->
+<div class="iphone-frame" data-purpose="phone-mockup">
+<div class="dynamic-island"></div>
+<div class="status-bar">
+<span>9:41</span>
+<div class="flex space-x-1">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 21l-12-18h24z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24"><path d="M12 21l-12-18h24z"></path></svg>
+</div>
+</div>
+<div class="iphone-screen">
+<!-- App Grid Simulation -->
+<div class="grid grid-cols-4 gap-4 mt-8">
+<!-- PullUpATL App -->
+<div class="flex flex-col items-center space-y-1">
+<img alt="PullUpATL" class="w-14 h-14 ios-icon-shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIORzqzCf4xIvZB_yPM28Sc6oInn_09_sOY3zCFm6mDJttIQQt3h7wg_Phg5v0Elutx1sUulbyXzS4Y7saXwafDcRWPHBrg1E7r6GHqzGuoR7RpBUSx-nnf2mvdVNdDLf41-oGWrlnWeNxnMRWaVNp3i_jHaNZfLV4-N263kr56J80NWFG49pAcJ4WIEK_pAxKx1RDX-_4KRH68jDOy-XxTzpNWSNBaIZ2Y2RMHo9cEvEymNMYb7nwoizF1jrnbR799-kEf5pMjT3B"/>
+<span class="text-[10px] font-medium">PullUpATL</span>
+</div>
+<!-- Comparison App: Uber (Placeholder) -->
+<div class="flex flex-col items-center space-y-1">
+<img alt="Uber" class="w-14 h-14 ios-icon-shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAQj-IawkhOFiSf_eEVR_wTZLAnkSWTtmyioLPxBkMr0oWatRze1tnv1bD8Zzg7ab4MIgyFesBmXIOdLTwpdDLvJ8Y7KyFWfLK4FEyIpXvq6cq7iwuCSfxA3beNoCSmOMeQvYq9aYG9100wOYYGYPxIm3uecr0AXSGtxcCM89r8ASDSgy5Sv5NGhJjIm0lFOajBmhUOhenNAVLamhB0ikHPuCRgaaLWdyF97qywAPZCn1nWMxtVR2-m2hXPsazZS3s-G8CUyiRdMGd"/>
+<span class="text-[10px] font-medium opacity-80">Uber</span>
+</div>
+<!-- Comparison App: Instagram (Placeholder) -->
+<div class="flex flex-col items-center space-y-1">
+<img alt="Instagram" class="w-14 h-14 ios-icon-shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLRwSfz1GM9eYTvq3HcZD5_eSNBmsDw-NZScPzLe1MbhxhTRV3bkv7hLkNT7riQXUqD2vt1ANaysKxIJL41eLObHNk_PnnhaQUQcJC0hbBpfXDJDI_b-SphqqCxENvjgHAxk1nImuXm6chDYDiPm5QJF7PA6NLaLKJfaJbYlrhxcpCq-TSvxjJRT3YHU4LKZFEH3PHZlX1OiG9wVEnFm9ShH2q6R7jfmeMyQrNpLF3Z5gmOii95HMWWKrnS79RXl89xUr1IkE-p9An"/>
+<span class="text-[10px] font-medium opacity-80">Instagram</span>
+</div>
+<!-- Comparison App: Cash App (Placeholder) -->
+<div class="flex flex-col items-center space-y-1">
+<img alt="Cash App" class="w-14 h-14 ios-icon-shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPmHTtvUj7vphNbu28cy3JdLzpuIWCyPQQrMoy8YnshCgq62hD2lo06BAyRt74kNMkDkEPTwF1t-cH0D83JH9Xj92rOliS7epok9N8BAFHnBG-Dx6Gb7kvFgsVUhnucdQ1Twg9xixnWA9MxQmK99GjL0irQBOWUPWyFJ3svlDgDRtZ_nqHTBnzGnSx5-rZwGZnmEsVV8PGLnvQusi0c2BKdV9qrGE8UafViPpTYZms60HXcD-qF7qgmETTkopP-z5PqAfkKvWpvBqs"/>
+<span class="text-[10px] font-medium opacity-80">Cash App</span>
+</div>
+</div>
+<!-- Dock -->
+<div class="absolute bottom-4 left-4 right-4 h-20 bg-white/10 backdrop-blur-xl rounded-[32px] flex items-center justify-around px-2">
+<div class="w-14 h-14 bg-white/20 rounded-2xl"></div>
+<div class="w-14 h-14 bg-white/20 rounded-2xl"></div>
+<div class="w-14 h-14 bg-white/20 rounded-2xl"></div>
+<div class="w-14 h-14 bg-white/20 rounded-2xl"></div>
+</div>
+</div>
+</div>
+<p class="mt-8 text-center text-white/40 text-sm max-w-sm">
+        Testing visual prominence and legibility against system standards and high-saturation third-party applications.
+      </p>
+</section>
+<!-- END: Section2-ContextualMockup -->
+<!-- BEGIN: Footer -->
+<footer class="mt-32 pt-12 border-t border-white/10 text-center" data-purpose="footer">
+<p class="text-white/30 text-xs font-medium tracking-widest uppercase">
+        PullUpATL © 2024 Design Specification
+      </p>
+</footer>
+<!-- END: Footer -->
+</main>
+<!-- END: MainContainer -->
+</body></html>
